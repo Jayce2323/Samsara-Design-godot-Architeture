@@ -1,0 +1,20 @@
+Game Actions/ Tabs
+
+1. Inventory
+2. Journal/Character/Map
+3. Combat
+4. Interact
+5. Look
+6. Abilities - {skill with combat and non combat applications, walk, run, crouch, jump}
+
+Equip slots-
+Limbs - 6 slots
+Head* - 3 slots = Helmet, Hood, Face
+Neck- 3 slots = Necklace
+Torso*- 10 = Clothing, UnderArmor, OverArmor, 5 slots Backitem (bags/scabbards/Weapons), Backclothing(Capes/Cloaks)
+Arms* - 5 (x2) = Clothing, ShoulderArmor, ArmAmor, WristArmor, Wrist jewlery 
+Hands*- 6 (x2) = Clothing/Armor, 4 rings, Weapons/Held
+Waist - 5 = Belt, Scabbards/weapons
+Legs* - 3 (x2) = Clothing, UpperlegArmor,LowerLegArmor
+Feet* - 1(x2) = Clothing/Armor
+Total slots = 57 [6 base body slots- 49 item equip slots + 2 weapon/held slots] 
