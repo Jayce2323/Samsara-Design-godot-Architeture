@@ -1,0 +1,141 @@
+Core sentence structure:	Noun : Names a person, place, thing, or idea/Pronoun: Replaces a Topic noun after topic established	Adjective: : Describes or modifies a noun or pronoun 	Adverb: Modifies a verb, adjective, or another adverb	Preposition: Shows the relationship between a noun/pronoun and other words (e.g., in, on, under).Links Verb and Object	Verb: Shows an action, occurrence, or state of being (Verb tags define context toinfer Connotation)	Pronoun Type-Perspective/case (verb Tag)	Verb Target [specifc type of noun affect. Person Place or thing](Verb tag)	Verb connotaion (Verb tag)	Verb Speech Type(Verb Tag)	Verb Reaction (expected/main)	Conjunction: Connects words, phrases, or clauses [Modifier or Qualifier]
+simple (command): Verb(V) + Noun(N)	Name : Specific Person, Place, Object/Idea			ex. Simple (command: V + P + [N = (O-d)]	Action:			NEGATIVE	Bartering, 	(-)+(+) = (-)	CONJUNCTION RULE (FINALIZED)
+simple (descriptive): Noun(N) + Verb(V)	Object (T): non specific thing to varying degrees: sword or cutlass vs Name: Eternal Cutlass of Riverforge	Descriptive: good, bad, happy, sad, big, small, blue, red, beautiful, difficult, easy, new, old, pretty, tall, short, kind, nice, wonderful	Manner (How): quickly, slowly, carefully, well, badly, loudly, gently, easily, rapidly, hungrily	"Where: Specific: Location (in, on, at, under, above, below, beside, between, behind, across, 
+                    near, by, inside, outside, over), NonSpecific: Direction: to, after, ahead of, before"	Action-Type: Movement:			POSITIVE	Intimidation,	(+) + (-) = (+)	"Conjunctions may appear:
+- between verbs
+- between clauses
+- between objects
+- between full sentence structures"
+Standard (command: V + O-i +O-d	Pronoun: non-direct person or thing (ex. him, it, that): By type/Case/Role key- A/BNOUN= After/before noun, A/BVERB= Afterr/before verb, ALE = Standalone	Quantitative: many, few, several, one, two, three, four, first, second, third, all, some, most	Time (When): now, soon, yesterday, tomorrow, always, often, never, before, after, late, early, still	When: Specific: Time +/or Date, NonSpecific: at, in, on, before, after, during, since, until, by	Movement: Run, 			NEUTRAL	Coercion, 	(+) + (+) = (+)	Conjunctions **modify or qualify** the relationship between actions.
+Standard (descriptive: N + V + Object(O-d)[secondary noun direct-object]	Subjective-Singular = PRNSS: [I - ACTOR] [You - ENACTED] [He - TOPIC/MALE] [She - TOPIC/MALE] [It - TOPIC/THING/IDEA]	Demonstrative: this, that, these, those	Place (Where): here, there, everywhere, inside, outside, up, down, near, far, home, somewhere, nowhere	How (Method/modifier (of-v)): with, by 	jump, 			DECEPTIVE	Persuasion, 	(-) + (-) = (+)	FUNCTIONS:
+Complex (command/direct):  V-i + O-i + V-d + O-d	Subjective-Plural = PRNSP: [We - ACTOR + ENACTED] [You - ENACTED + TOPIC] [THEY - THING/IDEA + TOPIC]	Proper Adjectives: American, European, Italian, French, Spanish	Degree (How much/extent): very, extremely, almost, quite, too, enough, really, nearly, less, more	Why (reason/cause)(descriptive only): Because (before noun), for, due to, because of (before pronoun), from	walk,				Argumentaion, 	Neutral = functions as 0	1. **Action chaining**
+Complex (descriptive): N + V + Object(O-i)[tertiary noun indirect-object] + O-d	Objective-Singular = PRNOS: [Me - ACTOR] [You - ENACTED] [Him - TOPIC/MALE] [Her - TOPIC/MALE] [It - TOPIC/THING/IDEA]			Who (Agent/ACTOR[(N)]): O-d	 swim, 				Commanding (Ordering), 	"Formula - (1)(ACTOR/Observer (or quest giver) goal[tied to verb])+ (2)(ENACTED (goal)) = OUTCOME 
+(For quest,  Quest Giver = ACTOR)(for indv-ACTOR(characters) (+) ENACTED = OUTCOME(ENACTED reaction)]"	V-d + Conj + V-d
+Complex (command/inderect/multi-act): V-n + V-i + O-i + V-d + O-d	Objective-Plural = PRNOP: [Us - ACTOR + ENACTED] [You - ENACTED + TOPIC] [THEM - THING/IDEA + TOPIC]			What (Agent/ENACTED[N]): O-i	fly, 				Negotiation, 	OUTCOME - ACTOR + ENACTOR = OUTCOME (inverse AO = - EO when opposed, = when aligned)	“attack AND steal”
+Complex (descriptive/inderect/multi-act): N + V-i + O-i + V-d + O-d	Possessive-Singular = PRNPS: [My - ACTOR/BNOUN] [Mine - ACTOR/AVERB/ALE] [Your - ENACTED] [His - TOPIC/MALE] [Hers - TOPIC/MALE] [Its - TOPIC/THING/IDEA]			Ownership: relates O-d to O-i, of, of the, ('s)	climb, 				Interrogation,		2. **Temporal sequencing**
+Simple Question (Inverse): V-aux + N + V	Possessive-Plural = PRNOP: [Our - ACTOR + ENACTED/BNOUN] [Ours - ACTOR + ENACTED/AVERB/ALE] [You - ENACTED + TOPIC] [THEM - THING/IDEA + TOPIC]			Measure: quantity [see magic formulas]	crawl, 				Inquiry,		Clause + Conj + Clause
+Standard Question (Inverse): V-aux + N + V + O-d					dance, 				Narration, 		“help merchant BEFORE bandits arrive”
+Complex Question (Inverse): V-aux + N + V-i + O-i + V-d + O-d				for max-multistage- setences- Topic  = event ( who + what + when + where + why) = MMS	slide, 						3. **Causality**
+noun = subject, verb=action, Object(S)= noun/subject (direct or indirect) direct = acted upon/action committed to, indirect = acted through				MMS =  Each part of event gets a sentence (capped 3 layer)[Ex. Topic1 -> Who1  (Topic2 = Topic1 cause)->Who(Topic2 reason)	skip,						Clause + Conj + Clause
+					 stroll, 						“villager fled BECAUSE wolves attacked”
+					trudge, 						4. **Conditional logic**
+					wander, 						Conj + Clause
+					dash, 						“IF bandits attack, guard intervenes”
+					race, 						5. **Multi‑act expansion**
+					saunter, 						(N + V + O-d) + Conj + (N + V + O-d)
+					scamper, 						6. **Qualifier insertion**
+			"Speech distrobution model - S-Structure pattern
+                                    S-Complextivity pattern"		stagger, 						Conj modifies meaning:
+		Friends vs Rivals -> Friends  (Like each other + Goals align), Rivals (Like each other + Goals oppose)			swagger, 						“help merchant BUT refuse payment”
+		"Antagonists vs Support vs Synergistic Protagonists -> Antags (Neutral but goals oppose), 
+Synergistic Protagonists (One neutral party and goals align), Support (Both Liked and goals align)"			march, 						Conjunction: Coordinatings, Subordinating, Correlative][Verbs: Auxiliary/Helping Verbs
+		Enemy vs Mortal Enemy -> Enemies (One neutral party and goals oppose), Mortal Enemies (Both Dislike and Oppose each other)			tiptoe, 						Coordinatings: for, and, nor, but, or, yet, so
+					limp, 						Subordinating: because, although, if, while, after, before, since, when, unless, until, how, tha
+					hop,						Correlative: either/or, neither/nor, both/and, not only/but also, whether/or
+					 dive, 						
+					sprint, 						
+					roam, 						
+					surge, 						
+					glide, 						
+					sink, 						
+	Morphology-.Morhpemes (each speech part needs morrpheme catgeory by type)				float.						
+	"1. Nouns: Number and Ownership
+Nouns use inflectional suffixes to indicate quantity and possession. Khan Academy
+Pluralization: Most nouns add -s or -es (e.g., dog → dogs, wish → wishes). Scribendi
+Possession: Singular nouns add -’s (kitten’s), while plural nouns typically add only an apostrophe if they already end in ""s"" (kittens’). QuillBot
+2. Verbs: Tense and Agreement
+Verbs undergo constant morphological change through inflectional endings to match the subject and time. Sarah's Teaching Snippets
+Third-Person Singular: Adding -s or -es to indicate present tense (e.g., I go → He goes). Wikipedia
+Past Tense: Adding -ed or -d for regular verbs (e.g., walk → walked). YouTube: Introduction to Morphology
+Present Participle: Adding -ing to indicate ongoing action (paint → repainting). YouTube: Introduction to Morphology
+3. Adjectives: Intensity (Comparison)
+Adjectives use suffixes to show degrees of comparison. Grammarly
+Comparative: Adding -er to compare two things (e.g., fast → faster). EF United States
+Superlative: Adding -est to indicate the highest degree in a group (e.g., fast → fastest). Albert.io
+Spelling Shifts: If an adjective ends in -y, it changes to -i before the suffix (happy → happier). Lingo Apps
+"				Action-Type Manual: 						
+	"4. Derivational Morphology (Changing Word Class)
+This process creates entirely new parts of speech by adding specific suffixes to a ""root"" or ""base"" word. Penn Linguistics
+Verb to Noun: Adding -er (agent) or -ance (abstract) (e.g., write → writer, deliver → deliverance). Wikipedia
+Adjective to Verb: Adding -en or -ize (e.g., weak → weaken, final → finalize). Penn Linguistics
+Noun to Adjective: Adding -al, -ous, or -less (e.g., recreation → recreational, symptom → symptomless). Scribd
+Adverb Morphology (The Suffix Specialists)
+5.Adverbs are almost always formed by adding a suffix to a base word (usually an adjective). Wordy
+Derivational Suffixes:
+-ly: The most common way to turn an adjective into an adverb (e.g., quick → quickly, quiet → quietly). GINGER
+-wise: Added to nouns to show direction or manner (e.g., clockwise, lengthwise, otherwise). Scribd
+-ward(s): Added to indicate direction (e.g., backward, homeward, upwards). Scribd
+Spelling Rules for ""-ly"":
+If the base ends in -y, it changes to -i (e.g., happy → happily). My English Class
+If it ends in -le, drop the -e and add -y (e.g., gentle → gently). My English Class
+If it ends in -ic, add -ally (e.g., tragic → tragically). My English Class
+6.Preposition Morphology (The Compounders)
+Unlike adverbs, prepositions rarely use consistent suffixes. They are formed through compounding or functional derivation. Scribd
+Compound Prepositions: Combining two or more morphemes into a single word. Scribd
+In + to → Into
+With + in → Within
+Out + side → Outside
+Participial Prepositions: Verbs modified with an -ing or -ed suffix that have evolved to function as prepositions. Scribd
+Considering (e.g., ""Considering the weather..."")
+Concerning (e.g., ""Questions concerning the law..."")
+Provided (e.g., ""Provided that you stay..."")
+A-Prefixing: An ancient way of forming prepositions from nouns or verbs (e.g., Board → Aboard, Float → Afloat, Cross → Across). Scribd"				Build, 						
+					break, 						
+					cut, 						
+					draw, 						
+					paint, 						
+					write, 						
+					touch, 						
+					catch,						
+					 throw, 						
+					hold,						
+					 push, 						
+					pull,						
+					 lift, 						
+					carry, 						
+					drop, 						
+					hit, 						
+					kick, 						
+					rub, 						
+					scrub, 						
+					wipe, 						
+					grab, 						
+					squeeze, 						
+					scratch, 						
+					stretch,						
+					 tear, 						
+					fold, 						
+					wrap, 						
+					twist, 						
+					shake, 						
+					stir, 						
+					pour, 						
+					dig, 						
+					plant, 						
+					sow, 						
+					reap, 						
+					weave,						
+					 sew, 						
+					knit, 						
+					carve, 						
+					mold.						
+					Daily Living: Eat, drink, sleep, wake, cook, wash, clean, dress, brush, shave, comb, bathe, shower, drive, ride, sit, stand, lie, rest, breathe, blink, sneeze, cough, yawn, snore, chew, swallow, bite, lick, suck.						
+					Interaction/Force: Open, close, lock, unlock, hide, find, seek, show, hide, give, take, send, bring, fetch, buy, sell, pay, spend, borrow, lend, use, fix, mend, repair, destroy, wreck, smash, crush, bend, straighten.						
+					Communication Physicality: Talk, speak, shout, whisper, sing, hum, whistle, yell, scream, cry, laugh, smile, frown, wave, point, nod, shrug, clap, whistle, chant.						
+					Nature/Mechanical: Flow, blow, shine, burn, freeze, melt, grow, shrivel, bloom, wither, rot, rust, roar, crash, buzz, hum, click, snap, crack, pop, sizzle, sparkle, flicker, spin, rotate, revolve, expand, contract, boil, steam.						
+					Vigorous/Detailed Action: Scrape, scratch, scrawl, seize, serve, shatter, shimmer, shock, sizzle, skulk, slash, slosh, slouch, slump, slurp, smite, snag, snap, snarl, sneak, soar, sprinkle, stare, starve, steal, steer, storm, strain, strike, strip.						
+					2. Mental & Emotional Action Verbs (100)						
+					These describe internal processes, cognitive states, and feelings.						
+					Cognition: Think, know, believe, understand, remember, forget, decide, mean, suppose, guess, doubt, wonder, imagine, realize, recognize, notice, consider, ponder, analyze, study, learn, teach, plan, solve, discover, identify, evaluate, assess, appraise, calculate.						
+					Emotional State: Love, hate, like, dislike, fear, enjoy, prefer, want, wish, hope, desire, care, mind, appreciate, adore, loathe, detest, envy, pity, trust, respect, admire, grieve, mourn, rejoice, satisfy, surprise, amaze, astonish, bore.						
+					Communication (Mental Intent): Ask, tell, say, answer, reply, suggest, advise, recommend, promise, agree, disagree, refuse, accept, allow, permit, forbid, excuse, forgive, thank, warn, explain, describe, mention, report, claim, argue, debate, discuss, negotiate, persuade.						
+					Perception: See, hear, smell, taste, feel, look, listen, watch, notice, observe, perceive, recognize, sense, detect, witness.						
+					3. Stative & Possession Verbs (60)						
+					These describe a state of being or ownership rather than an action.						
+					Ownership: Have, own, possess, belong, keep, hold, contain, include, lack, deserve, owe, earn, gain, win, lose, provide, furnish, supply, distribute, secure.						
+					Relational/State: Be, seem, appear, look, sound, smell, taste, feel, become, remain, stay, continue, consist, involve, equal, represent, matter, depend, resemble, differ, suit, fit, suffice, weigh, measure, cost, exist, survive, endure, last.						
+					4. Linking & Auxiliary Verbs (40)						
+					These connect subjects to descriptors or assist other verbs.						
+					Linking(To link the subject to a description): Be (am, is, are, was, were), become, seem, appear, look, sound, feel, smell, taste, grow, turn, prove, remain, stay, keep, go (as in "go bad"), get (as in "get tired").						
+					Primary Auxiliaries: Do, does, did, have, has, had, be, am, is, are, was, were, been.						
+					Modals: Can, could, shall, should, will, would, may, might, must, ought, dare, need, used to.						
