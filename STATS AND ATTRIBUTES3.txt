@@ -1,0 +1,493 @@
+
+										Attributes-> Derived From Stats
+
+	Strength = how strong the character is
+		Tied to Torso, Arm and Legs.
+          [Torso = 50% of strength stat]
+          [Arms = 10% of strength stat each]
+          [Legs = 15% of strength stat]
+         = Power 40%,  Stamina 40%, Toughness 20%
+	Intelligence = how smart the character  is/ How many logcial steps the character can navigate
+		Tied to Head[50%] and Internal [stomach[25%] & brain[25%]]
+	= Charisma 10%, Muscle Memory 20%, Aptitude 70%
+	Endurance = how much energy the character has
+		Tied to Internal [lungs[33%], muscle[33%], and fat[33%]]
+	= Stamina 50%, Quickness 15%, Muscle Memory 15%, Constution 20%
+	Dexterity = How well the charcter moves and performs fine /or fluid motions
+		Tied to Hands[50%] and Internal [eyes[50%]]
+	= Accuracy 50%, Quickness 25%, Muscle Memory 25%
+	Willpower = How mentally and physically tough the character is
+		Tied to Internal [brain]
+	= Toughness 25%, Resilience 25%, Aptitude 20%, Constitution 30%
+	Perception = How acute is the characters sense are
+		Tied to Internal [Eyes[25%], Ears[25%], Nose[25%], Skin[25%]]
+	 = Accuracy 50%, Charisma 20%, Resilience 15%, Aptitude 15%
+
+	Height (in cm) = used for metabolism and body comp calculations
+
+	*If linked body part takes damage stat is reduced by [.1 x Dmg]. Attributes are wieghted by associated stat instead of being directly leveled, making both manage through skill leveling.
+
+		-Stats = [Attribute/10]- Derived From Skills ->Skills set on character creation/Npc skills generated with Job [Job*on Social Sim Page]
+
+	[Strength + Dexterity] = Power <- How much force the character generates [Combat Stats -  Power 17%, Agriculture Stats- Power 30%, Stoneworking Stats-  Power 30%, Athletics Stats-  Power 20%, Metallurgy Stats- Power 22.5%,]
+	[Perception + Dexterity] = Accuracy <- Charcters hand eye coordination skill [Combat Stats - Accuracy 17%, Survival Stats- Accuracy 25%, Stoneworking Stats- Accuracy 30%, Roguery Stats- Accuracy 35%, Athletics Stats-  Accuracy 20%, Artistry Stats - Accuracy 40%,]
+	[Perception + Intellingence] = Charisma <- Characters social awareness [Roguery Stats- Charisma 35%, Speech Stats - Charisma 50%, Athletics Stats- 10%]
+	[Strength + Endurance] = Stamina <- The amount of energy a character can exert at once [Combat Stats -  Stamina 16.5%, Survival Stats-  Stamina 25%, Agriculture Stats- Stamina 40%, Stoneworking Stats- Stamina 40%, Athletics Stats- Stamina 20%, Metallurgy Stats- Stamina 22.5%, Artistry Stats - Stamina 10%]
+	[Willpower + Strength] = Toughness <- How much damage a characters body can absorb [Combat Stats - Toughness 16.5%, Survival Stats-  Toughness 25%, Agriculture Stats- Toughness 20%, Metallurgy Stats- Toughness 22.5%,]
+	[Dexterity + Endurance] = Quickness <- How well the character can navigate spacial movement (proprioception) [Combat Stats - Quickness 16.5%, Athletics Stats-  Quickness 20%,] 
+	[Willpower + Percpetion] = Resilience <- How well the character can guard against mental attacks &/or recover from them. [Survival Stats-  Resilience 25%, Athletics Stats- Resilience 10%, Metallurgy Stats- Resilience 22.5%]
+	[Intelligence + Endurance + Dexterity]/1.5 = Muscle Memory <- Governs skill retention and potential [Combat Stats - Muscle Memory 16.5%, Agriculture Stats- Muscle Memory 10%, Athletics Stats- Muscle Memory 10%, Metallurgy Stats- Muscle Memory 10%,]
+	[Intelligence + Willpower + Perception]/1.5 = Aptitude <- How well the character can learn a skill, execute, and or strategize [Governs Exp gain. [Natural Skill](Cannot be trained)] [Roguery Stats- Aptitude 30%, Learning Stats - Aptitude 100%, Artistry Stats - Aptitude 50%, Speech Stats - Aptitude 50%]
+	[Willpower + Endurance] = Constitution/Lifeforce [Qi/Ki/Chakra] <- Represents the characters pysche and body (soul). [Control Stats - Constitution 90%, Survival - 10% ] 
+
+	[Point distr.- stats range 1-100, an avg character is 50 in all stat categories, 5 in all attributes]
+			
+									-Base-Derived Stats-
+
+	Health Points (HP)- General wellness 		     
+		     [Limb health - The health of each individual limb = 
+		                    [[Original Total # of parts] x [# of parts per body part as percentage] = Health per part]]
+				    [ Damage to Limbs will reduce relevant atrribute (see chart below) and may futher impede tasks]
+ 		     [Internal Health [[Toughness + Stamina] - Represent general health ofe the internals. Used for bone and organ damage, other hemmoraging, and sickness]
+                     [Total Health = Limb Health + Internal Health][Tied to Vigor] 
+				
+						Limbs/BODYPARTS -
+	Limb health [[Original Total # ofparts] x [# of parts per body part as percentage] = Health per part]
+
+	BodyPart       Organ-> 	Skin(side of body)	Muscle/Tendon Group		A.V.(Arteries & Veins)		Vital-Organs	Bones
+	Head- 23 parts = 38.64	Face				Cheek			Arteries-Neck			Eyesx2		Skull	
+	40 hp			Neck				Jaw			Veins-Face 			Nose		Jaw
+           			Back				Throat			Head				Mouth		Teeth [avg 32]
+				Side x2(L/R)						Neck				Ears		Orbital x2	
+            														Brain	
+
+	Torso- 33 parts = 55.44	Chest(Left/Right)		Abdominals		Heart(Pulminary A.V. x2)	Kidney x2	Spine x3
+	55 hp			Back(Mid/Upper/Lower)		Chest(x2)						Lungs x2	Ribs x2
+				Lower Abdomen(Front/x2Sides)	[Back							Heart		Collar Bone x2
+				Groin				(Upper-Trap&Delts					Liver		Hip x2
+								/Lower-Erector Spinae/
+								 Mid-Lats&Rhomboid)]
+								 Groin
+							
+	Armsx2- 16 parts = 26.88 Upper Arm			Bicep			Radial Artery/Vein 		Armpit		Humorous(Upper Arm)
+	27 hp			Lower Arm			Tricep			Ulnar Artery/Vein 				Radius/Ulna(Lower Arm)
+				Shoulder			Forearm									Wrist
+				Elbow
+
+	Handsx2- 12 parts = 20.16 Fingers x10
+	20 hp			  Hand x2
+
+	Legsx2 - 16 parts = 26.88 Upper Leg			Upper Leg(Quadricep,	Upper Leg(Femoral Artery)			Upper Leg(Femur)
+	27 hp			 Lower Leg				Hamstring)	Lower Leg(Tibial Artery)			Lower Leg(Tibia/Fibula)
+				 Knees				Lower Leg(Shin/Calf)
+				 Ankle				Achilles Tendon 
+				  
+	Feetx2 - 12 parts = 20.16 each Toesx10
+	20 hp							Total = 168 parts = 283 Limb Hp [rounded]
+
+					Brain & Psyche/Senses- Psyche & Sense connect to brain for mental attacks and sense-reliabity
+		Senses-		Stimuli-
+	 	1. Sight    	Light
+  		2. Smell        Odarants [Chemical Molecules/compounds]
+		3. Hearing 	Sound
+		4. Touch	Pressure
+		5. Taste        [Chemical Molecules/compounds]
+		6. Temperature	Radiation/Heat [Though temperature is exprienced through touch, this will be split cognitavily for Psyche-calcs]
+		7. ESP		[Psychic sense] = [Sense Hp [1-7] = Constitution + Resilience]
+		8. Rationale	[Emotional State = Logos, Pathos, Ethos][Hp = (50 -> range from 0 [+/-])(+/-)(Skill-Lvl)  ]
+
+
+	[Sense & Rationale Tracking - e.states "hp" starts at 0, + attack raise hp, - attacks lower hp. Applies to both speech and mental attacks.}		
+
+	ESP & Sense- Esp Represents the sense of imagine/percieve reality and the mental link between the two (The ability of the mind to influence imagined/perceived reality).
+			Senses 1-6 - Follow Rationale logic for damage and simulation. Sense 7 [ESP] - is the only sense with proper "hp" score. "Attacks" + or -.
+			Mental Attack calc = Spell effect dmg - Enemy-Resilience = Pen check-> Pen-check - ESP = Mental dmg taken [MDT] -> MDT x 10 = Damage to targeted Sense
+			Speech combat does not effect ESP or Sense.
+    
+		For short-hand design mental attack will use Pysche targeting in the same way physical attacks use bodypart targeting [Since touch is a physical sense it will target a bodypart but will damage the sense]
+		Psyche-Damage - Senses cannot be mentally destroyed and therefore wont lose or gain health. Rather each sense has a Tolerance level that functions as health. When Stimulated the current Tolerance is raised,
+				If max tolerance is exceeded that sense is overrwhelemed and becomes unreliable. When Deprived the current Tolerance is decreased, if min Tolerance is exceeded that sense is dimmed or disabled.
+
+	Stamina Points (ST/SP) - [Stamina x 50] [Used when performing an action attacking, evading, recieving damage, ]
+			 [Stamina Burn-rate: Stamina Base burn rate (BBR) = + 5 (every 3600 turns, 1 hour, approx 0.0014 per turn), 
+			                     (Light activity burn rate) while moving = BBR + (CarryWeight/CarryCapacity = Encumberance)]
+					     (Moderate activity burn rate) performing tasks in heat, light exercise, hiking = LABR + 2
+					     (Heavy activity burn rate) performing tasks in extreme heat, vigorous excersice, combat/martial arts, maunal labor = LABR + 3
+			 [Fatigue = prevents stamina regen. Every time 10% of max stamina burned generates 1 fatigue point. if Fatigue = Max Stamina character has 100% chance to become immobile/comatose.
+			 [Stamina Regen= Base Rate (STMR_BR)= ([Max stamina *.02=X+25%= regen per tick/turn][base character = 500 *.02= (10) + 25%(2.5)= 12.5 per tick])-(Encumberance * STMR_BR)] [Tied to vigor]
+			 [Sense regen = stamina regen]
+
+	Vigor Points (VP) - [Constitution + Total Health + Stamina = The absolute health of the characters pysche and body (soul).] 
+		    [Used for magic, ki attacks, and for certain skills in lieu of health & stamina when both are required.]
+		    [Character Dies when depleted]
+	            [Base recovery = .5 per tick]
+
+	Agility - [Quickness + Accuracy = Characters movement and attack speed [base value for avg character is 1.2 sec or 1 turn]
+	Carry Capacity - [Power + Stamina = How much a character can carry if exerting all energy to take a step.[Max amount carriable]]
+	Resistance - [Toughness + Resilience = Resistance against abstract damage; poison, burns, frost, hemmoraging]
+	Hit-Chance/Evasion[Finesse] (Spatial Reasoning)(SR) - [([Accuracy] + [Agility]) x 0.01] Represents subtle body movements such as flinching, and fine motion accuracy 		
+	Metabolism - [Influences HP,SP, And VP, Bodyweight, and Satiation/thirst Levels]
+	     BaseMetabolic Burn Rate (MBR)
+	     Hunger - Current Satiation Level
+	     Thirst - ""[Static water loss range inbetween 25mL to 37.5mL per hour, first stage of thirst begins in range 1% to 2% bodywater lost.
+	     Calories - [Starting Weight (Total caloric makeup of the character body) = 21.5 x (Height x Height) ]
+				[Cont. Weight = Internals + Fluids + MRV+ CRV ]
+
+										Base Caloric burn rate - Sedentary 1 per minute/ approx .017 per sec/tick/turn
+			 										 Light 3 per minute/ approx .051 per sec/tick/turn 330% 
+			 										 Moderate 5 per minute/ approx .084 per sec/tick/turn/ 500% increase
+                         										 Heavy 12 per minute/ approx .2 per sec/tick/turn 1200% increase
+
+										Base Caloric return/movement rate - Sedentary 1 per minute/ approx .017 per sec/tick/turn
+														    Light 3 per minute/ approx .051 per sec/tick/turn
+														    Moderate = [BBR (5 per minute/ approx .084 per sec/tick/turn/ 20% increase) x 1.5]
+                         											    Heavy 12 per minute/ approx .2 per sec/tick/turn 83% increase [BBR (5 per minute/ approx .084 per sec/tick/turn/ 20% increase) x 2]
+
+                         										[Weight/ BMI- [3,500 kcals = 1 pound = 0.454 kg]
+
+			                                                               [Internals (Skeletal & Organ weight in kcal)- [static/see chart]]
+											[Fluids (Base fluid comp)- [static/see chart]]
+			[Stomach Value (stores consumed kcals)- Base min. starting value 75 mL- Base max. cap. starting value 2.75L = 2750mL,
+			[Digetsion/Stomach function [converts consumed kcals into stored kcals/Reserves]-	     
+		      (Stores values by macro type for digetion formula)DigestionRate- [(Carbs - Simple Carbs ~240 kcal/hr (~.067 per tick) [Grain with out bran/germ (Endosperm only/Flour/bread), Fruit/Fructose]
+								                     Complex Carbs ~390 kcal/hr (~.109/.11 per tick) [incl. glucose/fructose mixtures]
+									     Fats -  ~9 kcal/hr (~.0025 per tick)
+								             Proteins - Lean Protien ~36 kcal/hr (~.01 per tick)		
+               										Fatty protien ~12 kcal/hr) (~.0033 per tick)= (DR/per tick) ->ADDED DIRECTLY TO CRV
+
+			[Reserves (BodyFat/Stores digested kcals from stomach value) -  [Base starting value (BSV) = see chart]
+                                                                                        [Current Reserve Value (Total Stored fat kcals for transfer)(CRV)] (end of cycle: if (CURRENT CRV) - (BEGINNING CRV) = (CRV CHANGE) 
+																				If CRV CHANGE = 0 - [MRV = NO CHANGE], ELSE [NEW MRV = CURRENT MRV + CRV CHANGE]]
+											[Max reserve Value (kcals currently stored as body fat/)(MRV) = [Match CRV]  [natural cap of 3,500 kcal creation/destruction per day]]
+											[Reserve Burn rate = see chart [converts MRV into Converted kcals]]                      
+ 			[Converted (Muscle/Calories Burned for Actions) - Hold kcal values for character actions, Base burn rate = .017 per turn ]
+											[Base starting value (BSV) = see chart]
+                                                                                        [Base Current Converted Value (Total Stored kcals)(CCV)- (end of cycle: if (CURRENT CCV) - (BEGINNING CCV) = (CCV CHANGE) 
+																				If CCV CHANGE = 0 - [MCV = NO CHANGE], ELSE [NEW MCV = CURRENT MCV + CCV CHANGE] 
+																				[If CCV CHANGE = >3,500 ; CCV CHANGE = 3,500 ][If CCV CHANGE = <3,500 ; CCV CHANGE = -3,500 ]
+ 											[cont. Current Converted Value (Total Stored kcals)(CCV)-  
+											[Max Converted Value (kcals stored as skeletal muscle)(MCV) = [Match CCV]
+											[Reserve Burn rate = see chart [converts MRV into Converted kcals]]
+								
+     note * if MCV<15% bodywieght character should have physical starvation penalties ]	  note2* kcal transfer rate = to Burn rate	note3 *MCV[natural cap of 3,500 kcal creation/destruction per day]
+
+								Weight Distribution- 
+  
+	Base Weight generation based on height = 21.5 (BMI(median avg)) x (Height x Height) [sample of starting cal distribution: 21.5 BMI x (176cm x 176cm) = 665,984 k cals = 86.39 kg]
+	
+	Skeletal Weight = 12% Female body weight [12% BW x 665,984 k cals = 79,918.08 = ] 
+		          15% Male bodyweight    [15% BW x 665,984 k cals = 99,897.6 = 12.96 kg ] Internals/Static
+	   Organ weight = 25% of bodyweight      [25% BW x 665,984 k cals = 166,496 = 21.6 kg]  Internals/Static
+	Base Fat = 28% of bodyweight           [28% BW x 665,984 k cals = 186,475.52 = 24.19 kg] (3% Higher for women) Reserve
+	Base Muscle = 30% of bodyweight       [30% BW x 665,984 k cals = 199,795.2 = 25.92 kg] Converted
+        Base Fluid Comp = 2% of bodyweight     [2% BW x 665,984 k cals = 13,319.68 = 1.73 kg] Internals/Cannot exceed
+	Base burn rate Ratio = 3:1 [Muscle:Fat] for every 3 muscle cals burned: 1 cal of fat is burned [(3/.017) = approx. 176.5 turns]
+        
+	BMI Formula= [Weight/(Height x Height)] x 10,000
+
+											*Muscle Gain & Loss System*
+
+				MUSCLE GAIN
+	Triggered by: Caloric surplus + strenuous activity + high carry weight
+	
+	gain_modifier = (avg_daily_heavy_activity_kcal / 1000.0) + (avg_daily_carry_weight_kg / carry_capacity)
+	
+	Hard cap: MUSCLE_CREATION_CAP_KCAL = 3500 kcal per day max muscle gain
+	
+	Logic:  Character must have surplus calories AND be performing heavy activity/carrying weight. 
+	The surplus is converted to muscle up to the daily cap.
+	Without activity stimulus, surplus goes to fat instead.
+
+				MUSCLE LOSS
+	Triggered by: Activity imbalance (sedentary > heavy) + moderate activity presence
+	
+	muscle_loss_factor = [avg_weekly_sedentary_minutes - avg_weekly_heavy_activity_minutes] × [avg_weekly_moderate_activity_minutes × 0.1]
+	
+	Logic: If character spends more time sedentary than doing heavy work, muscles atrophy.
+	The presence of moderate activity slows atrophy (0.1 multiplier reduces loss).
+	Pure sedentary (zero moderate activity) = maximum loss.
+	Balanced or heavy-focused weeks = no loss or potential gain. 
+
+				CALORIC CONVERSION
+	Muscle mass stored as:  current_converted_value_ccv_kcal (3500 kcal = 1 kg muscle)
+	Fat mass stored as: current_reserve_value_crv_kcal (7700 kcal = 1 kg fat)
+	
+	Deficit burn ratio: 3: 1 (Muscle: Fat) - muscles burned 3x faster than fat when in deficit
+
+			DAILY vs WEEKLY PROCESSING
+	Tick-level (short term: every hr): Handle immediate caloric balance (digestion vs burn)
+	Daily: Calculate activity stimulus for muscle gain potential
+	Weekly: Calculate activity pattern for muscle loss/atrophy
+
+			Activity Thirst Rate -
+	Resting In Heat - 2,541.67ml per hour-5.0 liters per hour in elite
+	Average: Most people lose 0.5–2.0 liters per hour.
+	Moderate Intensity: Roughly 1.0 liter (34 oz) per hour is common.
+	High Intensity/Endurance: 1.5-2.0 liters per hour Rates can exceed 2,500 ml–3.0 liters per hour in elite
+
+			Thirst-Lvls
+	Mild Thirst (1%–2% Loss): This is the initial "thirst threshold".
+	Strong Thirst (3%-4% Loss): Characterized by persistent, "very thirsty" feelings. Physical symptoms like dizziness, loss of appetite, and faintness often begin here.
+	Extreme Thirst (5%–6% Loss): The urge to drink becomes overwhelming. This level is often accompanied by headaches, significant fatigue, and flushing of the skin.
+	Severe Dehydration (10%+ Loss): thirst sensations may be overshadowed by life-threatening symptoms like delirium, seizures, and potential organ failure
+
+			Thirst-Type
+	Osmotic (Intracellular) Thirst: Triggered by ssalt and not enough water in your blood (e.g., after eating salty snacks).
+	Hypovolemic (Extracellular) Thirst:  Triggered by a decrease in total blood volume
+
+The Satiety Signal: the brain "predicts" hydration and shuts off thirst signals within minutes of drinking. [Trigger signal to lower satiation Lvl on drinking before applying effects]
+
+
+						-Skills -[Associated/trained Attributes] * = updated[Base  Skills train -Knowledge &  Proficiency except for Learning(uncapped theory only)]
+
+	Combat Skills - Tier 1 (general skill)= Striking (general fighting), Ranged, Grappling, 
+				Weapon Skills [One-handed Fighting, Two-Handed Fighting, Dual Wielding (incl. Sword & Shield), Polearm, Blunt Weapon Fighting]
+        		Tier 2 (speific skill)= [Striking Skills= Punching, Kicking, Footwork [Dodge/evasion]], [Grappling Skills = Throws, Takedowns, Holds] 
+				[Weapon Skills = Knife, Short Knife, Long Knife, Sword, Short Sword, Long Sword, Thrusting Sword, Sickle, Axe, Hammer, Club, Staff, Javelin, Spear, Poleaxe, Spearsword, Glaive, Pike, Shield]
+				[Ranged Skills = Slings, Short bow, Bow, Longbow, Warbow, Crossbow, Arbalest, Hand-Cannon, Musket/Arquebus, Rifle, Pistol, Artillery (Cannon, Catapult[Trebuchet, Onager/Mangonel], Ballista)]
+
+	Combat Stats -  Power 17%, Accuracy 17%, Stamina 16.5%, Quickness 16.5%, Muscle Memory 16.5%, Toughness 16.5%
+
+	Survival Skills - Conditioning (Heat, Cold, Poison: Corrosive, Irritant, Systemic, Impact Res, *Body/Buddhist cultivator only [Pierce  Res, Slash Res]), Medical, Hunting, Trapping, Gathering, Scavenging
+
+	Survival Stats-  Resilience 25%, Toughness 25%, Stamina 15%, Accuracy 25%, Constitution 10% 
+
+	Agriculture Skills- Animal Husbandry, Aquaculture, Horticulture (Fruit & Vegs), Floriculture (Florals), Forestry (Logging), Apiculture (Beekeping), Food Processing
+
+	Agriculture Stats- Power 30%, Muscle Memory 10%, Toughness 20%, Stamina 40%
+
+	Stoneworking Skills- Quarrying (Extraction), Cutting/Shaping, Carving, Masonry (Stone-laying & Brickwork) 
+
+	Stoneworking Stats-  Power 30%, Accuracy 30%, Stamina 40%
+
+	Roguery Skills - Lockpicking, Stealth, Deception, Larceny, 
+
+	Roguery Stats- Accuracy 35%, Charisma 35%, Aptitude 30%
+
+	Athletics Skills - Travel, Jumping, Throwning, Weightlifting, Swimming
+	
+	Athletics Stats-  Power 20%, Accuracy 15%, Stamina 15%, Quickness 20%, Muscle Memory 10%, Resilience 10%, Charisma 10%
+
+	Metallurgy Skills [Smelting]- Processing (Crushing & Grinding [seperating rock from ore]), Extraction (Mainly through Hydromechanicals (Aqueous Chemical Solutions), Pyromechanical, or Electro mechanical means), Refining (Alloy creation, Tempering)
+
+	Metallurgy Stats- Power 22.5%, Stamina 22.5%, Muscle Memory 10%, Toughness 22.5%, Resilience 22.5%
+
+	Learning Skills [Abstract skills that require increasing levels of understanding - all other skills  have learning skill component] - [train Potential & Knowledge ][Learning Proficency Skill Lvl = Learning Theoretical Skill Lvl]
+		Combat, Survival, Agriculture, Stoneworking, Roguery, Athletics, Metallurgy, Artistry, Teaching [Expression of Learning skill], Cooking, Cuisine [Non-PC created recipes learned], History [World], Culture[History[Saga, Language, Religion (Knowledge, Piety), Musicality (Composition, Theory), Physics, Geometry, Anatomy, Biology (Terra, Astra, Mara), Mathematics, Kinesiology, 
+		Geography (increased by exploring (going) or learning about new places), Mercantile [Trading], Performance, Geology, Cultivation (qi magic), Arcane (Elemental, Alchemical(internal)[(Neidan)], Rituals, Formations, Entites), Heavy Armor, Light Armor, Medium Armor, (Npc only: Tactics, Strategy, Leadership)
+		Speech: Logos [logic], Pathos [emotion], Ethos [credibility (appeal to authority or consensus over reliabiity)][add] 
+
+			[*ARMOR SKILLS - Reprsents characters understanding a wearing and securing a piece of armor and comfortability in the armor removing any minor penalties. Skilled is trained through wearing and trainers and doesn't require taking damage.]
+
+	Learning Stats - Aptitude
+
+	Artistry Skills [Smithing/Crafting] - Blacksmithing:[Weaponsmithing, Armorsmithing, Goldsmithing, Silversmithing, Toolsmithing], Goodsmithing[Jewel-crafting, Tannery, Leather-working, Woodworking, Weaving, Pottery, Glassmaking, Cartography, Calligraphy,] Musicality [String, Percussion, Wind)*], Alchemy(External)[(Waidan)]
+
+	Artistry Stats - Aptitude 50%, Accuracy 40%, Stamina 10%
+
+	Speech Skills (Active) - Bartering, Intimidation/Coercion, Persuasion, Argumentaion, Commanding (Ordering), Negotiation, Interrogation, Inquiry, Narration, Description, Exposition, Prasising, Pleading, Mockery
+
+	Speech Stats - Aptitude 50%, Charisma 50%
+
+	Control Skills - Stat that governs Max "mana", magic/special damage, strength of useable artifact/artifact modifier: Control_Force, Control_Output, Control_Use 
+				
+				Skill_Method/Fuction[Control]: Control is measure of one ability to manipulate Aether. 
+
+Known/Unknown Skills [only trained until learned]- Reading, Writing
+
+				
+				Handling_Experience
+Potential = Skill Potential (Represents the character's innate theoretical application of a skill) 
+			[TheoreticalSkill_XP_Gain_Modifier = Aptitude * Potential_Multiplier{based on major and minor skill selection}]
+Knowledge = TheoreticalSkill(Represents the character's conceptual understading of a skill)
+			[Caps proficiency ]
+Proficiency = PraticalSkill (Represents the character's practical applibility of a skill)
+
+Exponential_Exp = [XP_Needed_For_Next_Level = Base_XP * (Level * Exponential_Factor)]
+Practical Skill Decay = P_Loss = Base_Decay_Rate * (1 - (Muscle_Memory_Score / 100))
+
+
+			Notes-
+			Tile-Size
+	tile_size: Vector2 = Vector2(32, 16), = 1 Square meter
+							  
+
+		 # --- TIME CONSTANTS (1 game turn = 1.2 sec) ---
+	var total_turns_passed: int = 0
+	const TURN_DURATION_REAL_SECONDS: float = 1.2
+	const TURNS_PER_MINUTE: int = 50 
+	const TURNS_PER_HOUR: int = 3000
+	const TURNS_PER_DAY: int = 72000
+	const TURNS_PER_WEEK: int = TURNS_PER_DAY * 7      # 504,000 turns
+	const TURNS_PER_2_WEEKS: int = TURNS_PER_WEEK * 2 # 1,008,000 turns
+	const TURNS_PER_MONTH: int = TURNS_PER_DAY * 30    # 2,160,000 turns
+
+	(in game day 12 am- 11:59/12am, game cycle (daily updates) 5am)
+
+	Combat allows for as many move selections as the player wants since each has a time cost. A simple end turn button handles any issues. If weapon unsheated/fists up = Combat state
+	Combat button = Armed/unarmed
+	End turn = execute-perform loaded actions, 
+	   	sheathe weapon/put fists down - ends combat, 
+	   	Armed/Unarmed - change from fist to selected equipped weapon or vise versa 
+[The ai can always calculate 2 moves, because interruptions allow for new selection.
+*for Ai[Opposing Armies/Parties Avg = Mortal Enemy before any social modifiers are weighted. vs Mortal Enemy Behavior (Base)= will kill if legal]]
+  
+	Combat States- [Z axis position when not standing- Inflicted/Afflicted: Knocked Down [chartacter on ground], Inflicted: Afflicted: Low Float/ed [floating/falling between midpoint and ground lvl], Inflicted/Afflicted:High float/ed [floating/falling from mid-point or above],]
+ 
+									 Hit-Chance & Evasion calc.-
+	* Both are expressed as percentages out of a 100% chance. (a base characters Evasion of ([10(Acc)+10(Agile)] x .01 = .20 or a 20% Base evasion rate)
+	* For the static combat calc [Hit-Chance]-[Evasion] = X if X = 0, there is no chance to dodge and damage is immediately calculated. *this calc is representative of 2 stationary combatants.
+	* [Example of regular Hit-Evade calc before die roll for chance] = Attacker = [Hit-Chance + Spatial modifier]-[Evasion + Spatial modifier] = X,
+                                                                   Attacker Advantage: If X > 0 the Attacker has an  H% [percent conversion [(1-X) x 100 = Y percent chance to hit]]. a 1d100 die is rolled and the number rolled (R) must be R <(Less than)/(or)=(equal to) Y to hit (go to damage calc)
+								   Defender Advantage: If X < 0 the Defender has an D% [percent conversion 1a = [((-1) * X) x 100 = A] percent chance to chance to dodge]. a 1d100 die is rolled and the number rolled (R) must be R <(less than)/(or)=(equal to) A to dodge (skip damage calc)
+								   
+								 	Formula ,step 1 = [Attacker - Defender] = X, X = 0 (no advantage, calc dmg), X > 0 (Attacker advantage) , X < 0 (Defender Advantage)
+										 step 2 =  Die roll for success or fail 
+										 step 3 = After a failed advantage roll, a disadvantage roll is performed. (if Defender has adv. and fails to dodge, a roll for hit chance is initiated)
+                                                                                           Disavntage formula [[(1s-X) x 100]-25% = Y] (R) must be R <(Less than)/(or)=(equal to) Y to hit (go to damage calc or skip is dodging)
+
+	[Pc Action: Rest vs Meditate: Rest- a gen. action to recover stamina. (Gains bonus from sitting, sitting supported, sitting shaded(under canopy)/when applicable, Laying (infers supported bonus),surface comfort lvl )
+				Meditate - gen action for ki-formation (confers rest status for Cultivators) - Action for Qigong (Breathe Control)- trains (Control Skills)[Skill name: Jitsu-Jutsu]]		
+     
+			Height and Weight Chart (Adults)
+This table provides general weight ranges for various heights in metric units, corresponding to the BMI categories above. 
+
+Height (cm) 	Height (ft/in)	Healthy Weight (BMI 18.5-24.9) (kg)	Overweight (BMI 25-29.9) (kg)
+147 cm	             4' 10"	         45 – 57 kg	                         58 – 65 kg
+152 cm	             5' 0"	         48 – 60 kg	                         61 – 69 kg
+157 cm	             5' 2"	         51 – 64 kg	                         65 – 73 kg
+163 cm	             5' 4"	         54 – 68 kg	                         69 – 80 kg
+168 cm	             5' 6"	         57 – 72 kg	                         73 – 86 kg
+173 cm	             5' 8"	         61 – 76 kg	                         77 – 90 kg
+178 cm	             5' 10"	         65 – 82 kg	                         83 – 98 kg
+183 cm	             6' 0"	         68 – 87 kg	                         88 – 104 kg
+188 cm	             6' 2"	         71 – 92 kg	                         93 – 110 kg
+
+	General Healthy Body Fat Ranges (ACE Guidelines) 
+
+Instead of relying strictly on somatotype, health professionals use general body fat percentage charts to assess health risks. 
+
+Classification 	Women (% fat)	Men (% fat)
+Essential Fat	10–13%	        2–5%
+Jacked	        14–20%	        6–13%
+Athlete 	21–24%	        14–17%
+Average 	25–31%	        18–24%
+Obese	        ≥ 32%           ≥ 25%
+
+Below is a dual-metric chart displaying typical Skeletal Muscle Mass (SMM) percentages and Body Fat (BF) percentages for adults across different builds. These percentages are general estimates and can vary by age, sex, and height.
+Build Description	Men (% Skeletal Muscle)	Women (% Skeletal Muscle)	Men (% Body Fat)	Women (% Body Fat)
+"Jacked" / Bodybuilder	          ~45%+	                 ~35%+	                   < 9%	                   < 15%
+Athletic/Fit	                  ~40–44%	         ~32–34%	           10–17%	           14–20%
+Average/Acceptable	          ~36–40%	         ~28–32%	           18–24%	           25–31%
+Obese	                           < 36%	         < 28%	                    ≥ 25%	            ≥ 32%
+
+
+						Low Body Fat (Jacked/Essential)	Average Body Fat (Athlete/Average)	High Body Fat (Obese)
+High Muscle Mass (Jacked/Athletic)	          "Shredded" (Ideal Performer)	    "Strongman" (Powerful/Heavy)	"Over-muscled Obese"
+						 Extremely defined, lean physique. Optimal for agility/speed tasks.	
+										   Very strong, heavy frame, visible muscle definition but covered by a layer of fat. High Power/Stamina.	
+															Extremely rare build in reality. High strength potential but heavily impaired by weight/fatigue mechanics.
+
+Average Muscle Mass (Average/Acceptable)	   "Lean & Toned" (Fitness Model)   "Standard Build" (The Average NPC)	 "Typical Overweight"
+							Healthy, toned, non-bulky look. Good balance of all stats.	
+										     The baseline character build (5 in all Attributes, 50 in all Stats). Balanced performance.	
+															Healthy muscle mass but mobility/stamina impacted by excess weight. Good for specific labor skills.
+Low Muscle Mass (Below Average)			  "Skinny" (Ectomorph)	            "Skinny-Fat" (Sedentary)	         "Sedentary Obese" (High Risk)
+						   Very low strength/toughness. High potential for quickness/dexterity based on frame. High stamina burn rate due to lack of muscle mass.	
+										    Normal body weight, but low strength/toughness due to lack of muscle engagement.	
+															Significant penalties to physical stats (Strength, Endurance, Dexterity). High fatigue accumulation, susceptible to disease/damage.
+
+BuildIndexValue:          Fat Mass (Men/Women) Jacked ~6-13%/14-20%         Athletic ~14-17%/~21-24%         Average ~18-24%/~25-32%   Obese ~26+%/~32%     Essential Fat ~3-5%/~8-10%
+
+Muscle Mass (Men/Women)
+
+Jacked     ~45+/~35%+				Jacked				Jacked (Strongman/Buff)		Ripped (Brawny)			Hulking (Over-Muscled)		Paper-Skinned
+Atheletic ~36-44%/~30-34%			Shredded (Lean)			Atheletic			In Shape (Solid)		Well-Fed (Stocky)		Gaunt
+Average ~32-36%/~25-30%				Ripped				In Shape (Toned)		Average			        Overweight (Chubby)	        Starving
+Obese <32%/<25					Emaciated		        Thin		                (Undertrained)		        Morbidly Obese		        Wasting Away
+
+
+			Stomach Values
+
+ Stomach Capacity and Satiation Levels
+
+
+Satiation Level 	      ApproximateStomachVolume/	Approximate Weight Capacity
+Empty/Fasting	                 50-100 mL	      /   ~0.05-0.1 kg	                  
+Mild Fullness/Satiation Point   ~600-800 mL	      /    ~0.6-0.8 kg	
+Comfortably Full (Normal Meal)	 1-1.5 L	      /   ~1-1.5 kg	             
+Maximum Tolerated Volume	 Up to 4 L (or more)  /    Up to ~4 kg (9 lbs)	
+
+Macronutrient Absorption Rates [Digestion]
+
+Carbohydrates (single source): Approximately 60 grams per hour (~240 kcal/hr) using a single transport mechanism (e.g., glucose only).
+Carbohydrates (multiple sources): Up to 90-105 grams per hour (~360-420 kcal/hr) when combining multiple transportable carbohydrates (e.g., a glucose and fructose mixture at a 2:1 ratio).
+Protein: The rate is highly dependent on the type of protein:
+Fast-digesting protein [Lean protien](e.g., whey): Roughly 8-10 grams per hour (~32-40 kcal/hr).
+Slow-digesting protein [Fatty protien](e.g., cooked egg): About 3 grams per hour (~12 kcal/hr).
+Fat: Fat absorption is complex and generally slower than carbohydrate or protein absorption per hour during exercise, and it slows gastric emptying. While fat provides 9 kcal per gram, a high-fat meal takes much longer to process overall. 
+The body is highly efficient at absorbing nearly all fat consumed over the full digestive cycle, but the hourly rate during physical exertion is lower than for simple carbs. *Base starting value About 1 gram per hour (~9 kcal/hr)
+   
+
+FORMULAS***
+								Task Completion Time Calculation - " calculate - Skill effect on task"		
+
+% 1. TOTAL OBSERVED TIME (The Raw Baseline)
+T_{obs} = \sum_{i=1}^{n} s_i
+
+% 2. NORMAL TIME (Adjusting for Subject Skill/Performance)
+T_n = T_{obs} \times \left( \frac{R}{100} \right)
+
+% 3. STANDARD TIME (The Final Practical Estimate)
+T_s = T_n \times (1 + A)
+
+% WHERE:
+% s_i = Time per individual step
+% n   = Total number of steps (Task Complexity)
+
+% R   = Performance Rating / Skill Factor (e.g., 100 = Standard)
+% A   = Allowance Factor for fatigue/delays (e.g., 0.15 = 15%)
+
+
+
+
+
+
+[Formula explanation: -The Estimation Formula The total estimated time is the sum of individual step durations, modified by a skill-based performance factor: 
+			 	(T= [sum {i=1}^{n}s_{i}] x [{1}{S})\(s_{i})-> (1\S)] 
+				(Individual Step-Times): The average time estimated for each discrete step in the task.
+				(n) (Task Complexity): The total number of steps in the sequence.
+				(S) (Subject Skill): A rating factor where 1.0 represents the "standard" or average skill level.
+
+ 			- Refining Your Estimate To account for uncertainty or "minimum average time" (the best-case scenario), use these industry-standard methods: 
+				Three-Point Estimation (PERT): Combine your best-case (optimistic), worst-case (pessimistic), and most-likely times to find a realistic average:
+				(Estimate)= [O+4M+P]\6) 
+				(O) is the optimistic (min) time, (M) is the most likely, and (P) is the pessimistic.
+
+			- Normal Time Calculation: Professionals often use a Time Study Rating Factor to convert observed average time into "Normal Time" by multiplying the average time by a performance rating (Skill).
+				Time Study Rating Factor (or Performance Rating) is used to normalize the time a specific person took to perform a task compared to the time a "standard" worker would take. 
+				The Rating Factor Formula The rating factor is typically expressed as a percentage, where 100% represents a "normal" or standard pace. 
+				[Rating Factor]= [Observed Performance]\[Standard Performance] x 100) 
+				Rating > 100: The subject is working faster than the standard pace.Rating < 100: 
+				The subject is working slower than the standard pace. 
+
+			- Applying the Rating to Task Time To find the Normal Time 
+				(NT)— the time an average worker would require—you multiply the average time you actually observed (OT) by the rating factor: 
+				(NT= [Average Observed Time] x ([Rating Factor]\100]
+
+			-	To calculate the final Standard Time (Ts), we combine the complexity of the task, the subject's skill (performance rating), and an allowance factor for human fatigue or unavoidable delays. 
+				
+				1: Calculate Total Observed Time Sum the individual times recorded for each step in the task sequence to find the total time actually taken by the subject. 
+					(T(obs)=[sum {i=1}^{n}s_{i}]
+
+				2: Determine Normal Time Adjust the observed time based on the Rating Factor (R). This accounts for the subject's skill and effort relative to a standard 100% pace.
+					(T(n) = T(obs) x [R\100]
+
+				3: Apply Allowances for Standard Time To reach a realistic time that can be sustained over a workday, apply an Allowance Factor (\(A\)). This typically ranges from 10% to 20% to account for personal needs, fatigue, and minor interruptions. 
+					(T(s) = T(n) x (1+A)
+
+                 		The final formula to determine the subject's time to complete a task is:
+					(T(s) = T(obs) x [R\100] x [1+A]
+				Where: T(obs) is the sum of individual step-times.
+					R is the Performance Rating 
+					A is the Allowance Factor expressed as a decimal (e.g., 0.15 for 15%).
