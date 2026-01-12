@@ -1,0 +1,160 @@
+#EquipmentEnumStat
+
+extends Node
+
+class_name EnumConsts
+
+const ITEM_ARMOR_STATS: Dictionary = {
+	ItemEnums.ItemTypeSubCategory.HAPPURI: {ItemEnums.StatKey.WEIGHT: 0.6,ItemEnums.StatKey.BASEARMORVALUE: 7,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +10,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -30},
+	ItemEnums.ItemTypeSubCategory.OPEN_FACE_HELM: {ItemEnums.StatKey.WEIGHT: 2,ItemEnums.StatKey.BASEARMORVALUE: 8,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +20,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -10},
+	ItemEnums.ItemTypeSubCategory.NASAL_HELM: {ItemEnums.StatKey.WEIGHT: 2,ItemEnums.StatKey.BASEARMORVALUE: 9,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +20,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.BUCKET_HELM: {ItemEnums.StatKey.WEIGHT: 3.25,ItemEnums.StatKey.BASEARMORVALUE: 13,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -10},
+	ItemEnums.ItemTypeSubCategory.FILTERED_HELM: {ItemEnums.StatKey.WEIGHT: 3.50,ItemEnums.StatKey.BASEARMORVALUE: 12,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +20,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -10},
+	ItemEnums.ItemTypeSubCategory.FULL_HELM: {ItemEnums.StatKey.WEIGHT: 3.15,ItemEnums.StatKey.BASEARMORVALUE: 15.7,ItemEnums.StatKey.KINETICARMORVALUE: +30,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +10},
+	ItemEnums.ItemTypeSubCategory.MAGE_HELM: {ItemEnums.StatKey.WEIGHT: 3,ItemEnums.StatKey.BASEARMORVALUE: 12.8,ItemEnums.StatKey.KINETICARMORVALUE: +30,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +20},
+	ItemEnums.ItemTypeSubCategory.MAGE_HELM_TYPE2: {ItemEnums.StatKey.WEIGHT: 3.15,ItemEnums.StatKey.BASEARMORVALUE: 13.8,ItemEnums.StatKey.KINETICARMORVALUE: +30,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +20},
+	ItemEnums.ItemTypeSubCategory.GREAT_HELM: {ItemEnums.StatKey.WEIGHT: 3.25,ItemEnums.StatKey.BASEARMORVALUE: 16.8,ItemEnums.StatKey.KINETICARMORVALUE: +30,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +20},
+	ItemEnums.ItemTypeSubCategory.SORCERER_MENPO: {ItemEnums.StatKey.WEIGHT: 1,ItemEnums.StatKey.BASEARMORVALUE: 14,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +10,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.CLERICS_MENPO: {ItemEnums.StatKey.WEIGHT: 1,ItemEnums.StatKey.BASEARMORVALUE: 15.7,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +10,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.WARLOCK_MENPO: {ItemEnums.StatKey.WEIGHT: 1,ItemEnums.StatKey.BASEARMORVALUE: 15.8,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +10,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.FACELESS_MENPO: {ItemEnums.StatKey.WEIGHT: 1,ItemEnums.StatKey.BASEARMORVALUE: 10,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +10,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.SORCERER_FACE: {ItemEnums.StatKey.WEIGHT: 0.30,ItemEnums.StatKey.BASEARMORVALUE: 9,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +20,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -10},
+	ItemEnums.ItemTypeSubCategory.CLERICS_FACE: {ItemEnums.StatKey.WEIGHT: 0.30,ItemEnums.StatKey.BASEARMORVALUE: 9,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +20,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -10},
+	ItemEnums.ItemTypeSubCategory.WARLOCK_FACE: {ItemEnums.StatKey.WEIGHT: 0.30,ItemEnums.StatKey.BASEARMORVALUE: 9,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +20,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -10},
+	ItemEnums.ItemTypeSubCategory.FACELESS: {ItemEnums.StatKey.WEIGHT: 0.30,ItemEnums.StatKey.BASEARMORVALUE: 9,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +20,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -10},
+	ItemEnums.ItemTypeSubCategory.PURGING_HELM: {ItemEnums.StatKey.WEIGHT: 3.50,ItemEnums.StatKey.BASEARMORVALUE: 16.50,ItemEnums.StatKey.KINETICARMORVALUE: +30,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +30},
+	ItemEnums.ItemTypeSubCategory.MASKED_FILTERED_HELM: {ItemEnums.StatKey.WEIGHT: 4.50,ItemEnums.StatKey.BASEARMORVALUE: 14,ItemEnums.StatKey.KINETICARMORVALUE: +30,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +30},
+	ItemEnums.ItemTypeSubCategory.CHAIN_HELM: {ItemEnums.StatKey.WEIGHT: 3,ItemEnums.StatKey.BASEARMORVALUE: 17,ItemEnums.StatKey.KINETICARMORVALUE: -20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.VIZORED_HELM: {ItemEnums.StatKey.WEIGHT: 3,ItemEnums.StatKey.BASEARMORVALUE: 14,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +20},
+	ItemEnums.ItemTypeSubCategory.ARMET: {ItemEnums.StatKey.WEIGHT: 3.15,ItemEnums.StatKey.BASEARMORVALUE: 14,ItemEnums.StatKey.KINETICARMORVALUE: +30,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +30},
+	ItemEnums.ItemTypeSubCategory.DRAGOON_HELM: {ItemEnums.StatKey.WEIGHT: 17,ItemEnums.StatKey.BASEARMORVALUE: 17,ItemEnums.StatKey.KINETICARMORVALUE: +30,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +30},
+	ItemEnums.ItemTypeSubCategory.BARBUTE: {ItemEnums.StatKey.WEIGHT: 2.25,ItemEnums.StatKey.BASEARMORVALUE: 15,ItemEnums.StatKey.KINETICARMORVALUE: +30,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +30},
+#HANDArmorType, 
+	ItemEnums.ItemTypeSubCategory.GLOVES: {ItemEnums.StatKey.WEIGHT: 0.2,ItemEnums.StatKey.BASEARMORVALUE: 9.8,ItemEnums.StatKey.KINETICARMORVALUE: +5,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +10,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.MITTENS: {ItemEnums.StatKey.WEIGHT: 0.5,ItemEnums.StatKey.BASEARMORVALUE: 10.2,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +10,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.MAIL_MITTENS: {ItemEnums.StatKey.WEIGHT: 1,ItemEnums.StatKey.BASEARMORVALUE: 11.2,ItemEnums.StatKey.KINETICARMORVALUE: -10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.MAIL_GLOVES: {ItemEnums.StatKey.WEIGHT: 0.5,ItemEnums.StatKey.BASEARMORVALUE: 10.8,ItemEnums.StatKey.KINETICARMORVALUE: -10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.MITTEN_GAUNTLET: {ItemEnums.StatKey.WEIGHT: 2,ItemEnums.StatKey.BASEARMORVALUE: 12.2,ItemEnums.StatKey.KINETICARMORVALUE: +30,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +20},
+	ItemEnums.ItemTypeSubCategory.FINGER_GAUNTLET: {ItemEnums.StatKey.WEIGHT: 1,ItemEnums.StatKey.BASEARMORVALUE: 11.8,ItemEnums.StatKey.KINETICARMORVALUE: +30,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +20},
+	ItemEnums.ItemTypeSubCategory.DEMI_GAUNTLET: {ItemEnums.StatKey.WEIGHT: 0.8,ItemEnums.StatKey.BASEARMORVALUE: 10.5,ItemEnums.StatKey.KINETICARMORVALUE: +30,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +10},
+#TORSOArmorType,
+	ItemEnums.ItemTypeSubCategory.GAMBESON: {ItemEnums.StatKey.WEIGHT: 4,ItemEnums.StatKey.BASEARMORVALUE: 28.4,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +10,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.JUPON: {ItemEnums.StatKey.WEIGHT: 3,ItemEnums.StatKey.BASEARMORVALUE: 26.4,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +10,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.AKETON: {ItemEnums.StatKey.WEIGHT: 6,ItemEnums.StatKey.BASEARMORVALUE: 29.9,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +10,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.POURPOINT: {ItemEnums.StatKey.WEIGHT: 2,ItemEnums.StatKey.BASEARMORVALUE: 26.4,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +10,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.BRIGANDINE: {ItemEnums.StatKey.WEIGHT: 12.5,ItemEnums.StatKey.BASEARMORVALUE: 28.2,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +20,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -10},
+	ItemEnums.ItemTypeSubCategory.BRIGANDINE_TYPE2: {ItemEnums.StatKey.WEIGHT: 15,ItemEnums.StatKey.BASEARMORVALUE: 31.7,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +10},
+	ItemEnums.ItemTypeSubCategory.KIRITSUKE_KOZANE_DOU: {ItemEnums.StatKey.WEIGHT: 20,ItemEnums.StatKey.BASEARMORVALUE: 29.7,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +10},
+	ItemEnums.ItemTypeSubCategory.KOZANE_DOU: {ItemEnums.StatKey.WEIGHT: 15,ItemEnums.StatKey.BASEARMORVALUE: 32,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +10},
+	ItemEnums.ItemTypeSubCategory.LAMELLAR: {ItemEnums.StatKey.WEIGHT: 10,ItemEnums.StatKey.BASEARMORVALUE: 27.7,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -10},
+	ItemEnums.ItemTypeSubCategory.LAMELLAR_TYPE2: {ItemEnums.StatKey.WEIGHT: 14,ItemEnums.StatKey.BASEARMORVALUE: 29.7,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +10},
+	ItemEnums.ItemTypeSubCategory.CHAIN_MAIL: {ItemEnums.StatKey.WEIGHT: 13,ItemEnums.StatKey.BASEARMORVALUE: 29.7,ItemEnums.StatKey.KINETICARMORVALUE: -10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.DO: {ItemEnums.StatKey.WEIGHT: 12,ItemEnums.StatKey.BASEARMORVALUE: 32,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +20},
+	ItemEnums.ItemTypeSubCategory.PLATE_ARMOUR: {ItemEnums.StatKey.WEIGHT: 17,ItemEnums.StatKey.BASEARMORVALUE: 33.2,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +20},
+	ItemEnums.ItemTypeSubCategory.TWOPIECE_ARMOUR: {ItemEnums.StatKey.WEIGHT: 16,ItemEnums.StatKey.BASEARMORVALUE: 34.5,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +10},
+	ItemEnums.ItemTypeSubCategory.GEATIC_ARMOR: {ItemEnums.StatKey.WEIGHT: 20,ItemEnums.StatKey.BASEARMORVALUE: 35,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +20},
+	ItemEnums.ItemTypeSubCategory.CURAISS: {ItemEnums.StatKey.WEIGHT: 8,ItemEnums.StatKey.BASEARMORVALUE: 32,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +20},
+#ARMArmorType,
+	ItemEnums.ItemTypeSubCategory.GAMBESON_SLEEVE: {ItemEnums.StatKey.WEIGHT: 0.8,ItemEnums.StatKey.BASEARMORVALUE: 13,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +10,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.JUPON_SLEEVE: {ItemEnums.StatKey.WEIGHT: 0.5,ItemEnums.StatKey.BASEARMORVALUE: 11, ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +10,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.AKETON_SLEEVE: {ItemEnums.StatKey.WEIGHT: 1,ItemEnums.StatKey.BASEARMORVALUE: 14.5,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +10,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.POURPOINT_SLEEVE: {ItemEnums.StatKey.WEIGHT: 0.5,ItemEnums.StatKey.BASEARMORVALUE: 11,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +10,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.CHAINMAIL_SLEEVE: {ItemEnums.StatKey.WEIGHT: 1,ItemEnums.StatKey.BASEARMORVALUE: 12.6,ItemEnums.StatKey.KINETICARMORVALUE: -10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.FULL_CANNON: {ItemEnums.StatKey.WEIGHT: 4,ItemEnums.StatKey.BASEARMORVALUE: 15.8,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +20},
+	ItemEnums.ItemTypeSubCategory.BRIGANDINE_SLEEVE: {ItemEnums.StatKey.WEIGHT: 1.5,ItemEnums.StatKey.BASEARMORVALUE: 13,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +20,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -10},
+	ItemEnums.ItemTypeSubCategory.HALF_KOTE: {ItemEnums.StatKey.WEIGHT: 0.8,ItemEnums.StatKey.BASEARMORVALUE: 7.2,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +20,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +10},
+	ItemEnums.ItemTypeSubCategory.SPAULDER: {ItemEnums.StatKey.WEIGHT: 1,ItemEnums.StatKey.BASEARMORVALUE: 4.4,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +10,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -10},
+	ItemEnums.ItemTypeSubCategory.SPAULDER_TYPE2: {ItemEnums.StatKey.WEIGHT: 1.5,ItemEnums.StatKey.BASEARMORVALUE: 5.5,ItemEnums.StatKey.KINETICARMORVALUE: -10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.FULL_KOTE: {ItemEnums.StatKey.WEIGHT: 2,ItemEnums.StatKey.BASEARMORVALUE: 12.6,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +10,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -5},
+	ItemEnums.ItemTypeSubCategory.PAULDRON: {ItemEnums.StatKey.WEIGHT: 1.5,ItemEnums.StatKey.BASEARMORVALUE: 5.6,ItemEnums.StatKey.KINETICARMORVALUE: +15,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +20,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -5},
+	ItemEnums.ItemTypeSubCategory.PAULDRON_TYPE2: {ItemEnums.StatKey.WEIGHT: 2,ItemEnums.StatKey.BASEARMORVALUE: 7,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +10},
+	ItemEnums.ItemTypeSubCategory.REREBRACE: {ItemEnums.StatKey.WEIGHT: 2,ItemEnums.StatKey.BASEARMORVALUE: 14.4,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +20},
+	ItemEnums.ItemTypeSubCategory.VAMBRACE: {ItemEnums.StatKey.WEIGHT: 1.5,ItemEnums.StatKey.BASEARMORVALUE: 7,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +20,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +10},
+	ItemEnums.ItemTypeSubCategory.VAMBRACE_TYPE2: {ItemEnums.StatKey.WEIGHT: 2,ItemEnums.StatKey.BASEARMORVALUE: 7,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +15},
+#LEGArmorType
+	ItemEnums.ItemTypeSubCategory.CUISH: {ItemEnums.StatKey.WEIGHT: 3,ItemEnums.StatKey.BASEARMORVALUE: 5.8,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +10,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.CUISH_TYPE2: {ItemEnums.StatKey.WEIGHT: 4,ItemEnums.StatKey.BASEARMORVALUE: 6.4,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +20,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -10},
+	ItemEnums.ItemTypeSubCategory.CUISH_TYPE3: {ItemEnums.StatKey.WEIGHT: 5,ItemEnums.StatKey.BASEARMORVALUE: 7.8,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +10},
+	ItemEnums.ItemTypeSubCategory.CUISH_GREAVE: {ItemEnums.StatKey.WEIGHT: 4.5,ItemEnums.StatKey.BASEARMORVALUE: 12.2,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +10,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.CUISH_GREAVE_TYPE2: {ItemEnums.StatKey.WEIGHT: 4.5,ItemEnums.StatKey.BASEARMORVALUE: 13.6,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +20,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -10},
+	ItemEnums.ItemTypeSubCategory.CUISH_GREAVE_TYPE3: {ItemEnums.StatKey.WEIGHT: 6.5,ItemEnums.StatKey.BASEARMORVALUE: 15.8,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +10},
+	ItemEnums.ItemTypeSubCategory.HAIDATE: {ItemEnums.StatKey.WEIGHT: 1,ItemEnums.StatKey.BASEARMORVALUE: 6.7,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +20,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.HAIDATE_TYPE2: {ItemEnums.StatKey.WEIGHT: 1.5,ItemEnums.StatKey.BASEARMORVALUE: 8.2,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +20,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -10},
+	ItemEnums.ItemTypeSubCategory.CHAIN_MAIL_LEGS: {ItemEnums.StatKey.WEIGHT: 4,ItemEnums.StatKey.BASEARMORVALUE: 12.6,ItemEnums.StatKey.KINETICARMORVALUE: -10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.HAIDATE_SUNEATE: {ItemEnums.StatKey.WEIGHT: 2.25,ItemEnums.StatKey.BASEARMORVALUE: 13.3,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +20,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -20},
+	ItemEnums.ItemTypeSubCategory.HAIDATE_SUNEATE_TYPE2: {ItemEnums.StatKey.WEIGHT: 3,ItemEnums.StatKey.BASEARMORVALUE: 15.4,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +20,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -10},
+	ItemEnums.ItemTypeSubCategory.PLATE_LEGS: {ItemEnums.StatKey.WEIGHT: 6,ItemEnums.StatKey.BASEARMORVALUE: 12.2,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +10,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -10},
+	ItemEnums.ItemTypeSubCategory.PLATE_LEGS_TYPE2: {ItemEnums.StatKey.WEIGHT: 10,ItemEnums.StatKey.BASEARMORVALUE: 16.8,ItemEnums.StatKey.KINETICARMORVALUE: -20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -10},
+	ItemEnums.ItemTypeSubCategory.GREAVES: {ItemEnums.StatKey.WEIGHT: 1.5,ItemEnums.StatKey.BASEARMORVALUE: 10.8,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +10},
+#FOOTArmorType,
+	ItemEnums.ItemTypeSubCategory.BOOTS: {ItemEnums.StatKey.WEIGHT: 1,ItemEnums.StatKey.BASEARMORVALUE: 9.8,ItemEnums.StatKey.KINETICARMORVALUE: -10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: -10},
+	ItemEnums.ItemTypeSubCategory.SOLLERETS: {ItemEnums.StatKey.WEIGHT: 1.5,ItemEnums.StatKey.BASEARMORVALUE: 10.8,ItemEnums.StatKey.KINETICARMORVALUE: +10,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +10},
+	ItemEnums.ItemTypeSubCategory.SABATONS: {ItemEnums.StatKey.WEIGHT: 2,ItemEnums.StatKey.BASEARMORVALUE: 11.9,ItemEnums.StatKey.KINETICARMORVALUE: +20,ItemEnums.StatKey.SLASHINGEDGEARMORVALUE: +30,ItemEnums.StatKey.PIERCINGEDGEARMORVALUE: +10},
+	}
+# Function to retrieve stats based on the SubCategory Enum value
+func get_stats_for_armortype_subcategory(subcategory_enum_value: ItemEnums.ItemTypeSubCategory) -> Dictionary:
+	# We check if the dictionary has the provided enum value as a key
+	if ITEM_ARMOR_STATS.has(subcategory_enum_value):
+		return ITEM_ARMOR_STATS[subcategory_enum_value]
+	
+	# Return an empty dictionary if the subcategory isn't found
+	return {}
+
+const ITEM_WEAPON_STATS: Dictionary = {
+#WEAPONHiltType
+	ItemEnums.ItemTypeSubCategory.HANDGUARDHILT: {ItemEnums.StatKey.WEIGHT: 0.3, ItemEnums.StatKey.LENGTH: 0.12},
+	ItemEnums.ItemTypeSubCategory.NOGUARDHILT: {ItemEnums.StatKey.WEIGHT: 0.25, ItemEnums.StatKey.LENGTH: 0.22},
+	ItemEnums.ItemTypeSubCategory.BASKETGUARDHILT: {ItemEnums.StatKey.WEIGHT: 0.6, ItemEnums.StatKey.LENGTH: 0.14},
+	ItemEnums.ItemTypeSubCategory.CROSSGUARDHILT: {ItemEnums.StatKey.WEIGHT: 0.4, ItemEnums.StatKey.LENGTH: 0.22},
+	ItemEnums.ItemTypeSubCategory.KNUCKLEGUARDHILT: {ItemEnums.StatKey.WEIGHT: 0.45, ItemEnums.StatKey.LENGTH: 0.18},
+	ItemEnums.ItemTypeSubCategory.NOGUARDHILT_TYPE2: {ItemEnums.StatKey.WEIGHT: 0.1, ItemEnums.StatKey.LENGTH: 0.3},
+	ItemEnums.ItemTypeSubCategory.NOGUARDHILT_TYPE3: {ItemEnums.StatKey.WEIGHT: 0.6, ItemEnums.StatKey.LENGTH: 0.3},
+	ItemEnums.ItemTypeSubCategory.LARGE_CROSSGUARDHILT: {ItemEnums.StatKey.WEIGHT: 0.7, ItemEnums.StatKey.LENGTH: 0.38},
+	ItemEnums.ItemTypeSubCategory.PARIERHAKENHILT: {ItemEnums.StatKey.WEIGHT: 0.8, ItemEnums.StatKey.LENGTH: 0.5},
+	ItemEnums.ItemTypeSubCategory.TSUBAGUARDHILT: {ItemEnums.StatKey.WEIGHT: 0.2, ItemEnums.StatKey.LENGTH: 0.2},
+	ItemEnums.ItemTypeSubCategory.TSUBAGUARDHILT_TYPE2: {ItemEnums.StatKey.WEIGHT: 0.25, ItemEnums.StatKey.LENGTH: 0.3},
+	ItemEnums.ItemTypeSubCategory.CROSSGUARD_TYPE2: {ItemEnums.StatKey.WEIGHT: 0.3, ItemEnums.StatKey.LENGTH: 0.25},
+	ItemEnums.ItemTypeSubCategory.HELVE: {ItemEnums.StatKey.WEIGHT: 0.35, ItemEnums.StatKey.LENGTH: 0.55},
+	ItemEnums.ItemTypeSubCategory.SHAFT: {ItemEnums.StatKey.WEIGHT: 0.2, ItemEnums.StatKey.LENGTH: 2.3},
+	ItemEnums.ItemTypeSubCategory.HAFT: {ItemEnums.StatKey.WEIGHT: 1.5, ItemEnums.StatKey.LENGTH: 4.4},
+#WEAPONBladeType
+	ItemEnums.ItemTypeSubCategory.SINGLE_EDGE: {ItemEnums.StatKey.WEIGHT: 0.55, ItemEnums.StatKey.LENGTH: 0.45},
+	ItemEnums.ItemTypeSubCategory.DOUBLE_EDGE: {ItemEnums.StatKey.WEIGHT: 0.9, ItemEnums.StatKey.LENGTH: 0.78},
+	ItemEnums.ItemTypeSubCategory.THRUSTING_BLADE: {ItemEnums.StatKey.WEIGHT: 0.6, ItemEnums.StatKey.LENGTH: 1.1},
+	ItemEnums.ItemTypeSubCategory.FLAT_BLADE: {ItemEnums.StatKey.WEIGHT: 3, ItemEnums.StatKey.LENGTH: 0.88},
+	ItemEnums.ItemTypeSubCategory.GREAT_BLADE: {ItemEnums.StatKey.WEIGHT: 3.5, ItemEnums.StatKey.LENGTH: 1.3},
+	ItemEnums.ItemTypeSubCategory.DOUBLE_EDGE_TYPE2: {ItemEnums.StatKey.WEIGHT: 1.35, ItemEnums.StatKey.LENGTH: 1.0},
+	ItemEnums.ItemTypeSubCategory.LONG_PARRY_BLADE: {ItemEnums.StatKey.WEIGHT: 2.5, ItemEnums.StatKey.LENGTH: 1.2},
+	ItemEnums.ItemTypeSubCategory.KATANA_KEN: {ItemEnums.StatKey.WEIGHT: 0.75, ItemEnums.StatKey.LENGTH: 0.7},
+	ItemEnums.ItemTypeSubCategory.ODACHI_KEN: {ItemEnums.StatKey.WEIGHT: 2, ItemEnums.StatKey.LENGTH: 1.2},
+	ItemEnums.ItemTypeSubCategory.DOUBLE_EDGE_WIDE: {ItemEnums.StatKey.WEIGHT: 0.8, ItemEnums.StatKey.LENGTH: 0.4},
+	ItemEnums.ItemTypeSubCategory.SHORT_BLADE_TYPE2: {ItemEnums.StatKey.WEIGHT: 0.2, ItemEnums.StatKey.LENGTH: 0.35},
+	ItemEnums.ItemTypeSubCategory.LONG_KNIFE_BLADE: {ItemEnums.StatKey.WEIGHT: 0.4, ItemEnums.StatKey.LENGTH: 0.3},
+	ItemEnums.ItemTypeSubCategory.SHORT_BLADE: {ItemEnums.StatKey.WEIGHT: 0.3, ItemEnums.StatKey.LENGTH: 0.25},
+	ItemEnums.ItemTypeSubCategory.CURVED_BLADE: {ItemEnums.StatKey.WEIGHT: 1, ItemEnums.StatKey.LENGTH: 0.7},
+	ItemEnums.ItemTypeSubCategory.THRESHER_BLADE: {ItemEnums.StatKey.WEIGHT: 1.5, ItemEnums.StatKey.LENGTH: 0.9},
+#WEAPONHeadType
+	ItemEnums.ItemTypeSubCategory.AXE_HEAD: {ItemEnums.StatKey.WEIGHT: 0.55, ItemEnums.StatKey.LENGTH: 0.15},
+	ItemEnums.ItemTypeSubCategory.SCYTHE: {ItemEnums.StatKey.WEIGHT: 0.8, ItemEnums.StatKey.LENGTH: 0.8},
+	ItemEnums.ItemTypeSubCategory.BILLHOOK: {ItemEnums.StatKey.WEIGHT: 1.2, ItemEnums.StatKey.LENGTH: 0.4},
+	ItemEnums.ItemTypeSubCategory.FELLING_AXE_HEAD: {ItemEnums.StatKey.WEIGHT: 1.8, ItemEnums.StatKey.LENGTH: 0.22},
+	ItemEnums.ItemTypeSubCategory.DAGGER_AXE_HEAD: {ItemEnums.StatKey.WEIGHT: 0.7, ItemEnums.StatKey.LENGTH: 0.35},
+	ItemEnums.ItemTypeSubCategory.WAR_AXE_HEAD: {ItemEnums.StatKey.WEIGHT: 1, ItemEnums.StatKey.LENGTH: 0.2},
+	ItemEnums.ItemTypeSubCategory.CRESCENT_AXE_HEAD: {ItemEnums.StatKey.WEIGHT: 0.9, ItemEnums.StatKey.LENGTH: 0.3},
+	ItemEnums.ItemTypeSubCategory.HAMMERE_HEAD: {ItemEnums.StatKey.WEIGHT:1, ItemEnums.StatKey.LENGTH: 0.1},
+#SHIELD&WEAPONType
+	ItemEnums.ItemTypeSubCategory.KANABO: {ItemEnums.StatKey.WEIGHT: 6, ItemEnums.StatKey.LENGTH: 1.5},
+	ItemEnums.ItemTypeSubCategory.BUCKLER_SHIELD: {ItemEnums.StatKey.WEIGHT: 2.5, ItemEnums.StatKey.LENGTH: 0.25},
+	ItemEnums.ItemTypeSubCategory.ROUND_SHIELD: {ItemEnums.StatKey.WEIGHT: 1, ItemEnums.StatKey.LENGTH: 0.5},
+	ItemEnums.ItemTypeSubCategory.KITE_SHIELD: {ItemEnums.StatKey.WEIGHT: 7, ItemEnums.StatKey.LENGTH: 1.1},
+	ItemEnums.ItemTypeSubCategory.HEATER_SHIELD: {ItemEnums.StatKey.WEIGHT: 5.5, ItemEnums.StatKey.LENGTH: 0.6},
+	ItemEnums.ItemTypeSubCategory.PAVISE_SHIELD: {ItemEnums.StatKey.WEIGHT: 9, ItemEnums.StatKey.LENGTH: 1.3},
+	ItemEnums.ItemTypeSubCategory.TOWER_SHIELD: {ItemEnums.StatKey.WEIGHT: 15, ItemEnums.StatKey.LENGTH: 1.6},
+	}
+func get_stats_for_weapontype_subcategory(subcategory_enum_value: ItemEnums.ItemTypeSubCategory) -> Dictionary:
+	# We check if the dictionary has the provided enum value as a key
+	if ITEM_WEAPON_STATS.has(subcategory_enum_value):
+		return ITEM_WEAPON_STATS[subcategory_enum_value]
+	
+	# Return an empty dictionary if the subcategory isn't found
+	return {}
