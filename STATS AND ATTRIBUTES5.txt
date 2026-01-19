@@ -1,0 +1,1230 @@
+
+										Attributes-> Derived From Stats [Base Attributes/Normal character = 5][All charcters]
+
+	-Strength = how strong the character is
+		Tied to Torso, Arm and Legs.
+          [Torso = 50% of strength stat]
+          [Arms = 10% of strength stat each]
+          [Legs = 15% of strength stat]
+         	= Power 40%,  Stamina 40%, Toughness 20%
+	-Intelligence = how smart the character  is/ How many logcial steps the character can navigate
+		Tied to Head[50%] and Internal [stomach[25%] & brain[25%]]
+		= Charisma 10%, Muscle Memory 20%, Aptitude 70%
+	-Endurance = how much energy the character has
+		Tied to Internal [lungs[33%], muscle[33%], and fat[33%]]
+		= Stamina 50%, Quickness 15%, Muscle Memory 15%, Constution 20%
+	-Dexterity = How well the charcter moves and performs fine /or fluid motions
+		Tied to Hands[50%] and Internal [eyes[50%]]
+		= Accuracy 50%, Quickness 25%, Muscle Memory 25%
+	-Willpower = How mentally and physically tough the character is
+		Tied to Internal [brain]
+		= Toughness 25%, Resilience 25%, Aptitude 20%, Constitution 30%
+	-Perception = How acute is the characters sense are
+		Tied to Internal [Eyes[25%], Ears[25%], Nose[25%], Skin[25%]]
+	 	= Accuracy 50%, Charisma 20%, Resilience 15%, Aptitude 15%
+
+	Height (in cm) = used for metabolism and body comp calculations
+
+	*If linked body part takes damage stat is reduced by [.1 x Dmg]. Attributes are wieghted by associated stat instead of being directly leveled, making both manage through skill leveling.
+
+		-Stats = [Attribute/10]- Derived From Skills ->Skills set on character creation/Npc skills generated with Job [Job*on Social Sim Page]
+
+	[Strength + Dexterity] = Power <- How much force the character generates [Combat Stats -  Power 17%, Agriculture Stats- Power 30%, Stoneworking Stats-  Power 30%, Athletics Stats-  Power 20%, Metallurgy Stats- Power 22.5%,]
+	[Perception + Dexterity] = Accuracy <- Charcters hand eye coordination skill [Combat Stats - Accuracy 17%, Survival Stats- Accuracy 25%, Stoneworking Stats- Accuracy 30%, Roguery Stats- Accuracy 35%, Athletics Stats-  Accuracy 20%, Artistry Stats - Accuracy 40%,]
+	[Perception + Intellingence] = Charisma <- Characters social awareness [Roguery Stats- Charisma 35%, Speech Stats - Charisma 50%, Athletics Stats- 10%]
+	[Strength + Endurance] = Stamina <- The amount of energy a character can exert at once [Combat Stats -  Stamina 16.5%, Survival Stats-  Stamina 25%, Agriculture Stats- Stamina 40%, Stoneworking Stats- Stamina 40%, Athletics Stats- Stamina 20%, Metallurgy Stats- Stamina 22.5%, Artistry Stats - Stamina 10%]
+	[Willpower + Strength] = Toughness <- How much damage a characters body can absorb [Combat Stats - Toughness 16.5%, Survival Stats-  Toughness 25%, Agriculture Stats- Toughness 20%, Metallurgy Stats- Toughness 22.5%,]
+	[Dexterity + Endurance] = Quickness <- How well the character can navigate spacial movement (proprioception) [Combat Stats - Quickness 16.5%, Athletics Stats-  Quickness 20%,] 
+	[Willpower + Percpetion] = Resilience <- How well the character can guard against mental attacks &/or recover from them. [Survival Stats-  Resilience 25%, Athletics Stats- Resilience 10%, Metallurgy Stats- Resilience 22.5%]
+	[Intelligence + Endurance + Dexterity]/1.5 = Muscle Memory <- Governs skill retention and potential [Combat Stats - Muscle Memory 16.5%, Agriculture Stats- Muscle Memory 10%, Athletics Stats- Muscle Memory 10%, Metallurgy Stats- Muscle Memory 10%,]
+	[Intelligence + Willpower + Perception]/1.5 = Aptitude <- How well the character can learn a skill, execute, and or strategize [Governs Exp gain. [Natural Skill](Cannot be trained)] [Roguery Stats- Aptitude 30%, Learning Stats - Aptitude 100%, Artistry Stats - Aptitude 50%, Speech Stats - Aptitude 50%]
+	[Willpower + Endurance] = Constitution/Lifeforce [Qi/Ki/Chakra] <- Represents the characters pysche and body (soul). [Control Stats - Constitution 90%, Survival - 10% ] 
+
+	[Point distr.- stats range 1-100, an avg character is 50 in all stat categories, 5 in all attributes]
+			
+									-Base-Derived Stats-
+
+	Health Points (HP)- General wellness 		     
+		     [Limb health - The health of each individual limb = 
+		                    [[Original Total # of parts] x [# of parts per body part as percentage] = Health per part]]
+				    [ Damage to Limbs will reduce relevant atrribute (see chart below) and may futher impede tasks]
+ 		     [Internal Health [[Toughness + Stamina] - Represent general health ofe the internals. Used for bone and organ damage, other hemmoraging, and sickness]
+                     [Total Health = Limb Health + Internal Health][Tied to Vigor] 
+				
+						Limbs/BODYPARTS - 
+	Limb health [[Original Total # ofparts] x [# of parts per body part as percentage] = Health per part]
+
++2 add	BodyPart     [Organ]-> Skin(side of body)	Muscle/Tendon Group		A.V.(Arteries & Veins)		Vital-Organs	Bones	
+recalc
+	Head- 23 parts = 38.64	Face				Cheek			Arteries-Neck			Eyesx2		Skull	
+	40 hp			Neck				Jaw			Veins-Face 			Nose		Jaw
+           			Back				Throat			Head				Mouth		Teeth [avg 32]
+				Side x2(L/R)						Neck				Ears		Orbital x2	
+            														Brain	
+
+	Torso- 33 parts = 55.44	Chest(Left/Right)		Abdominals		Heart(Pulminary A.V. x2)	Kidney x2	Spine x3
+	55 hp			Back(Mid/Upper/Lower)		Chest(x2)						Lungs x2	Ribs x2
+				Lower Abdomen(Front/x2Sides)	[Back							Heart		Collar Bone x2
+				Groin				(Upper-Trap&Delts					Liver		Hip x2
+								/Lower-Erector Spinae/					Stomach
+								 Mid-Lats&Rhomboid)]					Diaphram
+								 Groin
+							
+	Armsx2- 16 parts = 26.88 Upper Arm			Bicep			Radial Artery/Vein 		Armpit		Humorous(Upper Arm)
+	27 hp			Lower Arm			Tricep			Ulnar Artery/Vein 				Radius/Ulna(Lower Arm)
+				Shoulder			Forearm									Wrist
+				Elbow
+
+	Handsx2- 12 parts = 20.16 Fingers x10
+	20 hp			  Hand x2
+
+	Legsx2 - 16 parts = 26.88 Upper Leg			Upper Leg(Quadricep,	Upper Leg(Femoral Artery)			Upper Leg(Femur)
+	27 hp			 Lower Leg				Hamstring)	Lower Leg(Tibial Artery)			Lower Leg(Tibia/Fibula)
+				 Knees				Lower Leg(Shin/Calf)
+				 Ankle				Achilles Tendon 
+				  
+	Feetx2 - 12 parts = 20.16 each Toesx10
+	20 hp							Total = 168 parts = 283 Limb Hp [rounded]
+
+	Limb Integrity (Links Limb/Total Health, Lifeforce, Chakra Points, & Meridians-> Calculates Pain lvls) = [[BodyPart-Hp% (x)(char)Mass(total)]*[[(BodyPart-Organ)(x)(Organ Weight Distribution %)] x Tissue kcal Distribution]
+														= The Amount of kcals currently contained in a limb. Damage to limbs must be repaired with kcals. 
+	Track Body Parts													Buffing Limbs requires kcals. The Force of internal effects are resisted in kcals
+	Limb Integrity = The kcal of specific body parts
+	Current Limb Integrity = The kcal of specific body parts
+	Max Limb Integrity = Maximum instanstaneous kcal injection a limb can withstand before energy of change must be resisted with Will.= [Limb Integrity + 3,500] x Limb Skill
+	Chakra Points = Qi is Aether as kcals that is controlled by Chakra Points (heart) and Meridians/Leylines (Arteries/Veins). Each Chakra Point contains the kcals of its associated limb.
+			= [Cumulative Max Limb Integrity], Meaning Earth = Earth + Metal + Wood = Root [Starting size/stats = Organs]
+	Dantian - [size(base, current), capacity(current, max)],[Starting size/stats = Stomach]
+  	Meridians - current volume, max volume,			[Starting size/stats = Arteries and veins] 
+	Golden-Core- Refractive index of the material, 		[Starting size/stats = determined during formation]
+	Nascent Soul-kcal count(Qi)				[Starting size/stats = determined during formation]
+
+Pain = Kcal %  of limb integrity need to repair limb dmg
+	% Health missing 	Rating
+	0: 			None
+	1-5%: 			Scratch
+	6-15%: 			Nagging
+	16-25%: 		Throbbing
+	26-35%:	 		Stinging
+	36-44%: 		Burning
+	45-55%: 		Searing
+	56-64%: 		Intense
+	65-74%: 		Nauseating
+	75-79%: 		Crippling
+	80-85%: 		Catastrophic
+	86-100%: 		Devastating
+
+				 
+					.			Body and Chakra Points Diagram [for flow Chakra points listed first]
+
+	This diagram visualizes how the Core elements anchor to the primary energy centers, with Branch offshoots radiating from their parent nodes.
+	
+	Root (Red): Earth anchors here, branching into Metal (structural) and Wood (flexible).
+	Sacral (Orange): Water anchors here, feedinsg the compound Ice.
+	Solar Plexus (Yellow): Fire anchors here, sparking the compound Lightning.
+	Heart (Green): Air anchors here, providing the motion for Lightning and the temperature for Ice.
+
+								The Unified Elemental Chart - 
+
+			This chart explains how each element manifests within the body's energy centers and its specific biological function.
+
+	Element Type		Element	Description/Origin						Primary Chakra				Body Relation
+
+	Core	Earth		The stabilizing foundation for all physical matter.			Root (Muladhara)		Skeletal system, spine, (solid tissues). (All Organs)
+	Branch	Metal		Earth + Fire + Air: The refined, mineral essence of the earth.		Root (Sub-point)		Teeth, bone marrow, and mineral absorption. (Bones)
+	Branch	Wood		Earth + Water + Air: The organic, living extension of the earth.	Root (Sub-point)		Muscles, tendons, and cellular growth.  (Muscle Group)
+	Core	Water		The fluid force of change and circulation.				Sacral (Svadhisthana)		Kidneys, bladder, and reproductive fluids. (Vitals)
+	Core	Fire		The metabolic energy and transformative heat.				Solar Plexus (Manipura)		Digestive system and metabolic "fire". (Heart,Stomach, Lungs)
+	Core	Air		The movement and life-breath (Prana).					Heart (Anahata)			Respiratory system and circulation of oxygen. (Heart, Lungs)
+	Branch	Lightning	Fire + Air + Water: High-frequency energy discharge.		        Solar Plexus / Heart		Nervous system and electrical impulses in the brain.(Skin, Muscle, Brain, Eyes, Nose, Spine)
+	Branch	Ice		Water + Air + Earth : Solidified fluid via thermal loss.		Sacral / Root	                Temperature regulation and joint preservation.(Arteries & Veins)
+
+
+
+
+		Brain & Psyche/Senses- Psyche & Sense connect to brain for mental attacks and sense-reliabity [Ki and Pysche sense. Tri-Nature Point activation can be activated on brain to (+)raise or (-)lower associted sense. 1 sense point = 3,500 kcals](see magic system)
+		Senses-		Stimuli-
+	 	1. Sight    	Light
+  		2. Smell        Odarants [Chemical Molecules/compounds]
+		3. Hearing 	Sound
+		4. Touch	Pressure
+		5. Taste        [Chemical Molecules/compounds]
+		6. Temperature	Radiation/Heat [Though temperature is exprienced through touch, this will be split cognitavily for Psyche-calcs]
+		7. ESP		[Psychic sense] = [Sense Hp [1-7] = Constitution + Resilience]
+		8. Rationale	[Emotional State = Logos, Pathos, Ethos][Hp = (50 -> range from 0 [+/-])(+/-)(Skill-Lvl)]
+		9. Morale       [Couragessness + Confidence][Both bars work in tandem Couragessness rise +1 with every "Sucessfull action", and +1 for "Positive interactions". "Negative interactions" inflicts -4 dmg per event on Couragessness.
+								For every +2 Couragessness earns gain +1 Confidence. "Action Failure" inflicts -4 dmg per event on Confidence. Confidence Homeostasis inactive until Courage is atleast 0 if +]
+									Food Score is directly applied here.
+"Sucessfull action" -> Action = Expected outcome -> ex. Crafting Success, Dmg Dealt, Trade made
+"Positive interactions"-> Positive Speech Dmg
+"Negative interactions" -> Negative Speech Dmg
+"Action Failure" -> Action ≠ Expected outcome -> Player sets crafting timer to end beforecraft finishes, Missed attacks, Taking Dmg, Failed trades
+"Craft-Timer" -> Time player expects it takes to craft 1 of selected item at current skill lvl
+
+	[Sense & Rationale Tracking - e.states "hp" starts at 0, + attack raise hp, - attacks lower hp. Applies to both speech and mental attacks.}		
+
+	ESP & Sense- Esp Represents the sense of imagine/percieve reality and the mental link between the two (The ability of the mind to influence imagined/perceived reality).
+			Senses 1-6 - Follow Rationale logic for damage and simulation. Sense 7 [ESP] - is the only sense with proper "hp" score. "Attacks" + or -.
+			Mental Attack calc = Spell effect dmg - Enemy-Resilience = Pen check-> Pen-check - ESP = Mental dmg taken [MDT] -> MDT x 10 = Damage to targeted Sense
+			Speech combat does not effect ESP or Sense.
+    
+		For short-hand design mental attack will use Pysche targeting in the same way physical attacks use bodypart targeting [Since touch is a physical sense it will target a bodypart but will damage the sense]
+		Psyche-Damage - Senses cannot be mentally destroyed and therefore wont lose or gain health. Rather each sense has a Tolerance level that functions as health. When Stimulated the current Tolerance is raised,
+				If max tolerance is exceeded that sense is overrwhelemed and becomes unreliable. When Deprived the current Tolerance is decreased, if min Tolerance is exceeded that sense is dimmed or disabled.
+
+		The Confidence Rating	/	The Courageousness Scale	
+		100%: Overconfident 		100%: Brave
+		75%: Radically Confident	75%: Valiant
+		50%: Self-Assured		50%: Gritted
+		25%: Capable			25%: Resolute
+		0%: Neutral			0%: Steady
+		-25%: Questioning		-25%: Apprehensive
+		-50%: Insecure			-50%: Intimidated
+		-75%: Self-Doubting 		-75%: Fearful
+		-100%: Overwhelmed		-100%: Terrified
+
+		*Unified Sensory State Chart*
+		State Description		Sight (Light)		Smell (Odorants)	Hearing (Sound)		Touch (Pressure)	Taste (Chemicals)	Temperature (Heat/Rad.)
+		Extreme Hyperstimulation	Blinded			Nauseating Stench	Deafened 		Excruciating Pain 	Repulsive 		Burning 
+		Severe Hyperstimulation		Intrusive Glare		Gagging Odor		Ringing Ears		Crippling Pain		Overpowering		Searing
+		Moderate Hyperstimulation	Dazzled			Sharp Scent		Overly Sensitive	Throbbing Pain		Intense/Pungent		Stinging
+		Mild Hyperstimulation		Heightened/Vivid	Enhanced		Acute			Sensitive		Heightened		Warm/Cool
+		Neutral	Homeostatic/Clear	Balanced		Normal			Baseline		Standard		Neutral			Comfortable
+		Mild Hypostimulation		Dull/Unfocused		Faint			Muted			Dulling Sensation	Blunted			Chilly
+		Moderate Hypostimulation	Blurred			Weak Scent		Muffled			Reduced Sensation	Bland			Numb
+		Severe Hypostimulation		Diminished Vision	Very Faint		Hard of Hearing		Reduced Sensitivity	Minimal Taste		Very Numb
+		Extreme Hypostimulation		Blind 			Anosmic 		Deaf 			Numb 			Ageusic			Insensate
+
+		**[Sense & Rationale Tracking]**
+		*   **Baseline:** 0 (Homeostatic Set-Point)
+		*   **Attack Range:** [+] raise HP (Over-stimulation/Mania), [-] lower HP (Deprivation/Depression)
+		*   **Manual Override:** Tri-Nature Point activation [+/-] 1 Sense Point = 3,500 kcals
+
+		**[The Drift: Recovery Calculation]**
+		*   **Sense Drift (1-7):** 
+    			Drift = MAX(1, |CurrentHP| / (Constitution + Resilience)) × (1 / (1 + Exposure_Turns / 9,000))
+		*   **Rationale Drift (8):** 
+    			Drift = MAX(5, |CurrentHP| / Skill-Lvl) × (1 / (1 + Exposure_Turns / 9,000))
+    		*(Rationale HP recovers toward 0 at a rate dictated by Logos/Pathos/Ethos proficiency)*
+
+		**[Senses- Stimuli- Recovery Constants]**
+		1. **Sight**       (Light)          [Normal. Constant: 300 turns (Fast) / 9,000 (Deep)]
+		2. **Smell**       (Odorants)       [Normal. Constant: 9,000 turns]
+		3. **Hearing**     (Sound)          [Normal. Constant: 300 turns (Fast) / 9,000 (Deep)]
+		4. **Touch**       (Pressure)       [Normal. Constant: 9,000 turns]
+		5. **Taste**       (Chemicals)      [Normal. Constant: 9,000 turns]
+		6. **Temp**        (Radiation)      [Normal. Constant: 9,000 turns]
+		7. **ESP**         (Psychic)        [Normal. Constant: 9,000 turns]
+		8. **Rationale**   (E. States)      [Normal. Constant: 9,000 turns]
+		9. **Morale**      (2C.States)      [Normal. Constant: 9,000 turns]
+
+		**[Rationale State Mechanics]**
+		*   **HP Range:** [-50 < 0 > +50]
+		*   **Mental Attack:** (Speech/Psyche) moves HP away from 0.
+		*   **Homeostasis:** Passive Drift pulls HP back to 0 (The Neutral Mind).
+
+
+
+
+			 [Fatigue = intensity and duration of anaerobic effort. if Fatigue = Max Stamina character has 100% chance to become immobile/comatose.
+					Fatigue Accumulation (HR‑Linked): Fatigue increases faster when HR exceeds the character’s Aerobic Threshold (75% MHR) and accelerates sharply past Anaerobic Threshold (85–90% MHR).
+					Each 10% of max stamina burned still generates 1 fatigue point, but HR zone modifies the rate:
+																	Zone 1–2 (<75% MHR): No modifier
+																	Zone 3 (75–85% MHR): +25% fatigue rate
+																	Zone 4 (85–90% MHR): +50% fatigue rate
+																	Zone 5 (>90% MHR): +100% fatigue rate
+
+	Vigor Points (VP) - [Constitution + Total Health + Stamina = The absolute health of the characters pysche and body (soul).] 
+		    [Life Bar: represents the junction of Health, Stamina and Ki - Character action resource]
+		    [Character Dies when depleted]
+	            [Base recovery = .5 per tick] [HR‑Linked Vigor Stress: Sustained HR above Anaerobic Threshold increases VP strain.For every minute spent above 90% MHR, apply a VP tax equal to 1% of max VP.]
+										[This represents systemic stress and oxygen debt.]
+
+	Agility - [Quickness + Accuracy = Characters movement and attack speed [base value for avg character is 1.2 sec or 1 turn]
+	Resistance - [Toughness + Resilience = Resistance against abstract damage; poison, burns, frost, hemmoraging]
+	Hit-Chance/Evasion[Finesse] (Spatial Reasoning)(SR) - [([Accuracy] + [Agility]) x 0.01] Represents subtle body movements such as flinching, and fine motion accuracy 		
+	Metabolism - [Influences HP,SP, And VP, Bodyweight, and Satiation/thirst Levels]
+	     BaseMetabolic Burn Rate (BM_BR):
+					BMR Calculation (Harris‑Benedict): baseline caloric requirement before activity multipliers.
+					Men:𝐵𝑀𝑅= 88.362 + (13.397⋅𝑊)+ (4.799⋅𝐻) − (5.677⋅𝐴)
+					Women:𝐵𝑀𝑅= 447.593 +(9.247⋅𝑊) +(3.098⋅𝐻) − (4.330⋅𝐴)
+								Activity Multipliers:
+									Sedentary = 1.2
+									Light = 1.375
+									Moderate = 1.55
+									Heavy = 1.725
+									Maximal = 1.9
+						(Where (W) = weight in kg, (H) = height in cm, (A) = age). 
+					[These multipliers apply only when HR‑based burn is not used.]	
+
+ 
+	     Hunger - Current Satiation Level
+	     Thirst - ""[Static water loss range inbetween 25mL to 37.5mL per hour, first stage of thirst begins in range 1% to 2% bodywater lost.
+	     Calories - [Starting Weight (Total caloric makeup of the character body) = 21.5 x (Height x Height) ]
+				[Cont. Weight = Internals + Fluids + MRV+ CRV ]
+
+										Dynamic HR‑Based Caloric Burn:  
+						Replace fixed activity burn rates with continuous HR‑derived caloric expenditure when HR data is available.
+
+						Men: Calories/min = ( 0.6309𝐻𝑅 + 0.1988 𝑊 + 0.2017𝐴 − 55.0969)
+										/4.184
+						Women: Calories/min = ( 0.4472𝐻𝑅 − 0.1263 + 0.074𝐴 − 20.4022)
+										/4.184
+						If HR is not being tracked, fall back to the existing fixed activity categories.
+
+						Dynamic Heart Rate Thresholds
+						Maximum Heart Rate (MHR):𝑀𝐻𝑅=220-age
+						Aerobic Threshold (AT):𝐴𝑇=0.75⋅𝑀𝐻𝑅
+						Anaerobic Threshold (LT):𝐿𝑇=0.85–0.90⋅𝑀𝐻𝑅
+
+						Stamina Burn Logic (HR‑Driven)
+						HR Zone	%	MHR	Effect
+						Zone 1		50–60%	Minimal stamina burn
+						Zone 2		60–75%	Light stamina burn
+						Zone 3		75–85%	Moderate stamina burn (+25% fatigue)
+						Zone 4		85–90%	Heavy stamina burn (+50% fatigue)
+						Zone 5		90–100%	Maximal burn (+100% fatigue, VP strain)
+
+						Fatigue Logic (HR‑Driven)
+							Fatigue accumulates based on HR zone rather than fixed activity categories.
+							Fatigue prevents stamina regeneration as defined in the original system.
+
+										Base Caloric burn rate - Sedentary 1 per minute/ approx .017 per sec/tick/turn
+			 										 Light 3 per minute/ approx .051 per sec/tick/turn 330% 
+			 										 Moderate 5 per minute/ approx .084 per sec/tick/turn/ 500% increase
+                         										 Heavy 12 per minute/ approx .2 per sec/tick/turn 1200% increase
+
+										Base Caloric return/movement rate - Sedentary 1 per minute/ approx .017 per sec/tick/turn
+														    Light 3 per minute/ approx .051 per sec/tick/turn
+														    Moderate = [BBR (5 per minute/ approx .084 per sec/tick/turn/ 20% increase) x 1.5]
+                         											    Heavy 12 per minute/ approx .2 per sec/tick/turn 83% increase [BBR (5 per minute/ approx .084 per sec/tick/turn/ 20% increase) x 2]
+
+                         										[Weight/ BMI- [3,500 kcals = 1 pound = 0.454 kg]
+
+			                                                               [Internals (Skeletal & Organ weight in kcal)- [static/see chart]]
+											[Fluids (Base fluid comp)- [static/see chart]]
+			[Stomach Value (stores consumed kcals)- Base min. starting value 75 mL- Base max. cap. starting value 2.75L = 2750mL,
+			[Digetsion/Stomach function [converts consumed kcals into stored kcals/Reserves]-	     
+		      (Stores values by macro type for digetion formula)DigestionRate- [(Carbs - Simple Carbs ~240 kcal/hr (~.067 per tick) [Grain with out bran/germ (Endosperm only/Flour/bread), Fruit/Fructose]
+								                     Complex Carbs ~390 kcal/hr (~.109/.11 per tick) [incl. glucose/fructose mixtures]
+									     Fats -  ~9 kcal/hr (~.0025 per tick)
+								             Proteins - Lean Protien ~36 kcal/hr (~.01 per tick)		
+               										Fatty protien ~12 kcal/hr) (~.0033 per tick)= (DR/per tick) ->ADDED DIRECTLY TO CRV
+
+			[Reserves (BodyFat/Stores digested kcals from stomach value) -  [Base starting value (BSV) = see chart]
+                                                                                        [Current Reserve Value (Total Stored fat kcals for transfer)(CRV)] (end of cycle: if (CURRENT CRV) - (BEGINNING CRV) = (CRV CHANGE) 
+																				If CRV CHANGE = 0 - [MRV = NO CHANGE], ELSE [NEW MRV = CURRENT MRV + CRV CHANGE]]
+											[Max reserve Value (kcals currently stored as body fat/)(MRV) = [Match CRV]  [natural cap of 3,500 kcal creation/destruction per day]]
+											[Reserve Burn rate = see chart [converts MRV into Converted kcals]]                      
+ 			[Converted (Muscle/Calories Burned for Actions) - Hold kcal values for character actions, Base burn rate = .017 per turn ]
+											[Base starting value (BSV) = see chart]
+                                                                                        [Base Current Converted Value (Total Stored kcals)(CCV)- (end of cycle: if (CURRENT CCV) - (BEGINNING CCV) = (CCV CHANGE) 
+																				If CCV CHANGE = 0 - [MCV = NO CHANGE], ELSE [NEW MCV = CURRENT MCV + CCV CHANGE] 
+																				[If CCV CHANGE = >3,500 ; CCV CHANGE = 3,500 ][If CCV CHANGE = <3,500 ; CCV CHANGE = -3,500 ]
+ 											[cont. Current Converted Value (Total Stored kcals)(CCV)-  
+											[Max Converted Value (kcals stored as skeletal muscle)(MCV) = [Match CCV]
+											[Reserve Burn rate = see chart [converts MRV into Converted kcals]]
+								
+     											note * if MCV<15% bodywieght character should have physical starvation penalties][note2* kcal transfer rate = to Burn rate][note3 *MCV[natural cap of 3,500 kcal creation/destruction per day]
+
+			Respiratory Rate (RR):  RR is derived from HR using the Pulse‑Respiration Quotient (PRQ = HR/RR ≈ 4:1).
+						If RR deviates from expected PRQ due to low Endurance or fatigue, apply penalties to Quickness and increase fatigue accumulation rate.
+							RR Stress Effects:  
+					If RR exceeds expected PRQ‑aligned value by more than 20%, apply: −10% Quickness, +15% fatigue accumulation, +5% stamina burn rate
+				
+					If RR is below expected PRQ (poor ventilation), apply: −10% Accuracy, −10% Power, +10% VP strain[loss]	
+				[During player action] Activity level = self-select		
+						Each activity level maps to:
+						A % of MHR
+						A caloric multiplier
+						A stamina burn modifier
+						Example mapping:
+						Sedentary = 50–60% MHR
+						Light = 60–70% MHR
+						Moderate = 70–80% MHR
+						Hard = 80–90% MHR
+						Maximal = 90–100% MHR
+	
+	World Tracked Derived Stats -Age
+				     Body Temp:
+
+								Weight Distribution- 
+  
+	Base Weight generation based on height = 21.5 (BMI(median avg)) x (Height x Height) [sample of starting cal distribution: 21.5 BMI x (176cm x 176cm) = 665,984 k cals = 86.39 kg]
+	
+	Skeletal Weight = 12% Female body weight [12% BW x 665,984 k cals = 79,918.08 = ] 
+		          15% Male bodyweight    [15% BW x 665,984 k cals = 99,897.6 = 12.96 kg ] Internals/Static
+	   Organ weight = 25% of bodyweight      [25% BW x 665,984 k cals = 166,496 = 21.6 kg]  Internals/Static
+	Base Fat = 28% of bodyweight           [28% BW x 665,984 k cals = 186,475.52 = 24.19 kg] (3% Higher for women) Reserve
+	Base Muscle = 30% of bodyweight       [30% BW x 665,984 k cals = 199,795.2 = 25.92 kg] Converted
+        Base Fluid Comp = 2% of bodyweight     [2% BW x 665,984 k cals = 13,319.68 = 1.73 kg] Internals/Cannot exceed
+	Base burn rate Ratio = 3:1 [Muscle:Fat] for every 3 muscle cals burned: 1 cal of fat is burned [(3/.017) = approx. 176.5 turns]
+        
+	BMI Formula= [Weight/(Height x Height)] x 10,000
+
+								Tissue kcal Distribution- 
+			Tissue (1 kg)				Approx. Energy (kcal)				Primary Components
+			Fat					~7,700						Lipids (~85%), Water (~10-15%)
+			Bone					~2,450						Minerals, Collagen, Marrow (Fat)
+			Skin					~2,100						Proteins (Collagen/Elastin), Water
+			Muscle					~1,500						Water (~75%), Protein (~20%)
+
+
+											*Muscle Gain & Loss System*
+
+				MUSCLE GAIN
+	Triggered by: Caloric surplus + strenuous activity + high carry weight
+	
+	gain_modifier = (avg_daily_heavy_activity_kcal / 1000.0) + (avg_daily_carry_weight_kg)
+	
+	Hard cap: MUSCLE_CREATION_CAP_KCAL = 3500 kcal per day max muscle gain
+	
+	Logic:  Character must have surplus calories AND be performing heavy activity/carrying weight. 
+	The surplus is converted to muscle up to the daily cap.
+	Without activity stimulus, surplus goes to fat instead.
+
+				MUSCLE LOSS
+	Triggered by: Activity imbalance (sedentary > heavy) + moderate activity presence
+	
+	muscle_loss_factor = [avg_weekly_sedentary_minutes - avg_weekly_heavy_activity_minutes] × [avg_weekly_moderate_activity_minutes × 0.1]
+	
+	Logic: If character spends more time sedentary than doing heavy work, muscles atrophy.
+	The presence of moderate activity slows atrophy (0.1 multiplier reduces loss).
+	Pure sedentary (zero moderate activity) = maximum loss.
+	Balanced or heavy-focused weeks = no loss or potential gain. 
+
+				CALORIC CONVERSION
+	Muscle mass stored as:  current_converted_value_ccv_kcal (3500 kcal = 1 kg muscle)
+	Fat mass stored as: current_reserve_value_crv_kcal (7700 kcal = 1 kg fat)
+	
+	Deficit burn ratio: 3: 1 (Muscle: Fat) - muscles burned 3x faster than fat when in deficit
+
+			DAILY vs WEEKLY PROCESSING
+	Tick-level (short term: every hr): Handle immediate caloric balance (digestion vs burn)
+	Daily: Calculate activity stimulus for muscle gain potential
+	Weekly: Calculate activity pattern for muscle loss/atrophy
+
+			Activity Thirst Rate -
+	Resting In Heat - 2,541.67ml per hour-5.0 liters per hour in elite
+	Average: Most people lose 0.5–2.0 liters per hour.
+	Moderate Intensity: Roughly 1.0 liter (34 oz) per hour is common.
+	High Intensity/Endurance: 1.5-2.0 liters per hour Rates can exceed 2,500 ml–3.0 liters per hour in elite
+
+			Thirst-Lvls
+	Mild Thirst (1%–2% Loss): This is the initial "thirst threshold".
+	Strong Thirst (3%-4% Loss): Characterized by persistent, "very thirsty" feelings. Physical symptoms like dizziness, loss of appetite, and faintness often begin here.
+	Extreme Thirst (5%–6% Loss): The urge to drink becomes overwhelming. This level is often accompanied by headaches, significant fatigue, and flushing of the skin.
+	Severe Dehydration (10%+ Loss): thirst sensations may be overshadowed by life-threatening symptoms like delirium, seizures, and potential organ failure
+
+			Thirst-Type
+	Osmotic (Intracellular) Thirst: Triggered by ssalt and not enough water in your blood (e.g., after eating salty snacks).
+	Hypovolemic (Extracellular) Thirst:  Triggered by a decrease in total blood volume
+
+	The Satiety Signal: the brain "predicts" hydration and shuts off thirst signals within minutes of drinking. [Trigger signal to lower satiation Lvl on drinking before applying effects]
+
+
+
+							Low Body Fat (Jacked/Essential)		Average Body Fat (Athlete/Average)		High Body Fat (Obese)
+	High Muscle Mass (Jacked/Athletic)	          "Shredded" (Ideal Performer)	    	"Strongman" (Powerful/Heavy)			"Over-muscled Obese"
+						 Extremely defined, lean physique. Optimal for agility/speed tasks.	
+										   		Very strong, heavy frame, visible muscle definition but covered by a layer of fat. High Power/Stamina.	
+																		Extremely rare build in reality. High strength potential but heavily impaired by weight/fatigue mechanics.
+
+	Average Muscle Mass (Average/Acceptable)	  "Lean & Toned" (Fitness Model)   "Standard Build" (The Average NPC)	 "Typical Overweight"
+							Healthy, toned, non-bulky look. Good balance of all stats.	
+										     		The baseline character build (5 in all Attributes, 50 in all Stats). Balanced performance.	
+																Healthy muscle mass but mobility/stamina impacted by excess weight. Good for specific labor skills.
+	Low Muscle Mass (Below Average)			  "Skinny" (Ectomorph)	            "Skinny-Fat" (Sedentary)	         "Sedentary Obese" (High Risk)
+						 	  Very low strength/toughness. High potential for quickness/dexterity based on frame. High stamina burn rate due to lack of muscle mass.	
+										    		Normal body weight, but low strength/toughness due to lack of muscle engagement.	
+															S	ignificant penalties to physical stats (Strength, Endurance, Dexterity). High fatigue accumulation, susceptible to disease/damage.
+
+
+----Age Thresholds and Fatigue Accumulation System
+
+[System-Type: Innate-Mechanic][Effect: Lifespan-Modeling]
+
+[Age-Thresholds: Define brackets for AFP accumulation]
+*   [Age-Bracket: Prime [20-35] [Effect: No-Accumulation] [Rate: 0 AFP/day]]
+*   [Age-Bracket: Middle-Age [36-55] [Effect: Accumulation-Starts] [Rate: 1 AFP/week]]
+*   [Age-Bracket: Old [56-75] [Effect: Increased-Accumulation] [Rate: 1 AFP/day]]
+*   [Age-Bracket: Venerable [76+] [Effect: Critical-Accumulation] [Rate: 5+ AFP/day (GM-Discretion)]]
+
+[Fatigue-Mechanic: Cumulative Age Fatigue (CAF)]
+*   [Effect-of-AFP: For every [10 total AFPs] [Penalty-Value: -1 Max-Vigor-Points (VP)] & [Penalty-Value: -1 Constitution-Stat (WP+END)]]
+*   [Death-Condition: If [Max VP = 0] due to AFP accumulation, character death occurs [Death = Natural-Causes]]
+
+----- Illness System Factors & Formulas---------
+
+## I. Pathogen Properties (Randomly Generated Base Stats)
+
+These stats are inherent to the disease species and type.
+
+*   **Property Name** | **Description** | **Type/Range**
+*   :--- | :--- | :---
+*   Type | Viral or Bacterial | Enum/String (e.g., 'Viral', 'Bacterial')
+*   Species | Human, Animal, Plant | Enum/String
+*   Transmission | Airborne, BloodBorne, Contact, Food/Waterborne | Tags (multiple possible)
+*   ID50 (Infectious Dose) | The minimum load needed to establish infection (e.g., a count) | Integer
+*   Infection Rate (beta) | How aggressively it spreads in a population (for World simulation) | Float (e.g., 0.1 to 0.5)
+*   Duration (d) | How long a host is infectious (affects R0) | Time Unit (Turns/Hours/Days)
+*   Target Body Parts | Primary limbs/organs affected (e.g., Lungs, Stomach, Legs) | List of Body Parts
+*   Severity (Tier) | A multiplier for damage/fatigue accumulation rates | Float (e.g., 1x, 2x, 3x)
+
+## II. Character Tracking Variables
+
+These variables track the progression within an individual character.
+
+*   **Variable Name** | **Description** | **Update Logic**
+*   :--- | :--- | :---
+*   Infection_Load | Current viral or bacterial count within the character | Increases during growth phase, decreases with immunity/treatment.
+*   Infection_Stage | Incubation, Infectious, Symptomatic, Recovering | Based on elapsed time and Infection_Load.
+*   Time_Exposed | Total turns since initial exposure | Increments every turn/hour.
+*   Immunity_Level | Character's acquired resistance to this specific pathogen strain | Starts at 0, increases as they fight the infection.
+
+## III. Formulas for Interaction with Existing Mechanics
+
+The existing game stats (Constitution, Resilience, Toughness, Stamina) will modify the pathogen's effects.
+
+### A. Infection Check (Initial Exposure)
+
+When a character is exposed to the pathogen, roll a check against their defense stats compared to the pathogen's ID50.
+
+*   Infection_Chance = (Pathogen_ID50_Threshold / (Constitution + Resilience)) * Exposure_Severity
+
+### B. Disease Progression (Damage & Fatigue)
+
+*   **Body Part Damage:**
+    Damage_per_Turn = (Base_Pathogen_Severity * Infection_Load_Multiplier) / Target_Toughness
+
+*   **Fatigue Accumulation:**
+    New_Fatigue_Rate = Base_Fatigue_Rate * (1 + (Pathogen_Severity_Multiplier / Character_Stamina))
+
+### C. Recovery
+
+The character's immune system passively fights the infection using their stats, similar to the Drift mechanics.
+
+*   Recovery_Rate = (Constitution + Resilience) * Immunity_Level * Heal_Modifier
+
+
+-------Illness--------
+
+# Formulas
+
+## Load Required to Get Ill (Infectious Dose)
+
+*   Median Infectious Dose (ID50) Spearman–Kärber Method:
+    log ID50 = log(highest dilution giving 100% CPE) + 0.5 - (total number of test units showing CPE / number of test units per dilution)
+*   Multiplicity of Infection (MOI) (Cell Culture):
+    MOI = Number of viral particles used per well / Number of cells originally seeded in the well
+*   Plaque Assay Titer:
+    Titer (PFU/ml) = Plaques counted * (1 / dilution) * volume correction
+
+CPE(Cytopathic Effect) - The observable damage or morphological changes a virus causes to host cells in a culture.
+
+## Multiplier During Illness (Viral/Bacterial Growth)
+
+*   Viral Load (from PCR Ct value):
+    viral RNA copies per mL = 133.3333 * e^((37.933 - Ct) / 1.418)
+*   Bacterial Growth Rate (k) (generations/unit time):
+    k = log10(Nt / N0) / (0.301 * t)
+*   Bacterial Number (exponential growth):
+    Nt = N0 * 2^n
+    or
+    Nt = N t = N0 * 10^(Kt)
+    or
+    N t = N0 * e^(Kt)
+    (Where n is the number of generations, and K is the growth rate constant.)
+
+## Load Value for Passing It On (Transmission Threshold)
+
+*   Basic Reproduction Number (R0) (from transmission rate beta and removal rate gamma):
+    R0 = beta / gamma
+    (Alternatively: R0 = tau * c_bar * d (transmissibility tau, average contact rate c_bar, duration of infectiousness d))
+*   Basic Reproduction Number (from exponential growth rate r and generation time distribution g(tau)):
+    R0_hat = 1 / Integral[g(tau) * exp(-r*tau) d(tau)]
+*   Viral Dynamics Model (R0):
+    R0 = lambda * beta * k / (dT * dI * c)
+    (lambda = target cell production rate, beta = infection rate, k = virus production rate, dT = target cell death, dI = infected cell death, c = virus clearance rate.)
+
+# Formulas and Definitions (Reproduction Rate)
+
+## Basic Reproduction Number (R0)
+
+R0 is a theoretical, dimensionless number representing the average number of new infections caused by one infected person in a completely susceptible population with no interventions in place.
+
+*   **Formula 1:**
+    R0 = tau * c_bar * d
+    (tau = transmissibility; c_bar = average rate of contact; d = duration of infectiousness)
+*   **Formula 2 (from SIR model):**
+    R0 = beta / gamma
+    (beta = transmission rate; gamma = removal rate, or 1/d)
+
+## Effective Reproduction Number (Rt or Re)
+
+Rt measures the actual transmission potential of a disease at a specific time t in a  population, considering existing immunity levels, vaccination coverage, and ongoing control measures.
+
+*   **Formula:**
+    Rt = R0 * S/N
+    (S = number of susceptible individuals; N = total population size)
+
+### Interpretation
+
+*   If R0 or Rt > 1: disease continues to spread and grow.
+*   If R0 or Rt < 1: disease spread slows down and eventually dies out.
+
+# Illness Recovery Drift Formula
+
+This formula calculates the amount of Infection_Load that the character's immune system eliminates during a given time period (e.g., per turn or per hour), using the character's existing stats.
+
+*   **Infection_Load_Decrease** = MAX(1, (Current_Infection_Load / (Constitution + Resilience))) * (1 / (1 + (Time_Exposed / Recovery_Constant)))
+
+### Variables
+
+| Variable Name | Description |
+| :--- | :--- |
+| **`Infection_Load_Decrease`** | The amount to subtract from the Infection_Load each tick. |
+| **`Current_Infection_Load`** | The current magnitude of the pathogen in the body. |
+| **`Constitution`** | A core character stat (Willpower + Endurance). |
+| **`Resilience`** | A core character stat (Willpower + Perception). |
+| **`Time_Exposed`** | Total turns since initial exposure began. |
+| **`Recovery_Constant`** | A high value (e.g., 9,000 turns) that governs the rate of recovery over time. |
+
+
+
+						-Skills -[Associated/trained Attributes] * = updated[Base  Skills train -Knowledge &  Proficiency except for Learning(uncapped theory only)]
+						Skills increase yield and efficency
+
+	Combat Skills (Overall Lvl-> Decrease Task-time(Mod), Increase Hit-chance = .5% per lvl)- (Mod) = Must be using that skill]
+
+			Tier 1 (general skill)= [Striking (general fighting)(Accuracy, Power = .5% per lvl), Ranged,(Accuracy, Toughness = .5% per lvl)],[Grappling,(Power, Toughness = .5% per lvl)]
+				Weapon Skills [One-handed Fighting, Two-Handed Fighting, Dual Wielding (incl. Sword & Shield), Polearm, Blunt Weapon Fighting, (Power (Mod)= .5% per lvl)]
+        		Tier 2 (speific skill)= [Striking Skills= Punching, Kicking, Footwork [Dodge/evasion(Evasion-Rate = .5% per lvl)]], [Grappling Skills = Throws, Takedowns, Holds] 
+				[Weapon Skills = Knife, Short Knife, Long Knife, Sword, Short Sword, Long Sword, Thrusting Sword, Sickle, Axe, Hammer, Club, Staff, Javelin, Spear, Poleaxe, Spearsword, Glaive, Pike, Shield]
+				[Ranged Skills = Slings, Short bow, Bow, Longbow, Warbow, Crossbow, Arbalest, Hand-Cannon, Musket/Arquebus, Rifle, Pistol, Artillery (Cannon, Catapult[Trebuchet, Onager/Mangonel], Ballista)]
+			Tier 3 (Body cultivation) = Limb Integrity (Toughness  (Mod)= .5% per lvl)]
+
+	Combat Stats -  Power 17%, Accuracy 17%, Stamina 16.5%, Quickness 16.5%, Muscle Memory 16.5%, Toughness 16.5%
+
+	Combat Learning Skills: Phsysics, Anatomy, Kinesiology, Mathematics, Geometry, Cultivation
+
+	Survival Skills (Overall Lvl-> Decrease Task-time(Mod), Increase Constitution = .5% per lvl)- 
+
+			Conditioning [(Cultivation only [(Heat, Cold,] Body cultivator only [Pierce Res, Slash Res, Impact Res,Poison: Corrosive, Irritant, Systemic,](Toughness, Resilience = .5% per lvl))], 
+					Medical, Hunting, Trapping, Gathering, Scavenging [Resilience = .5% per lvl]
+			
+			Resistances are added during composite interaction Formulas/ combat rolls[See Formulas]
+			For Temp-Resistance Calcultion - Toughness + Resilience = %Temp-Resistance to Temperature change/Thermal Homeostasis Rate
+
+			Temp->	Passive Normalization (The Drift)
+				 Ambient Temperature (default 75 degrees F).
+
+			    ->	The Drift Calculation:
+				Drift = MAX(5, |CurrentTemp - AmbientTemp| / 50) × (1 / (1 + ExposureLength_Turns / NormalizationConstant = 9,000 turns (3 hours)))
+				 [1 + ExposureLength_Turns = +1 skillpoint)
+
+			Poison/CorrosionRes-> avg Cell turn over rate = 7 years (base)-> 2,555 days (x 3,500 kcal CREATION per day)-> 8,942,500 kcals (x Mass)(needed to BEGIN regrowing a Completey missing body part)
+			Resistance = Abillity for cells to repair vs damage incurred, Reduces required kcal to resist decay
+			
+			Poison Potency Formula -LD50 = (ED50 / 3) * Wm * 10^-4 mg/kg
+				ED50: The effective dose for 50% of the population.
+				Wm: The individual's weight in grams.
+
+			Corrosion Potency Formula -Corrosion Rate (mm/y) = 87.6 * (W / (D * A * T))
+				W: Weight loss in milligrams., D: Material density in grams per cubic centimeter., A: Area of the sample in square centimeters.
+				T: Time of exposure in hours., 87.6: A unit conversion constant.
+
+			Poison_Damage_Per_Turn = (Poison_Potency / Target_Mass) × (1 - Target_Poison_Res%)
+			Cell_Damage_Per_Turn = (Poison_Potency / Target_Mass) × Corrosion_Rate × (1 - Target_Poison_Res%) × Time_Exposed
+
+			Edge Res, Impact Res = [(DMG ED/KD) recieved]/100
+						DMG= Lifetime [only tracked after becoming Body Cultivator]
+
+	Survival Stats-  Resilience 25%, Toughness 25%, Stamina 15%, Accuracy 25%, Constitution 10% 
+
+	Survival Learning Skills: Physics, Anatomy, Biology, Geography, Geometry, Chemistry
+
+	Agriculture Skills [Decrease Task-time (Mod)= .5% per lvl][Increase Yield/Quality lvl= .5% per lvl]- (Quality lvl = Item creation method Skill-lvl)
+
+			Animal Husbandry[Stamina, Muscle Memory = .5% per lvl], Aquaculture, Horticulture (Fruit & Vegs), Floriculture (Florals), Forestry (Logging)[Stamina = .5% per lvl], Apiculture (Beekeping)[Toughness = .5% per lvl], Food Processing 
+
+	Agriculture Stats- Power 30%, Muscle Memory 10%, Toughness 20%, Stamina 40%
+
+	Agriculture Learning Skills: Chemistry, Geometry, Biology, Geography, Cooking
+
+	Stoneworking Skills  [Decrease Task-time (Mod)= .5% per lvl][Increase Yield/Quality lvl= .5% per lvl]- 
+
+			Quarrying (Extraction)[Power, Stamina = .5% per lvl], Cutting/Shaping [Power, Accuracy = .5% per lvl], Carving [Power, Accuracy, Stamina = .5% per lvl], Masonry [Stamina, Accuracy = .5% per lvl] (Stone-laying & Brickwork) 
+
+	Stoneworking Stats-  Power 30%, Accuracy 30%, Stamina 40%
+
+	Stoneworking Learning Skills: Physics, Geometry, Geography, Artistry
+
+	Roguery Skills [Decrease Task-time (Mod)= .5% per lvl] - Lockpicking[Accuracy = .5% per lvl], Stealth[Decrease Task-time (Mod) = .5% per lvl], Deception/Blending[Charisma = .5% per lvl], Larceny[Decrease Task-time (Mod) = .5% per lvl], 
+
+	Roguery Stats- Accuracy 35%, Charisma 35%, Aptitude 30%
+
+	Roguery Learning Skills: Physics, Culture, History, Logos, Pathos
+
+	Athletics Skills (Overall Lvl-> Increase Quickness = .5% per lvl)- 
+
+			[Travel[Stamina, Quickness = .5% per lvl], [Jumping[Power, Stamina = .5% per lvl],[Throwning, Weightlifting, Swimming[Power, Stamina = .5% per lvl]]
+	
+	Athletics Stats-  Power 20%, Accuracy 15%, Stamina 15%, Quickness 20%, Muscle Memory 10%, Resilience 10%, Charisma 10%
+
+	Athletics Learning Skills: Physics, Kinesiology, Anatomy, Biology,
+
+	Metallurgy Skills [Smelting][Decrease Task-time (Mod)= .5% per lvl][Increase Yield/Quality lvl= .5% per lvl]- 
+
+			Processing (Crushing & Grinding [seperating rock from ore])[Power, Stamina = .5% per lvl], Extraction [Toughness, Resilience = .5% per lvl], Refining (Alloy creation, Tempering)[Power, Stamina, Toughness, Muscle Memory 10% = .5% per lvl]
+
+	Metallurgy Stats- Power 22.5%, Stamina 22.5%, Muscle Memory 10%, Toughness 22.5%, Resilience 22.5%
+
+	Metallurgy Learning Skills: Chemistry, Physics, Geology, Mathematics,
+
+	Learning Skills [Decrease Task-time (Mod)= .5% per lvl] - [train Potential & Knowledge ][Learning Proficency Skill Lvl = Learning Theoretical Skill Lvl][Learning skill = Max Magic Magnitude Threshold]
+		Teaching [Expression of Learning skill], Farming, Cooking, Cuisine [Non-PC created recipes learned], 
+		History [World], Culture[History[Saga, Language, Religion (Knowledge, Piety), Musicality (Composition, Theory), Physics, Geometry, Anatomy, Biology (Terra, Astra, Mara), Mathematics, Kinesiology, 
+		Geography (increased by exploring (going) or learning about new places), Mercantile [Trading], Performance, Geology, 
+		Arcane (Elemental[Reaction Force], Universal[Law of Domains], Alchemical(internal)[(Neidan)], Release, Rituals, Formations, Entites), 
+		Thinking/Speech: Logos [logic], Pathos [emotion], Ethos [credibility (appeal to authority or consensus over reliability)](Npc only: Tactics, Strategy, Leadership)
+			[Abstract skills that require increasing levels of understanding - all other skills  have learning skill component]Theorectical Exp to Associated skill = .5% per lvl]
+
+	Learning Stats - Aptitude
+
+	Artistry Skills [Smithing/Crafting][Decrease Task-time (Mod)= .5% per lvl] -
+
+		 Goodsmithing:[Blacksmithing, Weaponsmithing, Armorsmithing, Goldsmithing, Silversmithing, Toolsmithing, Jewel-crafting, Tannery, Leather-working, Woodworking, Weaving, Pottery, Glassmaking,[Stamina, Accuracy = .5% per lvl]] Literacy[Cartography, Calligraphy,[Accuracy = .5% per lvl]] Musicality [String, Percussion, Wind [Stamina, Accuracy, Aptitude = .5% per lvl]],[Alchemy(External)[(Waidan) [Accuracy, Aptitude = .5% per lvl]]
+
+	Artistry Stats - Aptitude 50%, Accuracy 40%, Stamina 10%
+
+	Artistry Learning Skills: Chemistry, Physics, Geology, Mathematics, Geometry, History, Culture, Language, Religion, Performance, Musicality
+
+	Speech Skills (Active)[Effect (Mod)= .5% per lvl] - 
+
+		Positive-Speech, Negative-Speech, Bartering, Intimidation, Coercion, Persuasion, Argumentaion, Commanding (Ordering), Negotiation, Interrogation, Inquiry, Narration, Description, Exposition, Prasising, Pleading, Mockery[Charisma, Aptitude = .5% per lvl]
+
+	Speech Stats - Aptitude 50%, Charisma 50%
+
+	Speech Learning Skills: Mercantile, Mathematics, Biology, History, Culture, Language, Religion, Performance, Leadership, Pathos, Logos, Ethos, Teaching
+
+	Control Skills[Decrease Task-time (Mod)= .5% per lvl, Constitution = .5% per lvl] - 
+			 Qi Absorption: [Meditation (Qi Absorbption-Rate), Breathing(Qi Exhange-Rate[air->blood]), Meridians(Qi Movement-Rate), Chakras (Qi Movement-Rate, Qi Absorbption-Rate)]= .5% per lvl] , 
+			 Qi OutPut: [Force[spell-output] = .5% per lvl], Artifact[Aptitude = .5% per lvl],]
+			 Qi Nature: [Law of Nature(Reaction Force) [Laws: (Main/Type 1 Chakra)[Fire, Water, Earth, Air, Lightning, Ice, Metal, Wood]
+			 	    [Law of Syntheis(Manifestations:Type 2 Chakra)[Crystal, Mist, Blood, Lava, Corrosion, Swift, Glass, Smoke, Stone, Steam, Flash, Sand, Sound, Magnetism, Fluid, Pressure, Plasma, Miasma, Gravity, Swallow]],
+			 	    [Temporal Law: Divine Sense (Time), Void Mastery (Space),]
+			 	    [Law of Domains [Domain Creation (Creation), Law Comprehension (Destruction), Formations/Arrays, Dieification/Faith]] [Constitution = .5% per lvl]
+		         Qi-Refinement[Meridians[Size: start= 33μm, elasticity = .5% per lvl]], Chakras[Qi density, HeatPressure = .5% per lvl]], Dantian[Elasticity = .5% per lvl]], Golden Core; Grade [Luster/Reflectance = .5% per lvl]], Nascent Soul[Mass = .5% per lvl]], 
+			 
+	Control Stats - Constitution 50%, Aptitude 25%, Resilience 12.5%, Toughness 12.5% 
+
+	Control Learning Skills: Arcane, Mathematics, Biology, History, Culture, Language, Religion, Performance, Musicality, Anatomy, Geology, Geometry
+
+		Control-trackedparts - Dantian - [size(base, current), capacity(current, max)], Chakras - initTemp, current temp, Meridians - current volume, max volume , Golden-Core- Refractive index of the material, Nascent-kcal count(Qi)
+
+				Skill_Method/Fuction[Control]: Control is measure of one ability to manipulate Aether. 
+
+Known/Unknown Skills [only trained until learned]- Reading, Writing
+
+				
+				Handling_Experience - 
+Flat gain Rate (G) = 5
+
+(M_tier)
+Major Skill (3) = x1.20 exp gain
+Minor Skill (3)	= x1.15 exp gain
+Misc/Hobby  (3)	= x1.08 exp gain
+
+Potential (P) = Skill Potential (Represents the character's innate theoretical application of a skill){Can be reduced to lvl 1 = 0 exp (capped min), Potential is increased with theorectical skill,Theorectical skill is always trained}[P = K_level - Φ_level]			
+Knowledge  (K) = TheoreticalSkill(Represents the character's conceptual understading of a skill)[Caps proficiency][TheoreticalSkill_XP_Gain_Modifier = Aptitude * Potential_Multiplier{based on major and minor skill selection}][ΔK = G * Aptitude * M_tier]
+Proficiency (Φ) = PraticalSkill (Represents the character's practical applibility of a skill)[As Prof. rises/ Potential falls][ProficiencySkill_XP_Gain_Modifier = Aptitude * TheoreticalSkill{based on major and minor skill selection}][ΔΦ = G * Aptitude * (1 + P)]
+
+Potential Depletion = [PotentialLoss = Potential Exp - Proficiency Gained Exp][ΔP = ΔK - ΔΦ] 	
+Exponential_Exp = [XP_Needed_For_Next_Level = Base_XP * (Level * Exponential_Factor)][XP_req = Base_XP * (n * E)]
+Practical Skill Decay = P_Loss = Base_Decay_Rate * (1 - (Muscle_Memory_Score / 100))[ΔΦ_rust = -Base_Decay * (1 - (MM / 100))]
+
+
+================================================================================
+                              SLEEP SYSTEM
+                    (CDDA + Elona Hybrid Implementation)
+================================================================================
+
+I. NEW TRACKED VARIABLES
+--------------------------------------------------------------------------------
+var tiredness:  float = 0.0           # 0-100 scale
+var sleep_state: String = "Awake"    # Awake, Light, Deep, REM
+var sleep_cycle_position: int = 0    # turns into current sleep cycle
+var dream_type: String = "None"      # None, Neutral, Pleasant, Nightmare, Prophetic, Demonic, Memory
+var last_full_rest: int = 0          # turn count of last complete cycle
+var grogginess: float = 0.0          # post-wake penalty percentage
+var grogginess_duration:  int = 0     # turns remaining for grogginess
+
+================================================================================
+
+II. TIREDNESS ACCUMULATION (CIRCADIAN SYSTEM)
+--------------------------------------------------------------------------------
+
+A. Base Accumulation Formula: 
+   Tiredness_Gain_Per_Tick = (1 / 3000) × Activity_Modifier × Fatigue_Modifier
+
+   Activity_Modifiers:
+   - Sedentary:     ×0.75
+   - Light:        ×1.0
+   - Moderate:     ×1.25
+   - Heavy:        ×1.5
+   - Maximal:      ×2.0
+
+   Fatigue_Modifier:
+   - IF Fatigue > 50% Max_Stamina THEN ×2.0
+   - ELSE ×1.0
+
+B. Tiredness Threshold Effects: 
+
+   | Tiredness % | State          | Effects                                              |
+   |-------------|----------------|------------------------------------------------------|
+   | 0-25%       | Alert          | No penalty                                           |
+   | 26-50%      | Tired          | -10% Accuracy, -10% Aptitude                         |
+   | 51-75%      | Exhausted      | -25% all mental stats, -15% physical stats, Yawning |
+   | 76-90%      | Sleep-Deprived | -40% all stats, microsleep risk, hallucination chance|
+   | 91-100%     | Collapse       | Forced unconsciousness, vulnerability state          |
+
+   Microsleep Risk (76-90%):
+   - Roll every 500 turns:  IF Random(100) < (Tiredness - 75) THEN blackout for 10-50 turns
+   - During blackout: Cannot act, auto-fail perception checks, vulnerable
+
+   Hallucination Chance (76-90%):
+   - Roll every 1000 turns: IF Random(100) < (Tiredness - 70) THEN ESP takes 5 damage
+   - Manifests as false sensory input (phantom sounds, movement in periphery)
+
+================================================================================
+
+III. SLEEP STATES & RESTORATION RATES
+--------------------------------------------------------------------------------
+
+A. Sleep State Multipliers: 
+
+   | State        | Stamina Regen | Fatigue Decay    | Tiredness Decay  | HP Regen |
+   |--------------|---------------|------------------|------------------|----------|
+   | Awake-Rest   | ×1.0 (base)   | -1 per 50 turns  | 0 (accumulates)  | ×1.0     |
+   | Light Sleep  | ×2.0          | -2 per 50 turns  | -1 per 100 turns | ×1.5     |
+   | Deep Sleep   | ×4.0          | -4 per 50 turns  | -3 per 100 turns | ×3.0     |
+   | REM Sleep    | ×1.5          | -1 per 50 turns  | -2 per 100 turns | ×1.0     |
+
+B. Full Sleep Cycle Structure (24000 turns = 8 hours):
+
+   | Phase        | Turn Range      | Duration | Primary Function           |
+   |--------------|-----------------|----------|----------------------------|
+   | Light Sleep  | 0-3000          | 1 hour   | Transition in              |
+   | Deep Sleep   | 3000-15000      | 4 hours  | Physical restoration       |
+   | REM Sleep    | 15000-21000     | 2 hours  | Psyche/mental restoration  |
+   | Light Sleep  | 21000-24000     | 1 hour   | Transition out             |
+
+   Cycle Completion Bonus:
+   - Full cycle completed:  Tiredness = 0, +5 Courage, +5 Confidence
+   - Partial cycle (>50%): Tiredness = 25%, no morale bonus
+   - Partial cycle (<50%): Tiredness = 50%, -5 Courage, -5 Confidence
+
+================================================================================
+
+IV.  SLEEP INTERRUPTION & GROGGINESS
+--------------------------------------------------------------------------------
+
+A.  Interruption Effects by Phase:
+
+   | Interrupted During | Grogginess % | Stat Penalty | Duration (turns) |
+   |--------------------|--------------|--------------|------------------|
+   | Light Sleep        | 25%          | -10% all     | 300 (6 min)      |
+   | Deep Sleep         | 50%          | -20% all     | 900 (18 min)     |
+   | REM Sleep          | 35%          | -15% all     | 600 (12 min)     |
+
+B. REM Interruption Special Damage:
+   ESP_Damage = Tiredness_At_Sleep_Start / 10
+   Random_Sense += 15 Hyperstimulation
+   Rationale -= 10 (shifts toward negative/irritability)
+
+C. Grogginess Decay:
+   Grogginess_Per_Tick = -Grogginess / Grogginess_Duration
+   (Linear decay over duration)
+
+================================================================================
+
+V.  DREAM STATES & PSYCHE EFFECTS
+--------------------------------------------------------------------------------
+
+A. Dream Type Determination (rolled at REM phase entry):
+
+   Base Roll = Random(100)
+
+   | Condition                                      | Dream Type   | Roll Range |
+   |------------------------------------------------|--------------|------------|
+   | Active curse OR failed cultivation attempt     | Demonic      | Auto       |
+   | Morale (Courage + Confidence) < -50            | Nightmare    | 0-60       |
+   | Morale (Courage + Confidence) < -50            | Neutral      | 61-100     |
+   | Morale between -50 and +50                     | Neutral      | 0-70       |
+   | Morale between -50 and +50                     | Memory       | 71-85      |
+   | Morale between -50 and +50                     | Pleasant     | 86-100     |
+   | Morale > +50                                   | Pleasant     | 0-60       |
+   | Morale > +50                                   | Prophetic*   | 61-75      |
+   | Morale > +50                                   | Memory       | 76-100     |
+
+   *Prophetic requires:  ESP > 75% max AND Arcane skill > 50
+
+B. Dream Effects Table:
+
+   | Dream Type | Rationale Effect | ESP Effect      | Morale Effect        | Special                    |
+   |------------|------------------|-----------------|----------------------|----------------------------|
+   | Neutral    | Drift toward 0   | +5 recovery     | None                 | None                       |
+   | Pleasant   | +5 toward pos.    | +10 recovery    | +10 Courage, +5 Conf | None                       |
+   | Nightmare  | -10 toward neg.  | -5 (damage)     | -15 Courage, -10 Conf| Wake check each 1000 turns |
+   | Prophetic  | No change        | +15 recovery    | +5 Confidence        | UEG event preview generated|
+   | Demonic    | See combat below | See combat      | -20 both             | Must resolve dream combat  |
+   | Memory     | +5 toward pos.   | No change       | +5 Confidence        | +5% Muscle Memory to skill*|
+
+   *Memory Replay:  Applies to highest-trained skill from previous wake period
+
+C. Demonic Intrusion Resolution: 
+
+   Dream_Attack_Value = Event_Severity × (100 - Resilience) / 100
+   ESP_Damage = Dream_Attack_Value - (Constitution / 10)
+   
+   IF ESP_Damage > Current_ESP THEN: 
+       Forced_Wake = TRUE
+       sleep_state = "Awake"
+       Apply Terrified_State (Courage = -100 for 500 turns)
+       Tiredness += 25
+   ELSE:
+       ESP -= ESP_Damage
+       Continue REM phase
+       On wake: -10 Courage, -10 Confidence, memory of threat
+
+D.  Nightmare Wake Check:
+   Every 1000 turns during Nightmare: 
+   IF Random(100) < (50 - Resilience/2) THEN:
+       Forced_Wake = TRUE
+       Apply REM Interruption penalties
+       Tiredness += 15
+
+================================================================================
+
+VI. SYSTEM INTEGRATIONS
+--------------------------------------------------------------------------------
+
+A.  Metabolism Integration:
+   - Sleep activity level = Sedentary (BMR ×1.0)
+   - Digestion rate = 50% of normal during all sleep states
+   - Caloric burn continues at sedentary rate
+   - Thirst accumulation = 50% of normal rate
+
+B. Combat Integration:
+   - Cannot initiate combat while asleep
+   - IF attacked while asleep: 
+       - Attacker gets auto-hit on first strike
+       - Defender wakes in Surprised state (cannot act for 1 turn)
+       - Apply interruption grogginess based on current sleep phase
+   - Sleeping = +50% to enemy hit chance until fully awake
+
+C. Magic Integration:
+   - Continuous spells drain VP during sleep at normal rate
+   - Meditation can substitute for Light Sleep (not Deep/REM)
+   - Cultivation breakthrough attempts require:  Tiredness < 25%
+   - Some rituals require sleep-state entry (Prophetic dream triggers)
+
+D. Social Integration:
+   - Sleeping in public = vulnerability flag for theft/assassination AI
+   - Sleeping near allies (same tile/adjacent): +10 Morale on wake
+   - Sleeping in hostile territory:  Nightmare chance +20%
+   - Witnessed sleeping = potential ambush event generation
+
+E. Illness Integration:
+   - Deep Sleep: Immunity effectiveness +25%
+   - Infection_Load_Decrease ×1.5 during Deep Sleep
+   - IF sick:  Tiredness accumulation ×1.5 while awake
+   - Fever state: Cannot enter Deep Sleep (Light/REM only)
+
+F. Morale Integration:
+   - Full rest cycle:  +5 Courage, +5 Confidence
+   - Interrupted cycle: -10 Courage, -10 Confidence
+   - Sleep deprivation (>75% Tiredness): Morale decay -1 per 500 turns
+   - Pleasant dream: +10 Courage, +5 Confidence
+   - Nightmare: -15 Courage, -10 Confidence
+
+================================================================================
+
+VII. LOCATION & COMFORT MODIFIERS
+--------------------------------------------------------------------------------
+
+A. Surface Comfort Levels:
+
+   | Surface Type       | Comfort Level | Sleep Quality Modifier |
+   |--------------------|---------------|------------------------|
+   | Stone/Hard Ground  | 0             | ×0.5 all restoration   |
+   | Dirt/Grass         | 1             | ×0.75 all restoration  |
+   | Bedroll/Mat        | 2             | ×1.0 (base)            |
+   | Straw Bed          | 3             | ×1.15 all restoration  |
+   | Mattress           | 4             | ×1.25 all restoration  |
+   | Quality Bed        | 5             | ×1.5 all restoration   |
+
+B. Environmental Modifiers:
+
+   | Condition              | Effect                                    |
+   |------------------------|-------------------------------------------|
+   | Sheltered (indoors)    | +10% restoration rates                    |
+   | Temperature comfortable| No modifier                               |
+   | Too hot (>30°C)        | -20% Deep Sleep time, +Tiredness on wake  |
+   | Too cold (<10°C)       | -30% all restoration, wake checks         |
+   | Noisy environment      | -25% REM time, Memory dream impossible    |
+   | Unsafe location        | Cannot enter Deep Sleep, Light/REM only   |
+   | Sacred/blessed ground  | Demonic dream impossible, +20% ESP recovery|
+
+C. Combined Formula: 
+   Effective_Restoration = Base_Rate × Comfort_Modifier × Environment_Modifier
+
+================================================================================
+
+VIII. SPECIAL CASES
+--------------------------------------------------------------------------------
+
+A. Forced Sleep (non-Tiredness sources):
+   - Sleep spells:  Bypass Tiredness, enter Light Sleep directly
+   - Poison (sedative): Tiredness +50 immediate, drowsy state
+   - Knockout (combat): Unconscious state (not sleep, no restoration)
+   - Alcohol/drugs: Modified sleep (no REM, Deep Sleep only)
+
+B. Cultivator Sleep Modifications:
+   | Cultivation Stage    | Tiredness Accumulation | Sleep Requirement |
+   |----------------------|------------------------|-------------------|
+   | Mortal               | ×1.0                   | Full cycle needed |
+   | Qi Condensation      | ×0.95                  | Full cycle needed |
+   | Foundation Est.      | ×0.85                  | 75% cycle sufficient|
+   | Golden Core          | ×0.70                  | 50% cycle sufficient|
+   | Nascent Soul         | ×0.50                  | 25% cycle sufficient|
+   | Spirit Transformation| ×0.25                  | Meditation substitutes|
+   | Void Refinement+     | ×0.10                  | Sleep optional     |
+
+   Meditation Substitution (Spirit Transformation+):
+   - 1 hour meditation = 2 hours Light Sleep equivalent
+   - Cannot substitute Deep Sleep restoration
+   - Psyche restoration requires actual REM or special cultivation techniques
+
+C. Party Sleep Logic:
+   - When PC initiates sleep: Prompt for party behavior
+   - Options: 
+       1. "All Sleep" - Party sleeps simultaneously (ambush vulnerable)
+       2. "Set Watch" - Select companions for watch rotation
+       3. "I'll Sleep Alone" - Companions remain awake (their Tiredness accumulates)
+   
+   Watch Rotation: 
+   - Watcher cannot restore Tiredness
+   - Watcher Perception checks every 500 turns for threats
+   - IF threat detected: Watcher wakes party (reduced grogginess, -50%)
+   - Watch shifts:  Auto-rotate every 8000 turns (configurable)
+
+================================================================================
+
+IX.  FORMULAS SUMMARY
+--------------------------------------------------------------------------------
+
+Tiredness_Accumulation: 
+    ΔTiredness = (1/3000) × Activity_Mod × Fatigue_Mod × Cultivation_Mod
+
+Restoration_Rate:
+    Effective_Rate = Base_Rate × Sleep_State_Mult × Comfort_Mod × Environment_Mod
+
+Grogginess_Application:
+    Current_Stat = Base_Stat × (1 - Grogginess/100)
+    Grogginess_Decay = Grogginess / Grogginess_Duration per turn
+
+Dream_Attack_Resolution:
+    Dream_Attack = Event_Severity × (100 - Resilience) / 100
+    ESP_Damage = MAX(0, Dream_Attack - Constitution/10)
+
+Sleep_Quality_Score:
+    Quality = (Deep_Sleep_Time/12000 × 0.5) + (REM_Time/6000 × 0.3) + (Comfort × 0.2)
+    IF Quality > 0.8 THEN Full_Rest_Bonus applies
+
+================================================================================
+END SLEEP SYSTEM SPECIFICATION
+================================================================================
+
+
+
+
+
+
+			Notes-
+			Tile-Size
+	tile_size: Vector2 = Vector2(32, 16), = 1 Square meter
+							  
+
+		 # --- TIME CONSTANTS (1 game turn = 1.2 sec) ---
+	var total_turns_passed: int = 0
+	const TURN_DURATION_REAL_SECONDS: float = 1.2
+	const TURNS_PER_MINUTE: int = 50 
+	const TURNS_PER_HOUR: int = 3000
+	const TURNS_PER_DAY: int = 72000
+	const TURNS_PER_WEEK: int = TURNS_PER_DAY * 7      # 504,000 turns
+	const TURNS_PER_2_WEEKS: int = TURNS_PER_WEEK * 2 # 1,008,000 turns
+	const TURNS_PER_MONTH: int = TURNS_PER_DAY * 30    # 2,160,000 turns
+
+	(in game day 12 am- 11:59/12am, game cycle (daily updates) 5am)
+
+	World design note: Z-layer 6 tiles vertical. (Z0) 2 for ground lvl, and jumpable height. (Z1) 2 for underground storage/housing. (Z2)2 high for any levitation/flight effects that have 
+
+	Map Total Dimensions Width: \(192\text{\ tiles}\times 32\text{\ px}=\mathbf{6,144}\text{\ pixels}\)Height: \(192\text{\ tiles}\times 16\text{\ px}=\mathbf{3,072}\text{\ pixels}\) 
+	
+	The World Hierarchical Scale
+	Active (Embark) Tile: The smallest unit where actual characters and items exist.
+	Local Block: A 48 x 48 cluster of active tiles.
+	Region Tile: A 16 x 16 cluster of Local Blocks. This means one Region Tile contains 768 x 768 individual active tiles. 
+
+
+	Combat allows for as many move selections as the player wants since each has a time cost. A simple end turn button handles any issues. If weapon unsheated/fists up = Combat state
+	Combat button = Armed/unarmed
+	End turn = execute-perform loaded actions, 
+	   	sheathe weapon/put fists down - ends combat, 
+	   	Armed/Unarmed - change from fist to selected equipped weapon or vise versa 
+[The ai can always calculate 2 moves, because interruptions allow for new selection.
+*for Ai[Opposing Armies/Parties Avg = Mortal Enemy before any social modifiers are weighted. vs Mortal Enemy Behavior (Base)= will kill if legal]]
+  
+	Combat States- [Z axis position when not standing- Inflicted/Afflicted: Knocked Down [chartacter on ground], Inflicted: Afflicted: Low Float/ed [floating/falling between midpoint and ground lvl], Inflicted/Afflicted:High float/ed [floating/falling from mid-point or above],]
+ 
+									 Hit-Chance & Evasion calc.-
+	* Both are expressed as percentages out of a 100% chance. (a base characters Evasion of ([10(Acc)+10(Agile)] x .01 = .20 or a 20% Base evasion rate)
+	* For the static combat calc [Hit-Chance]-[Evasion] = X if X = 0, there is no chance to dodge and damage is immediately calculated. *this calc is representative of 2 stationary combatants.
+	* [Example of regular Hit-Evade calc before die roll for chance] = Attacker = [Hit-Chance + Spatial modifier]-[Evasion + Spatial modifier] = X,
+                                                                   Attacker Advantage: If X > 0 the Attacker has an  H% [percent conversion [(1-X) x 100 = Y percent chance to hit]]. a 1d100 die is rolled and the number rolled (R) must be R <(Less than)/(or)=(equal to) Y to hit (go to damage calc)
+								   Defender Advantage: If X < 0 the Defender has an D% [percent conversion 1a = [((-1) * X) x 100 = A] percent chance to chance to dodge]. a 1d100 die is rolled and the number rolled (R) must be R <(less than)/(or)=(equal to) A to dodge (skip damage calc)
+								   
+								 	Formula ,step 1 = [Attacker - Defender] = X, X = 0 (no advantage, calc dmg), X > 0 (Attacker advantage) , X < 0 (Defender Advantage)
+										 step 2 =  Die roll for success or fail 
+										 step 3 = After a failed advantage roll, a disadvantage roll is performed. (if Defender has adv. and fails to dodge, a roll for hit chance is initiated)
+                                                                                           Disavntage formula [[(1s-X) x 100]-25% = Y] (R) must be R <(Less than)/(or)=(equal to) Y to hit (go to damage calc or skip is dodging)
+
+	[Pc Action: Rest vs Meditate: Rest- a gen. action to recover stamina. (Gains bonus from sitting, sitting supported, sitting shaded(under canopy)/when applicable, Laying (infers supported bonus),surface comfort lvl )
+				Meditate - gen action for ki-formation (confers rest status for Cultivators) - Action for Qigong (Breathe Control)- trains (Control Skills)[Skill name: Jitsu-Jutsu]]		
+     
+			Height and Weight Chart (Adults)
+This table provides general weight ranges for various heights in metric units, corresponding to the BMI categories above. 
+
+Height (cm) 	Height (ft/in)	Healthy Weight (BMI 18.5-24.9) (kg)	Overweight (BMI 25-29.9) (kg)
+147 cm	             4' 10"	         45 – 57 kg	                         58 – 65 kg
+152 cm	             5' 0"	         48 – 60 kg	                         61 – 69 kg
+157 cm	             5' 2"	         51 – 64 kg	                         65 – 73 kg
+163 cm	             5' 4"	         54 – 68 kg	                         69 – 80 kg
+168 cm	             5' 6"	         57 – 72 kg	                         73 – 86 kg
+173 cm	             5' 8"	         61 – 76 kg	                         77 – 90 kg
+178 cm	             5' 10"	         65 – 82 kg	                         83 – 98 kg
+183 cm	             6' 0"	         68 – 87 kg	                         88 – 104 kg
+188 cm	             6' 2"	         71 – 92 kg	                         93 – 110 kg
+
+	General Healthy Body Fat Ranges (ACE Guidelines) 
+
+Instead of relying strictly on somatotype, health professionals use general body fat percentage charts to assess health risks. 
+
+Classification 	Women (% fat)	Men (% fat)
+Essential Fat	10–13%	        2–5%
+Jacked	        14–20%	        6–13%
+Athlete 	21–24%	        14–17%
+Average 	25–31%	        18–24%
+Obese	        ≥ 32%           ≥ 25%
+
+Below is a dual-metric chart displaying typical Skeletal Muscle Mass (SMM) percentages and Body Fat (BF) percentages for adults across different builds. These percentages are general estimates and can vary by age, sex, and height.
+Build Description	Men (% Skeletal Muscle)	Women (% Skeletal Muscle)	Men (% Body Fat)	Women (% Body Fat)
+"Jacked" / Bodybuilder	          ~45%+	                 ~35%+	                   < 9%	                   < 15%
+Athletic/Fit	                  ~40–44%	         ~32–34%	           10–17%	           14–20%
+Average/Acceptable	          ~36–40%	         ~28–32%	           18–24%	           25–31%
+Obese	                           < 36%	         < 28%	                    ≥ 25%	            ≥ 32%
+
+
+BuildIndexValue:          Fat Mass (Men/Women) Jacked ~6-13%/14-20%         Athletic ~14-17%/~21-24%         Average ~18-24%/~25-32%   Obese ~26+%/~32%     Essential Fat ~3-5%/~8-10%
+
+Muscle Mass (Men/Women)
+
+Jacked     ~45+/~35%+				Jacked				Jacked (Strongman/Buff)		Ripped (Brawny)			Hulking (Over-Muscled)		Paper-Skinned
+Atheletic ~36-44%/~30-34%			Shredded (Lean)			Atheletic			In Shape (Solid)		Well-Fed (Stocky)		Gaunt
+Average ~32-36%/~25-30%				Ripped				In Shape (Toned)		Average			        Overweight (Chubby)	        Starving
+Obese <32%/<25					Emaciated		        Thin		                (Undertrained)		        Morbidly Obese		        Wasting Away
+
+
+			Stomach Values
+
+ Stomach Capacity and Satiation Levels
+
+
+Satiation Level 	      ApproximateStomachVolume/	Approximate Weight Capacity
+Empty/Fasting	                 50-100 mL	      /   ~0.05-0.1 kg	                  
+Mild Fullness/Satiation Point   ~600-800 mL	      /    ~0.6-0.8 kg	
+Comfortably Full (Normal Meal)	 1-1.5 L	      /   ~1-1.5 kg	             
+Maximum Tolerated Volume	 Up to 4 L (or more)  /    Up to ~4 kg (9 lbs)	
+
+Macronutrient Absorption Rates [Digestion]
+
+Carbohydrates (single source): Approximately 60 grams per hour (~240 kcal/hr) using a single transport mechanism (e.g., glucose only).
+Carbohydrates (multiple sources): Up to 90-105 grams per hour (~360-420 kcal/hr) when combining multiple transportable carbohydrates (e.g., a glucose and fructose mixture at a 2:1 ratio).
+Protein: The rate is highly dependent on the type of protein:
+Fast-digesting protein [Lean protien](e.g., whey): Roughly 8-10 grams per hour (~32-40 kcal/hr).
+Slow-digesting protein [Fatty protien](e.g., cooked egg): About 3 grams per hour (~12 kcal/hr).
+Fat: Fat absorption is complex and generally slower than carbohydrate or protein absorption per hour during exercise, and it slows gastric emptying. While fat provides 9 kcal per gram, a high-fat meal takes much longer to process overall. 
+The body is highly efficient at absorbing nearly all fat consumed over the full digestive cycle, but the hourly rate during physical exertion is lower than for simple carbs. *Base starting value About 1 gram per hour (~9 kcal/hr)
+   
+
+FORMULAS***
+								Task Completion Time Calculation - " calculate - Skill effect on task"		
+
+% 1. TOTAL OBSERVED TIME (The Raw Baseline)
+T_{obs} = \sum_{i=1}^{n} s_i
+
+% 2. NORMAL TIME (Adjusting for Subject Skill/Performance)
+T_n = T_{obs} \times \left( \frac{R}{100} \right)
+
+% 3. STANDARD TIME (The Final Practical Estimate)
+T_s = T_n \times (1 + A)
+
+% WHERE:
+% s_i = Time per individual step
+% n   = Total number of steps (Task Complexity)
+
+% R   = Performance Rating / Skill Factor (e.g., 100 = Standard)
+% A   = Allowance Factor for fatigue/delays (e.g., 0.15 = 15%)
+
+
+
+[Formula explanation: -The Estimation Formula The total estimated time is the sum of individual step durations, modified by a skill-based performance factor: 
+			 	(T= [sum {i=1}^{n}s_{i}] x [{1}{S})\(s_{i})-> (1\S)] 
+				(Individual Step-Times): The average time estimated for each discrete step in the task.
+				(n) (Task Complexity): The total number of steps in the sequence.
+				(S) (Subject Skill): A rating factor where 1.0 represents the "standard" or average skill level.
+
+ 			- Refining Your Estimate To account for uncertainty or "minimum average time" (the best-case scenario), use these industry-standard methods: 
+				Three-Point Estimation (PERT): Combine your best-case (optimistic), worst-case (pessimistic), and most-likely times to find a realistic average:
+				(Estimate)= [O+4M+P]\6) 
+				(O) is the optimistic (min) time, (M) is the most likely, and (P) is the pessimistic.
+
+			- Normal Time Calculation: Professionals often use a Time Study Rating Factor to convert observed average time into "Normal Time" by multiplying the average time by a performance rating (Skill).
+				Time Study Rating Factor (or Performance Rating) is used to normalize the time a specific person took to perform a task compared to the time a "standard" worker would take. 
+				The Rating Factor Formula The rating factor is typically expressed as a percentage, where 100% represents a "normal" or standard pace. 
+				[Rating Factor]= [Observed Performance]\[Standard Performance] x 100) 
+				Rating > 100: The subject is working faster than the standard pace.Rating < 100: 
+				The subject is working slower than the standard pace. 
+
+			- Applying the Rating to Task Time To find the Normal Time 
+				(NT)— the time an average worker would require—you multiply the average time you actually observed (OT) by the rating factor: 
+				(NT= [Average Observed Time] x ([Rating Factor]\100]
+
+			-	To calculate the final Standard Time (Ts), we combine the complexity of the task, the subject's skill (performance rating), and an allowance factor for human fatigue or unavoidable delays. 
+				
+				1: Calculate Total Observed Time Sum the individual times recorded for each step in the task sequence to find the total time actually taken by the subject. 
+					(T(obs)=[sum {i=1}^{n}s_{i}]
+
+				2: Determine Normal Time Adjust the observed time based on the Rating Factor (R). This accounts for the subject's skill and effort relative to a standard 100% pace.
+					(T(n) = T(obs) x [R\100]
+
+				3: Apply Allowances for Standard Time To reach a realistic time that can be sustained over a workday, apply an Allowance Factor (\(A\)). This typically ranges from 10% to 20% to account for personal needs, fatigue, and minor interruptions. 
+					(T(s) = T(n) x (1+A)
+
+                 		The final formula to determine the subject's time to complete a task is:
+					(T(s) = T(obs) x [R\100] x [1+A]
+				Where: T(obs) is the sum of individual step-times.
+					R is the Performance Rating 
+					A is the Allowance Factor expressed as a decimal (e.g., 0.15 for 15%).
