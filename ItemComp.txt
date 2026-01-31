@@ -61,9 +61,9 @@ USAGE
 
 
 
-				*Reminder* - update code for Aether
-var chemical_elements = { element review/ need to add Aether as element and material type
-	"A": {"name": "Aether", "density": 0.0001, "atomic_mass": 0.01, "specific_heat": 99999, "fusion_heat": 0.0, "vapor_heat": 0.0},
+				
+var chemical_elements = { 
+	"A": {"name": "AETHER", "density": 0.0001, "atomic_mass": 0.01, "specific_heat": 99999, "fusion_heat": 0.0, "vapor_heat": 0.0},
 	"H": {"name": "HYDROGEN", "density": 0.0898, "atomic_mass": 1.01, "specific_heat": 14300, "fusion_heat": 0.558, "vapor_heat": 0.452},
 	"C": {"name": "CARBON", "density": 2.26, "atomic_mass": 12.01, "specific_heat": 710, "fusion_heat": 105, "vapor_heat": 715},
 	"N": {"name": "NITROGEN", "density": 0.0012, "atomic_mass": 14.01, "specific_heat": 1040, "fusion_heat": 0.36, "vapor_heat": 2.79},

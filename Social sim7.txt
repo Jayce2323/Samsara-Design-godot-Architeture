@@ -1,0 +1,833 @@
+Social Sim- *Psyche explnin Magic doc
+
+
+
+General princple of hierarchy - Like interacts with like. Individuals interact with individuals, kin with kin, states with states etc with Socioeconomic being the determining factor of who is interacted with in matters.
+				[not a hard sim rule rather it means that whatever lvl of hierarchy an interaction is made at resolves that issue. if opposing clansmen fight, that is now an inter-clan fight]
+				[Inter-status conflict normally resolve with the higher rank prevailing, unless found to be fradulent, immoral, ethically-lacking, factually wrong (dependant),or deceitful . resolution depend on morality of resolver]
+				The hierarchical position, in relation to ones social-status is the main determiner for the cause of social interaction	.
+				General structure is Ingroup/outgroup: strong loyalty/suspicion of rival clans but is reversed for the Subversive (individual who counters the norm/inverses one oe mor collective principals/goals) where Ingroup/outgroup: suspicion of peers/strong loyalty to rival clans
+																	Deceiptive (individual who hides subversive or deviant nautre)
+																	Deviant (individual who's goal breaks taboo )
+																	Liar (Pa = compelled to lie(habit))(So = to manipulate for gain)(Na = Lies for Ego)
+																		(Co = Small lies)(Oc = Lies to not be left out)(Imp = lies with out rregard for long term)
+																		(Av = lies to hide private details or avoid conseqence/reaction)(Pro = lies to protect others)
+																	Suspicion lvl (instinctual supicion of person based on witnessed behaivor and known info. 
+																		Suspicion represents that charachters chances of being a Subversive, Deceiptive, Deviant, Liar, Charlatan, or Infiltrator  )
+																	Pessimist (individual who responds negatively to positive speech-type)
+																	Optimist (Individual who repsonds positively to negative speech-type)
+				
+				Goal-structure is inverse. Individuals have complex-goals and simple methods. As the hierarchy moves up the goals-become simpler/focus and the methods more complex
+					*Ingroup-outgroup - as hierarchry lvl rise suspicion between unknown in group memebers rise. ie (situation with no proof, and out of character (action does not equal habit)) 
+								inter-family suspicion 5-10% for known family member if outof character (action does not equal habit) vs
+								20-25% suspicion for unknown kin; however if fellow Statesman:  20-25% suspicion for known Statesman and no other association vs
+								5-10% suspicion known Statesman and kinsman (implies/ clansman) vs  50-70% suspicion for known Statesman and unknown clan
+
+Social-Tracking - . 
+
+	MICRO LEVEL (Individual → Family → Kin) - needs, preferences, and daily life happen
+		(work is social)	
+						Individual - Drives: hunger, safety, comfort, belonging, ambition, Social radius: neighbors, coworkers, peers,
+						Family (Direct): Core functions: Support (resource sharing, protection, inheritance, early socialization (Early habit formation)
+						Kin (Extended): Core functions: alliance building, marriage ties, shared reputation, shared obligations,
+
+	MESO LEVEL (Clan → Religion(social)/guild(work)) - identity, tradition, and collective memory.
+
+						Clan: Collective goals: survival, legacy, territory, propagation, Practices: naming conventions, rites of passage, marriage rules, alliances through marriage (incorparation of acceptable out-groups)
+						Religion: Collective goals: moral order, cosmology, ritual stability, Practices: ceremonial food, funerary rites, fasting/feasting,taboos, 
+								-Ingroup/outgroup:believers vs non‑believers (religious out group), sects vs sects (religous in-group/Clan-outgroup)
+
+. 	MACRO LEVEL (State → Class/Status) - military/large collectivist-power, law, and economy
+
+						State / Country: Collective goals: stability (Resource security, Territory management, Population control), Practices: taxation, military service, festivals, legal systems
+								Ingroup/outgroup: citizens vs foreigners, guilds vs guilds, factions vs factions
+						Social Status / Class / Stratification: Socioeconomic rating, Determines: who you can marry, who you can trade with, who you can speak to, who you can employ,who you can command
+									Status is influenced by: Legacy (wealth, occupation/occupational success, lineage, reputation)- every individual social-structure has shared Legacy
+
+
+Morality: note*(for morality an all social concepts)- [Morality should not reflect the characters belief, but how others see the characters actions. a theif sees a hero as the villian, the vitcim does not.]
+					Support - (resources, protection, monetary, Socialization)[socialization* People dont like overbearing conversations/theif of joy (bringing the mood down)]
+Lawfulness -   Lawful - Upholds the law +
+		Unlawful - Upholds the law by unlawful means 
+		Outlaw - Operates outside of the law -
+
+Charitability - Benefactor - willing gives support +
+		Trustworthy - Barters for support
+		Theif - Takes support -
+
+Rules - Upholder - Follows the rules because there are 
+	Orderly - Makes decisions based on morality +
+	Rebel - Disobeys rules because there are -
+
+Self-Interest - Altruistic - Values others over self + [PARTY STAT, BASEDON FORGAGING/SCAVENGING/BUY RULES, AND WHTHERREWARDS ARE SHARED]
+		Neutral
+		Selfish - Value self over others -
+
+Ethics (Overall Morality score) - Benevalent = 4
+				  Good = 3
+				  Normal = 2-1
+				  Tabula-Rosa = 0
+				  Bad = -1
+				  Evil = -2 or more
+
+
+
+Disposition - Reflects A characters attitude for another. (Seeing an npcs Disposition show that Npcs feelings towrd the pc)
+
+		Disposition-components: First Impressions: Appearance: 
+									Items-worn - Display Stats link to Item adjectives ->Affects "Appearance" +,0,-(Ratings are general +,- = 1)]	        
+									Weapon Value (WV) - Base Weapon KD
+									Armor Value (AV) - Base Kinteic AV
+									Build - Based on Height, Weight, (Muscle% and Fat% = BuildIndexValue)
+								*Reputation:
+							   	Ethics: see chart (Not wieghted without reputation, or any percieved action)
+								Personality: Determined by avg used (Intent + Speech‑Type + Psyche‑Stat) with other characters (Not wieghted until spoken to = Modifier (x(X)->(+), or Negative(-)))
+									if "Pesonality-Type": is Liked -> (X) = 2 (and is same + or - as personality type), is Disliked: (X) = 2 (and is opposite + or - as personality type),
+												is Neutral -> (X) = 1,
+								
+					After-First Impressions: Appearance (if different from first imression) + Morality+ Personality:
+
+    		Disposition-calc: [Indv-Dispo-Comp + Hierarchy-Dispo-Cal](Initiator goal - Respondent-goal(Hierarchry-Goal(Micro)+Hierarchry-Goal(Meso)+Hierarchry-Goal(Macro))) = Respondents-Percieved-Dispo
+			* at certain threshold/Friendliness Hierarchy-Cal is disregarded to represent personal-bond
+
+		
+		Disposition-Stat = (Historical-Avg Disposition - Lifetime avg saved as tag/rating) + Current Disposition/2)
+ 		
+		Disposition ratings: Mortal Adversary   (-100%)<>(-91%)
+				     Adversary		(90%)<>(-61%)
+				     Dislike		(-60%)<>(-31%)
+				     Neutral = 0	(-30%)<>(+30%)
+				     Liked		(+60%)<>(+31%)
+				     Philia(same sex)/	(100%)<>(+61%)
+				     	Loved(opposit-sex)/(+90%)<>(+61%)
+				     	Eros(romance)	    (100%)<>(-91%)
+
+Fame:
+Per-Indv: = Influence +Dispotion
+Per-Faction: = Influence + Avg Member Disposition/Avg # of members
+Per-State: = Influence + Avg Disposition/2
+Total/World: = Fame/3
+
+Reputation:	Fame Score Range 	Rating Title
+			> +75			Legendary	
+			+51 to +75		Renowned
+			+26 to +50		Well-Known
+			+1 to +25		Noticed
+			0			Obscure
+			-1 to -25		Disliked
+			-26 to -50		Infamous
+			-51 to -75		Notorious
+			< -75			Reviled	
+
+				     
+Influence - the "political currency" -> Essentially how much a factions individual members respect you, based on provided "support".	
+
+ Influence Gain Formula
+
+The formula for **Influence** gain per interaction incorporates a base value derived from the interaction's sentiment and a bonus determined by the hierarchy level of the interacting parties.
+
+#### Step 1: Define variables
+
+We define the following variables:
+*   \( I_{gain} \) = Influence gained/lost from a single interaction.
+*   \( S \) = Sentiment score of the interaction (\( S = +1 \) for positive, \( S = -1 \) for negative).
+*   \( L_{initiator} \) = Hierarchy level of the character initiating the action (Micro, Meso, or Macro).
+*   \( L_{target} \) = Hierarchy level of the target faction/character (Micro, Meso, or Macro).
+*   \( B(L_{initiator}, L_{target}) \) = Bonus based on hierarchy levels.
+
+#### Step 2: Define the Hierarchy Bonus \( B \)
+
+The bonus value depends on the initiator's level and the target's level, as specified by your rules:
+*   If \( L_{initiator} = \text{Macro} \):
+    *   \( B = 3 \) if \( L_{target} = \text{Micro} \)
+    *   \( B = 2 \) if \( L_{target} = \text{Meso} \)
+    *   \( B = 1 \) if \( L_{target} = \text{Macro} \)
+*   If \( L_{initiator} = \text{Meso} \):
+    *   \( B = 2 \) if \( L_{target} = \text{Micro} \)
+    *   \( B = 1 \) if \( L_{target} = \text{Meso} \)
+    *   (Implied: \( B = 0 \) if \( L_{target} = \text{Macro} \), or interactions not defined)
+*   (If \( L_{initiator} = \text{Micro} \), the bonus might be implied as 0 or 1, but based on the rules, it's not specified beyond Meso).
+
+#### Step 3: Combine components into the main formula
+
+The total influence gain is the base sentiment value multiplied by the hierarchy bonus.
+
+#### **Answer:**
+The formula is:
+\[ I_{gain} = S \times B(L_{initiator}, L_{target}) \]
+where \( S \) is the interaction sentiment (+1 or -1) and \( B \) is the hierarchy bonus defined by the rules above.
+
+
+
+Prestige - Percieved Combat ranking. Base on Weapon Skills/Moves -> Combos -> Multistage moves. Combos can be made freely, learned from others, or taught to those who want to learn, or learn through "Osmosis". Combos Shared with others have shared prestige lvl (tracked through Dissappation method)
+            Prestige = Combat Score - Sum of all Combo Lvls [A combos prestige rating/stats only trained in actual battle against Npc and must have witness to move use Prestige gain - For every hit/attack of combo landed x dmg of attack, all combos gain prestige on win  [Loser Prestige - Victor Prestige = Prestige earned for each combo if x = 0 or less than "no change"]/ 
+																			Prestige Loss - Whiffed [every hit/attack of combo missed x number of consecutive-attacks missed], all combos lose prestige on defeat [Victor Prestige - Loser Prestige = Prestige earned for each combo if x = 0 or less than "no change"]
+         Combo Stats = Stamina Cost- Stamina lost if Combo is completed flawlessy with no resistance
+			  School - Name of fighting Style. Must Name style if unique (Styles with shared names from seperate creators will share prestige)
+			  Master - Leader of School (Faction)
+			  Creator - Character who made Combo
+
+Prestige lvl - [Higher than Tracked prestige] = Skill level -> This is the social representation of your skill stat. It determines your percieved item/work quality, and influences you comes to you and why. 
+        
+		[Just in case it unclear Prestige track Pc's Social (percieved) Job and Trainer Lvl for NPCs -> As  a Pc would do inversely]	
+
+
+Socialization -
+
+Functions as more traditional turn-based combat. Can have random encounters. Affected by mood.
+
+Conversation-parts - Subject: Convo type - Topic 
+      		  Intent/Speech-type: Bartering, Intimidation, Coercion, Persuasion, Argumentaion, Commanding (Ordering), Negotiation, Interrogation, Inquiry, Narration, Description, Exposition, Prasising, Pleading, Mockery
+		     Tone-Setting: Action-type: Hostile(Crits enhance "dmg"), Deceptive, Neutral, Friendly (crits reduce "dmg" (overfriendly)), Target-Self-effect: Negative- Dmg Dealt to Self and Target, Positive- Dmg converted to Shield
+                     
+			stats - Pyshce: Logos, Pathos, Ethos - these represent the ability to reason and are your social resource. Every character responds positively (Enhances Friendly speech), neutrally(Enhances deception), and negatively(Enhances hostile effect) to one of these.
+				
+Convo flow (after initial intent) - 1. Initiator (set intent) vs Respondent (Free to set own intent/Resist[start battle]/or agree [conversation resolves])
+				 Fight- Initiator (argument: Stat-type [Logos]+Tone[Hostile]+Effect[Positive]) - Respondent (argument: Stat-type [Pathos]+Tone[Hostile]+Effect[Positive]) = x
+						Inititor: Losses 1 logos to attack					Respondent: Losses 1 pathos to attack = Resolution determined by Speech Skill + Tone + Effect
+																				The higher number wins that round and the difference in score is subtacted from the losers stats resource
+
+Convo-Goal by speech type - Hostile (overwhelm oppenent reduce psyche/ force submission)
+			    Deceptive (Hide motive/intent or info without lying. [True intent unknown])
+			    Neutral (Opening tone is set by respondent)
+			    Friendly (Bolster opponents pysche[mental health stat])
+
+        			 Active Convo/Goal types
+
+	Goal-Oriented = [Diplomatic: focused on problem solving, mananging relations](for conflict resolution, and issuing orders outside of combat), 
+			[Negotiation: bargaining regarding price, terms, and conditions,](for trade), 
+			[Argumentative: Change the targets mind on topic](self explanitory), 
+			[Coercive: Force compliance](self explanitory)
+	
+	Information-Oriented = [Interrogative: questioning to exctract information], 
+				[Informative: used to relay information], 
+				[Consultive: ask for adviceabout a subject], 
+				[Narrative: for entertaiment, cultural transmission, sharing personal experience.]
+	
+	Relational-Oriented = [Social: Casual rapport building],	
+				[Therapeutic: emtional support], 
+				[Ceremonial: vows and rites],
+				[Confrontational: open hostility, due to grievance or to escalate a dispute]
+
+				*[Npcs should have prefered psyche min-max to avoid regular-prolonged conversations, and early player-psyche drain.]
+
+       Mood - is tied to [Emotional State = Logos, Pathos, Ethos] -> Determines available conversation options (Pc/NPc), and Event Reactions(NPc) [Determined in probability and scale] [E.State Tracking - e.states "hp" starts at 0 (respresenting emotional balance) average char limit per state = 50(capped in bot directions -50<0>+50) with no other consideration aside from base stats]
+									Ex. - Logos -> Low(25% down from 0) = Irrational [Pc- Gains Boost to speech types opposite from character by % lost (inthiscase:25% bonus effect/dmg)]
+										Logos -> Low(25% up from 0) = Irrational [Pc- Gains Boost to speech types opposite from character by % gained (inthiscase:25% bonus effect/dmg)]
+										reaching-cap: reaching a stat cap and using that action intiates a "Closer" 100% bonus but conversation ends. [If conversation ends and new convo is started before stat begins regen -> allow "exploit" of loop. this can be a freak out or straight bullying tactic.]
+												[Overkill: any dmgover psyche limitis multiplied by disperity between dmg dealt and limit by which cap was exceeded]
+					
+										Mood -> Disposition = [dmg dealt-dmg taken] x [mood % (+/-)]= Disposition chng
+
+						Mood Matrix -		Logos,		Pathos		Ethos
+				
+						+100%			Analytical,	Empathetic,	Trusted,
+						+75%			Logical,	Caring,		Credible,
+						+50%			Reasonable,	Affable,	Reputable,
+						+25%			Objective,	Detached,	Valid,
+						0			Pragmatic,	Neutral,	Neutral,
+						-25%			Skeptical,	Dismissive,	Dubious,
+						-50%			Paranoid,	Apathetic,	Unreliable,
+						-75%			Delusional,	Hateful,	Deceptive,
+						-100%			Irrational,	Cruel,		Fearful,
+			    
+*[System handles all interactions. menu based on intent-types: ex bater opens merchant inventory, player gains temp-customer buff to dispo, but combat/chat is still active. you can buy and resolve and only lose opener cost, or pry for info utilizing bonus. 
+			Direct actions (ex Dimplotic: fealty: offer, Accept), skip combat and Forr a yes/no system instead.]			    
+*[Speech-stat: governs power of speech components, Learning Stat: gorvens Topic modifier/ Psyche-stat-modifier]
+ 
+PERSONALITY‑TYPE CHART (Derived From Intent + Speech‑Type + Psyche‑Stat)
+
+		Bartering, 					Intimidation						Coercion,
+Hostile,	Antagonistic-Logos/Pathos/Ethos			Hot-Tempered-Pathos, Enforcer-Logos, Commanding-Ethos	Predatory-Ethos/Logos/Pathos	
+Deceptive, 	Scheming-Logos/Pathos/Ethos			Manipulative-Logos/Pathos/Ethos				Manipulative-Logos/Pathos/Ethos	
+Neutral, 	Strategical-Logos, Customer-Pathos/Ethos	Commanding-Logos, Intimidating-Pathos/Ethos		Tactical-Logos, Intimidating-Pathos/Ethos
+Friendly,	Customer-Logos/Pathos/Ethos			Humurous - Logos/Pathos/Ethos				Gaslighting  -Logos/Pathos/Ethos
+
+		Persuasion,	 				Argumentaion,	 					Command (Ordering), 				Negotiation, 
+Hostile,	Pathetic-Pathos, Sarcastic-Logos/Ethos		Hot-Tempered-Pathos, Antagonistic-Logos/Ethos		Enforcer-Logos/Demanding-Pathos.Ethos		Pathetic-Pathos, Sarcastic-Logos/Ethos 
+Deceptive,	Subversive-Logos/Pathos/Ethos			Subversive-Logos/Pathos/Ethos				Manipulative-Logos/Pathos/Ethos			Scheming-Logos/Pathos/Ethos
+Neutral,	Rational-Logos/Ethos, Passionate-Pathos		Rational-Logos, Judgemental-Ethos/Pathos		Commanding-Logos/Ethos, Demanding-Pathos	Rational-Logos/Pathos, Strategical-Ethos
+Friendly,	Mediative-Ethos, Diplomatic-Logos/Pathos	Caring-Ethos, Jealous-Logos/Pathos			Dominant-Logos/Ethos, Commanding-Pathos		Diplomatic-Logos/Pathos, Mediative-Ethos
+
+		Interrogation, 					Inquiry, 						Narration, 					Description,	 				
+Hostile,	Predatory-Ethos,Judgemental-Logos		Pathetic-Pathos, Sarcastic-Logos/Ethos			Pathetic-Pathos, Sarcastic-Logos/Ethos		Pathetic-Pathos, Sarcastic-Logos/Ethos		
+Deceptive,	Infiltrator-Logos,Pathos/Ethos			Infiltrator-Logos/Pathos/Ethos				Charlatan-Ethos, Subversive-Logos, 		Subversive-Logos/Pathos/Ethos			
+Neutral,	Judgemental-Ethos, Domineering-Logos, 		Strategical-Logos, Caring-Ethos, Observant-Pathos	Raconteuring-Pathos/Ethos, Wise-Logos		Raconteuring-Pathos/Logos, Observant-Ethos	
+Friendly,	Caring-Pathos/Ethos, Observant-Logos		Caring-Pathos/Ethos, Observant-Logos, 			Wise-Ethos, Raconteuring-Pathos/Logos		Wise-Ethos, Observant-Logos/Pathos		
+
+		Exposition, 						Praising, 						Pleading, 						Mockery
+Hostile,	Pathetic-Pathos, Sarcastic-Logos/Ethos			Pathetic-Pathos, Sarcastic-Logos/Ethos			Pathetic-Pathos, Sarcastic-Logos/Ethos			Hot-Tempered-Pathos, Antagonistic-Logos/Ethos
+Deceptive,	Charlatan-Ethos, Subversive-Logos, Infiltrator-Pathos	Scheming-Logos/Pathos/Ethos				Charlatan-Ethos, Pathetic-Pathos, Manipulative-Logos	Childish - Logos/Pathos/Ethos
+Neutral,	Raconteuring-Pathos, Wise-Ethos, Observant-Logos	Supportive-Ethos, Scheming-Pathos, Wise/Observant-Logos	Manipulative-Pathos, Sympathetic-Logos/Ethos	 	Antagonistic-Logos, Domineering-Ethos, Manipulative-Pathos	
+Friendly,	Wise-Ethos, Caring-Pathos, Supportive-Logos		Supportive-Pathos, Wise-Ethos, Observant-Logos		Sympathetic-Pathos, Caring-Ethos/Logos			Humorous-Ethos, Infiltrator-Logos, Manipulative-Pathos
+ 
+
+
+
+ 
+*[Excessive gift giving, Batering with nothing in return, over Bartering intentionally, should trigger suspicion for pc actions specifically, but as general rule (prevents tactics like outright buying all food and waiting out a Siege)]				
+
+
+*[Recruitment Party & Warband - Pc has 2 party slots Mainslot: Companions, Secondary: Mercenaries
+											Slots:	Companions: Fuction as direct/party members [Might have to lower but set cap to 12]
+												Mercenary: Hired units that travel with the Pc as allied units but do not generate-sim stats outside of function combat stats. [Might have to lower but set cap to 20]
+													*Mercenaries can be hired as Companions to retain their paid role, and will "freely choose" whether to leave the player once contract is up. Mecenaries will automatically fill Companion slot if <_4 companions
+														*As well Companions are Autonomous and can leave the party freely, or demand payment for joing you as a companion if they "see it as" mercenary work]
+[Settlement-Building - Mercenaries also count as Workers. As long as their paid they'll do the job. Merc/Workers with : Slave or Servant tag can not be paid in currency and will take rations only. All party members must be fed.(Daily), though Merc/Workers or companions can be assigned to handle this as well
+			Shared containers, area partitioning [unsure what it called but CDDA,Elin,Amazing CultSim all do it]] will be used to keep party and personal item seperate. Npcs will do the same. 
+
+			Workers party and non party may settle the areas they're building but as settlers they'll only follow the one in charge, so if you build a farm that's leased you may get neighbors whose placement cant directly be controlled. (though gernetaion should/would ideally have a logic map)
+			Security - The owner of a settlement/ments provides the troops for security through the party slots as well. Garrison spliting {into Standing-marching troops} can be handled by leaving troops with Substitute  who gains the other 50% party slots (just in case Sub is a companion with party already).
+					Multi-settlement security: Same principle. Through "Diplomacy" you can ask a companion to swear fealty. once sworn they be granted land or a settlement of their own that you currently own or come into possesion of. 
+									Companion gains the other 50% party slots and can operate an army and settlement as the Pc does.									
+max-party cap = 1064 (player not included)-[Max party size for battles, if battle is long/deadly enough for reinforcement charge they will enter map from direction of travel of party and be counted as world adjacent to local tile-probabbly over explain]
+	
+				Companions gets party slots as well - Slots: Companion: 6 each
+										Mercenary: 10 each
+
+
+*[unsure if contradictory notes exist- hardrule- Companions and mercs do no have to be in vicinity to be in party. Mercenary slots are static. Non vicinity Companion slots are cached and replace with up to 6 new slots. new companions must be sent from vinicity (or outright dismissed from party)]
+*[rule 2*- Mecenary/freelancer title changes with hired job role. Party companions can be interracted with Merc/freelancers cannot, but companions can be freely moved between the 2 slots. 
+		Companions: act as friends (share indv group faction identity/unpaid/shared rewards), 
+		Merc/Frees: acts as Guards (must already be part of faction, convert, or be made companion (for atleast 2  weeks[Social system can lower]) to share indv group faction identity)/Paid- system for ingratiating soliders][integrates soliders/labor]
+
+
+*rumors/gossip: stream line solution.  all tracked components work like stats that update every individual interaction. if a charcter sees you kill it updates that witnesses morality (their view of you), get the raduis the pc opreated in over a day. avg # of ppl. avg social score for all categories. that will modify a dissaption rate and set how "long it takes for word to spread" or let the set the update rate
+				per system rule, if witness is unknown, or known but current dispostion unknown, or Known current dispostion known and npc does not plan to speak of what they saw, the auto update skips and both actions are held in the buffer till the pc leaves "that npcs bubble"
+
+
+STAT-Soc[Character Culture-stat (outgroup-hierarchy tracking): 
+
+							
+[Social classes: Tracked Stats[Titles]]
+I. Micro-Level: 
+
+The Individual Units: Persue Personal goals over-all
+		      Name: []
+		      Home: Clan territory /& (Birthplace)
+		      Date of Birth/(Death): [forgot in game calender]
+		      Race: [Determined by chromosomes]
+		      Bloodline: Ancestry:(Grandparents Family name)
+		      Clan: []
+		      Country: []
+		      Language: [only languages you know/believe they speak]
+		      Religion:Primary-Worship =  
+						God: NAME+ CelestialBody/Domain/Skill Association OR Elemental Nature (world logic is syncretic- cosmological hierarchy)]
+						Time: Static (On fixed historical dates)/ Fluid (On dynamic event(ie. eruption, thunderstorm)), 
+						Offfering/Sacrifice: Prayer [priority](Somatic, Musical), Animal/human(Type:, Specs(Range): Weight, Color, Age, Culture/Breed), Food/Food-Item (Type:, (Cooked/Uncooked), Specs(Range): Amount/Quantity )
+						Method: Prayer"", Eaten, Ritualized: [Cast into/onto- Fire, Water, River, Sea, Lake, Air, Alter],[Cast-Off: Mountain, Cliff, Temple],[Left-Out: In-open, In-home, Outside-Home, For collection],[Sacrifice: Stabbing, Throat-Slitting, Organ-Removal, Burning, Drowning, Desiccation, Beheading], Feast, Fast
+ 						Holy-Site = High-place, Low-place, Near-water, Near-Fire, Set to the Direction (Cardinal-direction), Set facing Direction (Cardinal-direction), Open, Enclosed, Built-to-Specification, [One or Multiple]
+						Doctrine/Book = Generated item/Titles
+		      Wealth/Resources: Net Value of property
+
+
+Family (Direct): [Provide intial social/job/world interaction for (new) player(dependant on start condition)]
+Ancestral Ties [Grandparents]: Maternal:
+			       Paternal:
+Parental Core: Mother, Father 
+Sibling Branch: Brother, Sister.
+
+Kin (Greater-Blood-Relations)
+Affinal Ties: Wife, 
+Affinal Family [In-Laws](Indirect): Parental Core: Mother, Father 
+			            Sibling Branch: Brother, Sister.
+Collateral Ties: Aunts, Uncles 
+ 
+Adoptive Ties: [By type]Parental Core: Mother, Father 
+			Sibling Branch: Brother, Sister
+
+II. Meso-Level: The Community Bridges
+
+Clan (The Cultural Cluster): [Core of Intrastate conflict/Events below world map layer]
+Ancestry: Bloodline: [MostCommonindvMale]
+		     [MostCommonindvFemale]
+		     [If MostCommonMale or Female ≠ indvBloodline: Adopted][in case][if Parental core known, & Adoptive ties unknown -> move one or both parents to adpotive]
+			->[if Parental core known, & Adoptive Ties known -> if Parent clan unknown -> Generate new clan][if Parent clan known: something went wrong in generation]
+Ethnic Core: Language: [Generated Name]
+	     Ethics: Avg of Leadership 
+Religion: Primary-Worship = Most common method per indv
+
+III. Macro-Level: The Systemic Shell
+
+State/Country (The Administrative Body):
+State Leader: [Types: Elected (Emporer)/[Head of multiple-states],[ Inherited (Monarch), Appointed (Dictator/Premier), Declared (Tyrant)[whether opposed or unopposed]/[Head of one state]]
+Governing Body: Bicameral (two chambers)[Lord/Commoners], Unicameral (one chamber)[Lords/legalpower], or Council-based[Lord(usually/no legal power)].
+Military: Civilian-led (Republic), Officer-led (Stratocracy), Council-Based (Junta/[common w/ coupes]) or Guild-based (Mercenary/Contractual).
+Bureaucracy: Lords/Landowners:
+
+Social-Status/Class/Stratification (The Socioeconomic Grid): Movement: Free, Permissary
+							     Scale: Micro, Meso, Macro
+							     Job: 
+							     Class:
+							     Law: = Culture/Cultural -> Crime rating +1 per witnessed/known event
+							     Rule: = Leadership Ethics
+Wealth/Resources: Net Value of property
+Influence: Sum of Leadership influence (Leadership = Head(npc)/pc & Companions(npc/pc))
+
+
+*(The Socioeconomic Grid)
+Level	Skills Used							Job Titles/Subjob			Social Status/Class
+
+Micro	Agriculture Skills (Animal Husbandry, Horticulture, Forestry):  [Farmer] 				[Serf], [Peasant], [Laborer], [Outlaw]
+									[Ploughman, Shepherd, Swineherd, Forester, Livestocker] 
+	Survival Skills (Hunting, Trapping, Gathering): 		[Hunter], 
+									[Trapper, Poacher]
+	Basic Artistry (Cooking, Cuisine): 				[Chef],
+									[Cook, Baker, Brewer]
+	Stoneworking (Quarrying): 					[Quarrier]
+	Combat Skills (General, basic weapon use)			[Guardsman], 
+									[Watchman(Alerts guards)]
+									[Outer Disciple]	
+									
+Meso	:	General:						[Guild Member/micro[apprentice],	[Artisan], [Criminal Underclass], [Middle Class]
+									meso[journeyman-expert],
+	 								macro[expert-master]]
+	Metallurgy Skills (Smelting, Refining):			 	[Blacksmith],
+									[Armorer, Weaponsmith, Farrier]
+	Stoneworking (Cutting, Masonry, Carving):			[Stonemason]
+									[Bricklayer],						
+	Complex Artistry (Woodworking, Weaving, Tannery): 		[Carpenter], 
+									[Weaver, Tanner, Tailor],
+	Roguery Skills (Deception, Larceny, Stealth): 			[Spy], [Assassin],
+	Speech Skills (Bartering, Persuasion)				[Merchant/distro], [Master Tradesman/distro and creation]  
+									[Inner Disciple]
+	     
+	
+
+Macro	Learning Skills (History, Mathematics, Law, Culture): 		[Scribe], 				[High Clergy], [Noble Servant], [Scholar], State Official, Nobility (Vassals), High Military Command]
+									[Clerk], [Assayer], [Scholar],
+	
+Speech Skills (Commanding, Negotiation, Argumentation): 		[Bailiff, Steward, Emissary, Arbiter]
+	Control Skills (Magic/Ki): 					[Priest], [Monk], [Sect Elder],
+	Military (Tactics, Strategy, Leadership):			[General], [Captain],
+
+						LAW & DUTY[ETHICS]
+
+LawType		DefiningVerbs				BreakingVerbs		Connotation[Def/Break]	[VERB-Domain]
+PROPERTY	claim, inherit, gift, buy, trade	steal, rob, 			+/–		OWNERSHIP,
+VIOLENCE	defend, arrest, challenge		assault, murder			+/–		INTERACTION,
+MARRIAGE	wed, join, legitimate			adultery, desert, abduction	+/–		RELATIONAL,
+TAX		tithe, pay, tribute			evade, extort			+/–		OWNERSHIP,
+MARKET		trade, sell, barter, weigh		cheat, counterfeit, fix		+/–		OWNERSHIP,
+GUILD		join, work, inspect, admit		poach, sabotage, betray		+/–		INTERACTION,
+INHERITANCE	inherit, transfer, escheat		usurp, forge			+/–		OWNERSHIP,
+SPEECH		praise, defend, report			slander, betray, withhold	+/–		PERCEPTION,
+STATUS		rise, serve, promote, obey		betray, impersonate		+/–		NATURE/MECH,
+RELIGION	pray, worship, tithe			blaspheme, defile, heresy	+/–		MANUAL,
+MILITARY	serve, guard, defend			abandon,			+/–		INTERACTION,
+
+
+
+EthicType		UpholdVerbs			BreakVerbs		Connotation
+FIDELITY		honor, keep oath, defend	betray, break oath		+/–		PERCEPTION,
+MERCY			spare, forgive, aid		punish, cruel			+/–		INTERACTION,
+HONOR			respect, acknowledge		insult, mock, slander		+/–		PERCEPTION,
+HOSPITALITY		welcome, feed, shelter		neglect, expel			+/–		MANUAL,
+PIETY			worship, devote			blaspheme, neglect		+/–		NATURE/MECH,
+CHARITY			give, support			hoard, selfish			+/–		INTERACTION,
+JUSTICE			arbitrate, compensate		cheat, oppress			+/–		INTERACTION,
+HUMILITY		yield, defer, admit		boast, vaunt			+/–		INTERACTION,
+HONESTY			speak truth, admit		lie, deceive			+/–		PERCEPTION,
+FRATERNITY		aid, unite			ostracize, betray		+/–		RELATIONAL,
+
+
+Currency
+
+1. Establish the Baseline Value
+You already have the core baseline for your economy:
+1 sila silver = 0.73 kg grain
+This sets the purchasing power of silver in terms of the most essential commodity (food).
+2. Determine Metal-to-Metal Ratios
+Historically, the value ratios between precious metals were relatively stable but set by ruling authorities or market forces. The most common historical ratios were around 12:1 to 15:1 for gold to silver and approximately 40:1 to 50:1 for silver to copper by weight. 
+For this example, we will use the Roman system's approximate ratios under Augustus: 
+1 gram of gold ≈ 12 grams of silver
+1 gram of silver ≈ 41 grams of copper 
+3. Calculate Equivalent Values in Grain
+Using the ratios and your baseline, you can now determine the grain value for all metals:
+Silver: 1 gram silver ≈ 0.73 kg grain / (weight of 1 sila silver). If we assume a sila is a weight of, say, 11g (similar to a historical shekel), then 1 gram of silver ≈ 0.066 kg of grain.
+Gold: Since 1g gold ≈ 12g silver, 1 gram of gold ≈ 12 × (0.066 kg grain) ≈ 0.79 kg grain.
+Copper: Since 1g silver ≈ 41g copper, 1 gram of copper ≈ 0.066 kg grain / 41 ≈ 0.0016 kg grain. 
+4. Determine Prices for Other Goods
+The value of all other goods will be determined by their supply and demand relative to grain and metals in your specific market:
+Labor: A day's worth of common labor might be valued at a certain amount of grain (e.g., 2 kg of grain) or its silver equivalent.
+Manufactured Goods: The price of a tool would reflect the cost of the raw copper, plus the labor required to make it.
+Luxury Items: Items like spices, fine cloth, or exotic materials would have prices driven by scarcity and desirability, expressed in silver or gold weight
+
+func get_item_market_value(item, market_context):
+    # Baseline: calculate weight in silver/grain equivalent
+    base_value = item.weight * silver_value_per_gram * grain_value_per_silver
+    # Apply all quality, condition, rarity modifiers (from item.modifiers)
+    value_mod = ModifierSystem.get_total_value_modifier(item.modifiers)
+    # Scarcity/demand: context from trade logs
+    scarcity_mod = market_context.get_scarcity_mod(item.type)
+    # Self-correction: average over all recent transaction values for this item
+    # Final calculation
+    true_value = base_value * value_mod * scarcity_mod
+    return round(true_value, 2)
+
+[Promotions are decided by Superiors. Leaders need PromotionRequirements-> that factor in personal dispostion]
+
+To receive a promotion, a character (C) must meet or exceed a dynamic threshold set by the superior (S).
+
+Character Faction Member Score = Fame Score + Current Prestige Level + Total Influence
+
+Promotion Threshold = Superior's Prestige Level + (Superior's Influence/Superior's Dispostion)
+
+
+================================================================================
+                         RUMOR/GOSSIP SYSTEM
+              (Shannon Entropy-Based Information Propagation)
+================================================================================
+
+I. CORE CONCEPT
+--------------------------------------------------------------------------------
+Rumors are tracked as INFORMATION PACKETS with entropy values. 
+- High Entropy = Fresh, valuable, actively spreading
+- Low Entropy = Stale, common knowledge, or forgotten
+- Entropy determines both SPREAD RATE and DECAY RATE
+
+================================================================================
+
+II. NEW TRACKED VARIABLES (Per Rumor)
+--------------------------------------------------------------------------------
+var rumor_id: int                      # Unique identifier
+var subject: Actor                     # Who the rumor is about
+var witness_list: Array[Actor]         # Who has heard it
+var witness_count: int                 # Total who know
+var origin_actor: Actor                # Original witness/source
+var origin_turn: int                   # When event occurred
+var last_spread_turn: int              # Last time it propagated
+var rumor_content: Dictionary          # UEG event structure (Who/What/When/Where)
+var veracity:  float                    # 0.0-1.0 (how true it is)
+var severity: float                    # 0.0-1.0 (how significant the event was)
+var entropy: float                     # Current Shannon entropy value
+var spread_probability: float          # Chance to spread per social interaction
+var sentiment:  String                  # "Positive", "Negative", "Neutral"
+
+================================================================================
+
+III.  SHANNON ENTROPY CALCULATION
+--------------------------------------------------------------------------------
+
+A. Base Formula:
+   H = -Σ (p_i × log₂(p_i))
+
+   Where p_i represents probability distribution across AWARE vs UNAWARE population
+
+B. Rumor Entropy Formula: 
+
+   p_aware = Witness_Count / Local_Population
+   p_unaware = 1 - p_aware
+   
+   H = -( p_aware × log₂(p_aware) + p_unaware × log₂(p_unaware) )
+
+   Edge cases:
+   - IF p_aware = 0 THEN H = 0 (no information exists)
+   - IF p_aware = 1 THEN H = 0 (everyone knows, no information value)
+   - Maximum H ≈ 1.0 when p_aware = 0.5 (half know, half don't)
+
+C. Modified Entropy (incorporating severity and time):
+
+   H_effective = H × Severity_Mod × Freshness_Mod × Veracity_Mod
+
+   Severity_Mod = 0.5 + (Severity × 0.5)          # Range: 0.5 - 1.0
+   Freshness_Mod = 1 / (1 + (Turns_Since_Event / 72000))  # Decays over days
+   Veracity_Mod = 0.3 + (Veracity × 0.7)          # False rumors decay faster
+
+================================================================================
+
+IV. SPREAD MECHANICS
+--------------------------------------------------------------------------------
+
+A. Spread Probability (per social interaction):
+
+   Base_Spread_Chance = H_effective × Speaker_Charisma/100 × Topic_Relevance
+   
+   Topic_Relevance Modifiers:
+   - Rumor about listener's faction: ×2.0
+   - Rumor about listener's enemy: ×1.8
+   - Rumor about listener's friend: ×1.5
+   - Rumor about stranger: ×0.5
+   - Rumor already known by listener: ×0.0 (no spread)
+
+B. Spread Resolution: 
+
+   IF Random(100) < Base_Spread_Chance × 100 THEN:
+       Add listener to witness_list
+       witness_count += 1
+       last_spread_turn = current_turn
+       Recalculate entropy (H decreases as more know)
+       
+       # Mutation chance (rumors change as they spread)
+       IF Random(100) < (100 - Veracity × 100) × 0.1 THEN:
+           Mutate_Rumor()  # Slight detail change
+           Veracity -= 0.05
+
+C. Mutation Types:
+   - Exaggeration: Severity += 0.1
+   - Minimization: Severity -= 0.1
+   - Actor Swap: Subject changes to associated actor
+   - Detail Loss: Remove Where or When component
+   - Sentiment Flip: Rare, Positive ↔ Negative
+
+================================================================================
+
+V. DISSIPATION MECHANICS
+--------------------------------------------------------------------------------
+
+A.  Dissipation Check (every 3000 turns / 1 hour):
+
+   Dissipation_Rate = (1 - H_effective) × Base_Decay × Population_Factor
+   
+   Base_Decay = 0.01 per hour
+   Population_Factor = Local_Population / Witness_Count  # Faster decay if few know
+   
+   H_effective -= Dissipation_Rate
+   
+   IF H_effective < 0. 05 THEN: 
+       Rumor_State = "Forgotten"
+       # Remove from active tracking, archive or delete
+
+B. Crystallization Check (rumor becomes permanent Reputation):
+
+   IF witness_count > Local_Population × 0.6 THEN:      # >60% know
+       IF Turns_Since_Event > 504000 THEN:               # >1 week old
+           IF Veracity > 0.7 THEN:                       # Mostly true
+               Crystallize_To_Reputation()
+           ELSE:
+               # False rumor widely believed
+               Crystallize_To_False_Reputation()
+               Subject. Suspicion += 10  # People suspect something's off
+
+C. Crystallization Effect: 
+
+   Crystallize_To_Reputation():
+       # Permanent modification to subject's social stats
+       IF Sentiment = "Positive" THEN:
+           Subject.Fame += Severity × 10
+           Subject.Reputation_Rating += Severity × 5
+       ELSE IF Sentiment = "Negative" THEN: 
+           Subject.Fame += Severity × 5  # Infamy is still fame
+           Subject. Reputation_Rating -= Severity × 10
+           Subject.Ethics -= Severity × 2
+       
+       # Archive rumor content to subject's "Known History"
+       Subject.known_events.append(rumor_content)
+       
+       # Remove from active rumor pool
+       Rumor_State = "Crystallized"
+
+================================================================================
+
+VI.  RADIUS & LOCALITY
+--------------------------------------------------------------------------------
+
+A.  Rumor Radius (spatial spread limitation):
+
+   Initial_Radius = Origin tile only
+   
+   Radius expands based on: 
+   - Witness travel (carries rumor to new areas)
+   - Market/tavern locations (information hubs, ×3 spread rate)
+   - Messenger NPCs (deliberate spread, ignores radius)
+
+B. Local Population Calculation:
+
+   Local_Population = NPCs within (Witness_Radius × Spread_Factor)
+   
+   Spread_Factor by location type:
+   - Isolated: ×0.5 (farms, wilderness)
+   - Village: ×1.0 (base)
+   - Town:  ×2.0
+   - City: ×4.0
+   - Capital: ×8.0
+
+C. Cross-Region Spread:
+
+   Rumors can jump regions via:
+   - Traveling merchants (check every 72000 turns)
+   - Military movements
+   - Player character travel (carries known rumors)
+   - Official messengers (for Macro-level events only)
+
+================================================================================
+
+VII. DISPOSITION & SOCIAL INTEGRATION
+--------------------------------------------------------------------------------
+
+A. Rumor Impact on Disposition:
+
+   When NPC learns rumor about another actor:
+   
+   Disposition_Change = Severity × Sentiment_Value × Relationship_Modifier
+   
+   Sentiment_Value:
+   - Positive: +1
+   - Neutral: 0
+   - Negative: -1
+   
+   Relationship_Modifier:
+   - Rumor about enemy:  Inverted (+Negative = good for me)
+   - Rumor about friend:  Direct (+Positive = good)
+   - Rumor about neutral: ×0.5
+
+B.  Suspicion Generation: 
+
+   IF Rumor contradicts known behavior of subject THEN:
+       Listener.Suspicion_of_Subject += 10
+       Listener.Suspicion_of_Speaker += 5  # Maybe lying? 
+   
+   IF Multiple contradictory rumors exist THEN:
+       All listeners gain +15 general Suspicion
+       Rumor with lower Veracity decays ×2 faster
+
+C.  Gossip as Social Action: 
+
+   Speech Type:  Narration (Neutral) or Mockery (Negative) or Praising (Positive)
+   Psyche Stat:  Pathos (emotional rumors) or Logos (factual rumors) or Ethos (reputation rumors)
+   
+   Spreading rumors = Social interaction
+   - Costs speaker 1 Pathos/Logos/Ethos (minor)
+   - Success builds rapport (shared information = bonding)
+   - Failure (listener already knows, or doesn't care): No effect
+
+================================================================================
+
+VIII. PLAYER INTERACTION
+--------------------------------------------------------------------------------
+
+A.  Player as Witness:
+
+   When Player witnesses event:
+   - Auto-generate rumor with Veracity = 1.0
+   - Player can choose to spread or suppress
+   - Suppression: Rumor only spreads if other witnesses exist
+
+B. Player Spreading Rumors:
+
+   Social Action:  "Share Information" or "Spread Rumor"
+   - Select known rumor from journal
+   - Speech check determines spread success
+   - Player can deliberately lie (create false rumor, Veracity = 0.0)
+   - Deception check if listener is skeptical
+
+C. Player as Subject:
+
+   Rumors about Player affect:
+   - NPC initial Disposition (before meeting)
+   - Recruitment difficulty (Fame/Infamy)
+   - Shop prices (±10% based on reputation)
+   - Guard alertness (negative rumors = higher scrutiny)
+   - Quest availability (some require good/bad reputation)
+
+D.  Rumor Investigation:
+
+   Player can attempt to: 
+   - Trace rumor source (Inquiry speech + Investigation)
+   - Verify rumor truth (costs time, requires evidence)
+   - Counter rumor (spread opposing information)
+   - Suppress rumor (intimidate witnesses, costs Influence)
+
+================================================================================
+
+IX. UEG INTEGRATION
+--------------------------------------------------------------------------------
+
+A. Rumor Content Structure (mirrors UEG):
+
+   rumor_content = {
+       "who1": Actor,           # Subject of rumor
+       "what1":  Verb,           # Action taken
+       "who2": Actor/null,      # Enacted upon (if applicable)
+       "when1": Time/vague,     # Specific or "recently"/"long ago"
+       "where1": Location/vague,# Specific or "somewhere in [region]"
+       "sentiment": String,     # From verb connotation
+       "severity": float        # From verb + context
+   }
+
+B. Rumor Generation from Events:
+
+   When UEG generates event with witnesses:
+   
+   IF Event. witness_count > 0 THEN: 
+       new_rumor = {
+           subject: Event.Who1,
+           rumor_content: Event.export_to_rumor(),
+           veracity: 1.0,
+           severity: Calculate_Severity(Event),
+           entropy: Calculate_Initial_Entropy(witness_count, local_pop),
+           sentiment: Event.What1.connotation
+       }
+       Active_Rumors.append(new_rumor)
+
+C. Severity Calculation:
+
+   Base_Severity = Verb_Type_Weight × Target_Importance
+   
+   Verb_Type_Weights:
+   - Movement: 0.1
+   - Daily Living: 0.1
+   - Manual: 0.2
+   - Interaction: 0.4
+   - Communication: 0.3
+   - Cognition: 0.2
+   - Emotional: 0.3
+   - Mental Intent: 0.5
+   - Vigorous: 0.7
+   - Ownership: 0.5
+   
+   Target_Importance:
+   - Commoner: ×1.0
+   - Notable: ×1.5
+   - Noble: ×2.0
+   - Ruler: ×3.0
+
+================================================================================
+
+X.  FORMULAS SUMMARY
+--------------------------------------------------------------------------------
+
+Shannon Entropy: 
+    H = -Σ (p_i × log₂(p_i))
+    p_aware = Witness_Count / Local_Population
+    p_unaware = 1 - p_aware
+
+Effective Entropy:
+    H_eff = H × (0.5 + Severity×0.5) × (1/(1 + Turns/72000)) × (0.3 + Veracity×0.7)
+
+Spread Chance:
+    Spread% = H_eff × (Charisma/100) × Topic_Relevance
+
+Dissipation Rate:
+    Decay = (1 - H_eff) × 0.01 × (Local_Pop / Witness_Count)
+
+Crystallization Threshold:
+    IF (Witness_Count > Pop×0.6) AND (Age > 504000 turns) AND (Veracity > 0.7)
+    THEN → Permanent Reputation
+
+Disposition Impact:
+    ΔDisposition = Severity × Sentiment_Value × Relationship_Mod
+
+================================================================================
+
+XI.  BUFFER SYSTEM (Performance Optimization)
+--------------------------------------------------------------------------------
+
+A. Active Rumor Cap:
+   - Max 100 active rumors per region
+   - Oldest/lowest entropy rumors purged first
+   - Crystallized rumors archived, not actively tracked
+
+B. Update Frequency:
+   - Entropy recalculation:  Every 3000 turns (1 hour)
+   - Spread checks: Only during social interactions
+   - Dissipation:  Batch process every 72000 turns (1 day)
+
+C. Player Proximity Priority:
+   - Rumors in player's region: Full simulation
+   - Adjacent regions:  Simplified spread (aggregate)
+   - Distant regions: Snapshot only (update on player arrival)
+
+RR = [(Resilience × 0.4) + (Aptitude × 0.4) + (Charisma × 0.2)] / 10
+
+Disposition_Change = (Base_Calculation) / (1 + RR × 0.5)

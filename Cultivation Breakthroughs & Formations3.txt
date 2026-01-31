@@ -685,60 +685,60 @@ Job-System: Cultivator type-Notes: Cultivator-type[Archetype*][Must choose' job&
 These define the core method by which a practitioner interacts with spiritual energy (Qi). 
 
 Qi / Dharma Cultivator[Alchemist / Scholar]: The most common type, focusing on absorbing worldly energy to fuel external spells and elemental manipulation. 
-[Learning: Arcane (Alchemical (internal)]
+[Learning][Control][Free Choice]
 
-Body Cultivator[Monk / Fighter (Unarmed)]: Tempering the physical vessel to become an indestructible weapon, often trusting their own physique over magical items.
-[Athletics: Running, Jumping, Weightlifting][Combat: Striking, Grappling] 
+Body Cultivator[Paladin / Fighter (Unarmed)]: Tempering the physical vessel to become an indestructible weapon, often trusting their own physique over magical items.
+[Athletics][Combat][Control] 
 
-Buddhist Cultivator[Paladin/Cleric / Diplomat: Attains power through sutras and mantras, often focusing on indestructible defensive "Golden Bodies".
-[Speech: Bartering, Persuasion, Negotiation, Inquiry, Description, Exposition, Pleading]
+Buddhist Cultivator[Monk/Cleric / Diplomat: Attains power through sutras and mantras, often focusing on indestructible defensive "Golden Bodies".
+[Speech][Survival ][Control]
 
 2. Professional & Auxiliary Occupations[Job path: Career [All require unlocking Arcane for Magic (Must Atleast learn Alchemy)]
 
 These roles provide the resources and tools necessary for the cultivation world to function. 
 
-Rogue Path Cultivator [Custom]: Transforming repetitive daily tasks into specialized expertise.
+Rogue Path Cultivator [Serf / Slave]: Transforming repetitive daily tasks into specialized expertise.
 
 Elemental Cultivator [Naturalist / Geologist]: Specializes in specific resonances like Fire, Ice, or Metal Qi. 
-[[Learning: Physics, Geology, Arcane (Elemental, Alchemical(internal), Rituals, Formations, Entites)]  Survival, 
+[[Arcane: Elemental[Reaction Force], Universal[Law of Domains], Alchemical(internal)[(Neidan)], Release,][Free][Free], 
 
 Weapon Cultivator [Jutsu-Master][Weapon Master / Fighter]: Specializes in making a weapon an extension of their soul. Sub-types include Sword, Spear, Saber, and Axe cultivators.
-[Weapon Skills: Select 4 types]
+[Weapon Skills][Free][Free]
 
 Artifact/Forge Cultivator [Master-Smith][Blacksmith / Artisan]: Specializes in Tool-working and Forging. Creates and uses Magic Workshops to produce a variety of ordinary objects into vessel of/for storing great power. 
-[Metallurgy: Smelting, Refining], [Artistry: Blacksmithing, Goodsmithing][Stonewroking: All]
+[Metallurgy][Artistry][Stoneworking]
 
 Alchemist[Apothecary / Crafter]: Refines spiritual herbs into pills (elixirs) to aid breakthroughs or heal injuries.[Does not have Internal Alchemy]
-[Artistry: Goldsmithing, Silversmithing, Jewel-crafting, Calligraphy, Alchemy(External)],[Agriculture: Animal Husbandry, Floriculture ],[Survival: Conditioning, Medical], [Learning: Mercantile][Metallurgy: All]
+[Artistry:][Artistry: Alchemy(External)][Agriculture: Animal Husbandry, Floriculture ],[Survival: Conditioning, Medical],[Learning: Mercantile][Metallurgy]
 
 Formation / Array Master[Cartographer / Scribe]: Uses energy patterns to create protective barriers, traps, or spatial pockets.
-[Arcane (Elemental, Alchemical(internal), Rituals, Formations, Entites), Geography, Calligraphy]
+[[Arcane: Elemental[Reaction Force], Universal[Law of Domains], Alchemical(internal)[(Neidan)], Rituals, Formations],[Learning: Physics ,Geography, Calligraphy, Performance]
 
 Gu / Insect Cultivator[Theif / Beast Master (Insect, reptiles)]: A sinister path using poisonous insects and curses to weaken or control enemies.
-[Arcane (Elemental, Alchemical(internal), Rituals, Formations, Entites)][Survival: Hunting, Trapping, Gathering, Conditioning: Poison][Roguery: Lockpicking, Stealth, Deception, Larceny][Agriculture: Animal Husbandry, Apiculture]
-[Roguery: All]
+[Arcane: Alchemical(internal)[(Neidan)], Rituals][Survival: Hunting, Trapping, Gathering, Conditioning: Poison][Roguery:][Agriculture: Animal Husbandry, Apiculture]
+
 
 Talisman Master[Scribe / Jeweler]: Inscribes spells onto paper or jade for single-use effects.
-[Artistry: Jewel-crafting, Calligraphy][Learning: Culture, Arcane]
+[Artistry: Jewel-crafting, Calligraphy][Learning: Culture, Geometry, Histoy][Arcane: Elemental[Reaction Force], Universal[Law of Domains], Release, Rituals, Formations,]
 
 Beast Tamer[Beast Master / Hunter]: Breeds and commands spiritual beasts or monsters as combat partners.
-[Agriculture: Animal Husbandry], [Survival: Medical, Hunting, Trapping,], [Roguery: Stealth], [Athletics: All]
+[Agriculture: Animal Husbandry], [Survival: Medical, Hunting, Trapping,], [Roguery: Stealth], [Athletics]
 
 Immortal Physician / Chef[Healer / Chef]: Uses Qi to heal others through acupuncture or to cook food infused with spiritual energy.[Does not have Internal Alchemy] 
-[Survival: Medical],[Speech: Commanding, Inquiry, Description, Exposition],[Agriculture: All],
+[Survival: Medical],[Speech: Commanding, Inquiry, Description, Exposition],[Agriculture],
 [Learning: Cooking, Cuisine, Religion, Physics, Geometry, Anatomy, Biology, Mathematics, Kinesiology, Geography, Mercantile, Geology, Calligraphy, Alchemy(External)[(Waidan)]]
 
 Music/Sound Cultivator[Musician / Performer]: Uses instruments to affect the mind, emotions, or physical surroundings through vibrations.
 [Learning: Musicality, Mathematics, Performance, Arcane (Rituals), Artistry: Pottery, Glassmaking, Woodworking, Musicality, Speech: Narration, Description, Exposition, Prasising,]
 
 Soul / Spirit Cultivator[Occultist/ Mage / Scholar]: Manipulates mental energy or the ethereal realm to attack the mind or control ghosts.:
-[Learning: Arcane (Rituals, Formations, Entites), Biology (Terra, Astra), History,Culture]
+[Learning:, Biology (Terra, Astra), History,Culture][Arcane: Alchemical(internal)[(Neidan)], Release, Rituals, Entites)
 
 Duo Cultivator [Charmer / Con Artist/ Rogue]: A controversial path where two practitioners exchange Qi during intimate contact to speed up advancement.
 [Speech: Intimidation, Coercion, Persuasion, Argumentaion, Commanding, Interrogation, Prasising, Mockery,],[Learning: Performance, Mercantile][Learning: Arcane (Alchemical(internal), Rituals, Entites)]
 
 Ancient Witch / Shaman [Ranger / Survivalist]: Uses prehistoric rituals, sacrifices, and transformations that predate modern Qi systems. 
-[Survival: Medical, Hunting, Trapping, Gathering, Scavenging][Learning: Arcane (Rituals, Formations, Entites)][Speech: Commanding (Ordering), Negotiation, Interrogation, Inquiry, Narration]
+[Survival: Medical, Hunting, Trapping, Gathering, Scavenging][Learning: Arcane: Rituals, Formations, Entites][Speech: Commanding (Ordering), Negotiation, Interrogation, Inquiry]
 [Agriculture: Animal Husbandry [butchery], Aquaculture, Horticulture (Fruit & Vegs), Floriculture (Florals), Forestry (Logging), Apiculture (Beekeping), Food Processing]
 
 
@@ -1208,77 +1208,93 @@ Alchemy							Internal Alchemy (Spiritual Ingredients)
 			Tragic/Deep: Chaotic, cold, aggressive, "Yin." (Best for Curses, Soul-Repair, and Heavy Armor).
 
 
+							Sects: Roles & Resources
 
-Sects control cultivation resources through a combination of territorial dominance, economic monopolies, and strict internal hierarchies. They operate essentially as sovereign states or massive business conglomerates where the "currency" is spiritual power. 
-1. Territorial Dominance & "Resource Points"
-Sects claim physical land to monopolize the natural production of energy and materials.
-Spirit Veins & Mines: Sects are typically built over "Spirit Veins" where environmental Qi is densest. They control Spirit Stone mines, utilizing mortal laborers or low-level disciples to extract the raw energy used as currency.
-Vassal States & Tribute: Ruling sects often subordinate kingdoms or lesser clans. These vassal states are obliged to pay "tribute" in the form of raw materials, gold, or talented recruits in exchange for protection from beasts and other sects.
-Medicinal Plantations: Most sects maintain massive herb gardens to grow rare spiritual plants, often specialized by the sect’s primary element (e.g., a Fire sect owning a volcano for fire-type herbs). 
-2. Internal Resource Distribution (The "Sect Point" System)
-Sects do not give away resources for free; they use a system of Contribution Points to ensure the sect grows stronger as a whole.
-Missions: Disciples earn points by completing tasks ranging from mundane gardening to high-risk espionage.
-Tiered Hierarchy: Resources are allocated based on status:
-Outer Disciples: Receive basic manuals and survival resources; they are primarily the labor force.
-Inner/Core Disciples: Receive high-purity pills, secret techniques, and access to restricted areas. 
-3. Economic & Specialist Monopolies
-Sects control the processing of raw materials, which is often more valuable than the materials themselves.
-Alchemy & Refinement: By hoarding Alchemy Recipes and Master Blacksmiths, a sect can turn cheap herbs into expensive pills or raw ore into Divine Artifacts.
-Knowledge Hoarding: Techniques and "Jade Slips" are the most strictly controlled resources. A sect may guard its core inheritance for thousands of years, preventing any outsiders from learning their specific path to power. 
-4. Direct Acquisition (War & Raiding)
-When natural resources aren't enough, sects resort to conflict.
-Secret Realms: Sects frequently go to war over "Secret Realms"—pocket dimensions that open periodically and contain ancient treasures or concentrated Qi.
-Rogue Raiding: Stronger sects may raid or forcibly occupy the resource points of weaker sects to sustain their own growth. 
+			Sects control cultivation resources through a combination of territorial dominance, economic monopolies, and strict internal hierarchies. 
+				They operate essentially as sovereign states or massive business conglomerates where the "currency" is spiritual power. 
 
-In a sect, knowledge is power, and manuals are the most heavily guarded assets. The hierarchy ensures that no disciple receives a technique they aren't "loyal" enough to protect or "strong" enough to practice without dying.
-1. Outer Disciple Manuals (The Basics)
-These are mass-produced and often shared among thousands. They are designed to "filter" the talented from the mediocre.
-Manual Grade: Mortal or Low-Earth Grade.
-Content: Focuses on the first three layers of body tempering (Skin, Muscle, Viscera). They rarely contain "Secret Body" transitions.
-The Restriction: These manuals are often incomplete. A Sect Library will provide the manual for the first three realms, but the "transition" to Bone Forging is withheld until the disciple earns enough Contribution Points to become an Inner Disciple.
-2. Inner Disciple Manuals (The Foundation)
-Inner disciples are the "true" members of the sect. Their manuals provide a clear path to high-level power.
-Manual Grade: High-Earth or Low-Heaven Grade.
-Content: Includes the Bone Forging and Marrow Cleansing stages. These manuals often include the first Secret Body Techniques, such as the Vajra Body or Flood Dragon Strength.
-The Restriction: These are usually stored as Jade Slips that can only be read once or are protected by a Soul Brand. If the disciple tries to teach an outsider, the brand might erase their memory or kill them.
-3. Core Disciple Manuals (The Elite)
-Core disciples are the future Elders of the sect. They receive the "Sect Inheritances."
-Manual Grade: High-Heaven or Divine/Mystic Grade.
-Content: Contains the formulas for Pulse Condensing and the secrets of Body Integration. These manuals teach how to align the body with the specific Laws the sect specializes in (e.g., the "True Fire of the Sun" for a Fire Sect).
-The Restriction: These manuals are often One-of-a-Kind. They may require a specific bloodline or a Legacy Trial to unlock.
-4. Legacy/Sovereign Manuals (The Sect Leader)
-These are the "Forbidden Books" that define the sect's existence.
-Manual Grade: Supreme/God Grade.
-Content: The path to the Void God Weapon and beyond. This knowledge is almost never written down; it is passed through Divine Sense from the current Leader to the successor.
-The Restriction: Often kept in a Secret Realm or guarded by the sect’s Grand Array. Losing this manual usually results in the sect's extinction.
-Summary of Manual Access
-Rank	Primary Goal	Manual Access	Resource Access
-Outer	Labor & Filtering	General Qi Gathering	Low-Grade Spirit Stones
-Inner	Specialization	Path-Specific Tempering	Mid-Grade Pills
-Core	Future Leadership	Secret Body Arts	High-Grade Beast Blood
-Elder	Defense & Research	Forbidden Law Integration	Sect Treasury Access
+			Territorial Dominance & "Resource Points": Sects claim physical land to monopolize the natural production of energy and materials.
+				Spirit Veins & Mines: Typically built over "Spirit Veins" where environmental Qi is densest, sects control Spirit Stone mines, utilizing mortal laborers or low-level disciples.
+				Vassal States & Tribute: Ruling sects often subordinate kingdoms or lesser clans. These vassal states are obliged to pay "tribute" in the form of raw materials, gold, or talented recruits in exchange for protection from beasts and other sects.
+				Medicinal Plantations: Most sects maintain massive herb gardens to grow rare spiritual plants, often specialized by the sect’s primary element s. 
 
-In most cultivation worlds, hierarchies manage three primary paths: Essence (Energy), Body (Physical), and Soul (Mental/Divine). Sects control these via a "Need-to-Know" basis to prevent lower-level disciples from "overfilling" their meridians or losing their minds to complex laws.
-1. Essence Path (Qi/True Essence)
-The most common path focused on internal energy storage and external spellcasting.
-Outer (The Filter): Manuals focus on Qi Condensation and basic Five-Element spells. Disciples receive "Low-Grade Spirit Stones" to maintain energy but lack the manuals to "Compress" Qi into higher forms.
-Inner (The Specialist): Access to Foundation Establishment techniques. They receive Pills of Clear Thought to prevent Qi Deviation while learning to refine "True Essence" from raw Qi.
-Core (The Master): Manuals for Golden Core or Nascent Soul formation. They are granted access to the sect's Spirit Vein Core, where environmental energy is 100x thicker than outside.
-2. Soul/Mental Path (Divine Sense/Will)
-The most dangerous path, involving the expansion of the mind and the manipulation of reality.
-Outer: Basic Meditation and Visualization techniques to build focus. They are given "incense" to help calm the mind but no offensive soul arts.
-Inner: Manuals for Divine Sense expansion, allowing the disciple to "see" without eyes. They receive Soul-Nourishing Herbs to prevent their spirit from cracking under the pressure of higher cultivation.
-Core: Forbidden Soul Attack manuals (e.g., Soul Piercing Needle). They are taught how to survive Inner Demon Tribulations and how to anchor their soul to survive physical death.
-3. Support/Auxiliary Paths (Alchemy, Arrays, Smithing)
-These disciples are the sect's "Engineers" and receive resources based on their production value.
-Outer: Manuals for identifying herbs and basic fire-control. They act as assistants to higher-tier alchemists.
-Inner: Access to Secret Pill Recipes and Array Blueprints. They receive the sect's mid-grade "Cauldrons" or "Hammers."
-Core: Manuals for Heavenly Grade Artifacts or "Grand Arrays" that protect the sect. They have the authority to request any material from the Sect Treasury.
-Hierarchical Resource Table
-Tier	Manual Content	Key Resource Provided	Sect Role
-Outer	Qi/Body Basics	Low-Grade Stones/Food	Labor/Mining
-Inner	Specialization & Foundation	Mid-Grade Pills/Jade Slips	Combat/Protection
-Core	Inheritance & Laws	High-Grade Beast Blood/Veins	Future Leadership
-Ancestor	Universal Truths/Dao	Primordial Qi/Life Fruit	Sect Deterrent
-Each path involves distinct stages of progression, typically marked by increasingly powerful techniques and deeper understanding. Advancement often requires significant dedication, resources, and overcoming various challenges, including internal roadblocks and external threats. Within the structured environment of a sect, disciples follow established guidance, while rogue cultivators might forge their own paths through unconventional means and personal discovery.
+			Internal Resource Distribution (The "Sect Point" System): Sects do not give away resources for free; they use a system of Contribution Points to ensure the sect grows stronger as a whole.
+				Missions: Disciples earn points by completing tasks ranging from mundane gardening to high-risk espionage.
+				Tiered Hierarchy: Resources are allocated based on status:
+						Outer Disciples: Receive basic manuals and survival resources; they are primarily the labor force.
+							Inner/Core Disciples: Receive high-purity pills, secret techniques, and access to restricted areas. 
+
+			Economic & Specialist Monopolies: Sects control the processing of raw materials, which is often more valuable than the materials themselves.
+				Alchemy & Refinement: By hoarding Alchemy Recipes and Master Blacksmiths, a sect can turn cheap herbs into expensive pills or raw ore into Divine Artifacts.
+				Knowledge Hoarding: Techniques and "Jade Slips" are the most strictly controlled resources. A sect may guard its core inheritance for thousands of years, preventing any outsiders from learning their specific path to power. 
+				Direct Acquisition (War & Raiding): When natural resources aren't enough, sects resort to conflict.
+					Secret Realms: Sects frequently go to war over "Secret Realms"—pocket dimensions that open periodically and contain ancient treasures or concentrated Qi.[Dungeons/Nefia]
+						Rogue Raiding: Stronger sects may raid or forcibly occupy the resource points of weaker sects to sustain their own growth. 
+
+
+							Outer Disciple Manuals (The Basics)
+						These are mass-produced and often shared among thousands. They are designed to "filter" the talented from the mediocre.
+			Manual Grade: Mortal or Low-Earth Grade.
+				Content: Focuses on the first three layers of body tempering (Skin, Muscle, Viscera). They rarely contain "Secret Body" transitions.
+				The Restriction: These manuals are often incomplete. A Sect Library will provide the manual for the first three realms, 
+					but the "transition" to Bone Forging is withheld until the disciple earns enough Contribution Points to become an Inner Disciple.
+
+							Inner Disciple Manuals (The Foundation)
+						Inner disciples are the "true" members of the sect. Their manuals provide a clear path to high-level power.
+			Manual Grade: High-Earth or Low-Heaven Grade.
+				Content: Includes the Bone Forging and Marrow Cleansing stages. These manuals often include the first Secret Body Techniques, such as the Vajra Body or Flood Dragon Strength.
+				The Restriction: These are usually stored as Jade Slips that can only be read once or are protected by a Soul Brand. 
+							If the disciple tries to teach an outsider, the brand might erase their memory or kill them.
+
+							Core Disciple Manuals (The Elite)
+						Core disciples are the future Elders of the sect. They receive the "Sect Inheritances."
+			Manual Grade: High-Heaven or Divine/Mystic Grade.
+				Content: Contains the formulas for Pulse Condensing and the secrets of Body Integration. These manuals teach how to align the body with the specific Laws the sect specializes ins.
+				The Restriction: These manuals are often One-of-a-Kind. They may require a specific bloodline or a Legacy Trial to unlock.
+
+							Legacy/Sovereign Manuals (The Sect Leader)
+						These are the "Forbidden Books" that define the sect's existence.
+			Manual Grade: Supreme/God Grade.
+				Content: The path to the Void God Weapon and beyond. This knowledge is almost never written down; it is passed through Divine Sense from the current Leader to the successor.
+				The Restriction: Often kept in a Secret Realm or guarded by the sect’s Grand Array. Losing this manual usually results in the sect's extinction.
+
+							Summary of Manual Access
+
+			Rank		Primary Goal		Manual Access			Resource Access
+			Outer		Labor & Filtering	General Qi Gathering		Low-Grade Spirit Stones
+			Inner		Specialization		Path-Specific Tempering		Mid-Grade Pills
+			Core		Future Leadership	Secret Body Arts		High-Grade Beast Blood
+			Elder		Defense & Research	Forbidden Law Integration	Sect Treasury Access
+
+						Hierarchies manage three primary paths: Essence (Energy), Body (Physical), and Soul (Mental/Divine). 
+						Sects control these via a "Need-to-Know" basis to prevent lower-level disciples from "overfilling" their meridians or losing their minds to complex laws.
+
+							Essence Path (Qi/True Essence)
+						The most common path focused on internal energy storage and external spellcasting.
+			Outer (The Filter): Manuals focus on Qi Condensation and basic Five-Element spells. Disciples receive "Low-Grade Spirit Stones" to maintain energy but lack the manuals to "Compress" Qi into higher forms.
+			Inner (The Specialist): Access to Foundation Establishment techniques. They receive Pills of Clear Thought to prevent Qi Deviation while learning to refine "True Essence" from raw Qi.
+			Core (The Master): Manuals for Golden Core or Nascent Soul formation. They are granted access to the sect's Spirit Vein Core, where environmental energy is 100x thicker than outside.
+	
+							Soul/Mental Path (Divine Sense/Will)
+						The most dangerous path, involving the expansion of the mind and the manipulation of reality.
+			Outer: Basic Meditation and Visualization techniques to build focus. They are given "incense" to help calm the mind but no offensive soul arts.
+			Inner: Manuals for Divine Sense expansion, allowing the disciple to "see" without eyes. They receive Soul-Nourishing Herbs to prevent their spirit from cracking under the pressure of higher cultivation.
+			Core: Forbidden Soul Attack manuals (e.g., Soul Piercing Needle). They are taught how to survive Inner Demon Tribulations and how to anchor their soul to survive physical death.
+
+							Support/Auxiliary Paths (Alchemy, Arrays, Smithing)
+						These disciples are the sect's "Engineers" and receive resources based on their production value.
+			Outer: Manuals for identifying herbs and basic fire-control. They act as assistants to higher-tier alchemists.
+			Inner: Access to Secret Pill Recipes and Array Blueprints. They receive the sect's mid-grade "Cauldrons" or "Hammers."
+			Core: Manuals for Heavenly Grade Artifacts or "Grand Arrays" that protect the sect. They have the authority to request any material from the Sect Treasury.
+
+							Hierarchical Resource Table
+			Tier		Manual Content			Key Resource Provided		Sect Role
+			Outer		Qi/Body Basics			Low-Grade Stones/Food		Labor/Mining
+			Inner		Specialization & Foundation	Mid-Grade Pills/Jade Slips	Combat/Protection
+			Core		Inheritance & Laws		High-Grade Beast Blood/Veins	Future Leadership
+			Ancestor	Universal Truths/Dao		Primordial Qi/Life Fruit	Sect Deterrent
+
+			Each path involves distinct stages of progression, typically marked by increasingly powerful techniques and deeper understanding.
+ 				Advancement often requires significant dedication, resources, and overcoming various challenges, including internal roadblocks and external threats. 
+				Within the structured environment of a sect, disciples follow established guidance, while rogue cultivators might forge their own paths through unconventional means and personal discovery.
 

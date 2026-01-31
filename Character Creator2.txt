@@ -1,28 +1,37 @@
 Races - [Myth name]		[Modern-Fantasy/Parallel][Game Name/Race]	[Race-Bloodline]	[Known-by Humans as/Appearnce(colloquial)/Seperation] split, more '"natural" magic)
-1	[Human/race 1]	   	[Numen]			[Vir]          		[En]					(High/fantasy mode -.In game race  = More worldinteraction	
-2	[Human/race 2]     	[Human]			[Vir]          		[Enmesgal]
-3	[Human/race 3]     	[Half-ling]		[Vir]      		[Mixed/En-Enmesgal]
-4	[Ælf/Alp/Alfar]         [Elf/Fey/Fae]		[Skovir-El][El-vir] 	[Enshi]					[Elf-race Selection Determined by Skin Color/Tone and Strating Location]  
-5	[Forest Elves]		[High Elf/Noldor]/	[Skovir-El]		"			[El-Skovir][High-elf/Light Elf-Traditional] 
+															(High/fantasy mode -.In game race  = More worldinteraction	
+1.	[Human/race 1]	   	[Numen]			[Vir]          		[En]					
+2.	[Human/race 2]     	[Human]			[Vir]          		[Enmesgal]
+3.	[Human/race 3]     	[Half-ling/Demigod]	[Vir]      		[Mixed/En-Enmesgal]
+4.	[Ælf/Alp/Alfar]         [Elf/Fey/Fae]		[Skovir-El][El-vir] 	[Enshi]			[Elf-race Selection Determined by Skin Color/Tone and Strating Location]  
+5.	[Forest Elves]		[High Elf/Noldor]/	[Skovir-El]		"			[El-Skovir][High-elf/Light Elf-Traditional] 
 	(Ljósálfar(Light Elves))[Wood Elf/Silvan]								   [Wood-elf/Modern]																			
-6	[Mist(y) Elves]		[Orsimer]		[Tåkevir-El] 		"	    		[El-Tåkevir][Pale/Fair - less "radiant" than high elves]
-7	[Sea Elves]		[Falmari]		[Havir-El]		"			[El-Havir][High-elf/Light Elf] 
-8	[High Elves]		[Vanyar/Altmer]		[Højvir-El] 		"		     	[El-Højvir][High-elf/Light Elf] 
-9	[Snow Elves]		[Light Elf]		[Kalvvir-El] 		"	     	     	[El-Kalvvir][Pale/Fair - less "radiant" than high elves]
-10	[Dark Elves]		[Dark/Black Elf]	[Sokrienvir-El]/        "	     		[El-Trúrvir][Dark Elves/Black Elf]
+6.	[Mist(y) Elves]		[Orsimer]		[Tåkevir-El] 		"	    		[El-Tåkevir][Pale/Fair - less "radiant" than high elves]
+7.	[Sea Elves]		[Falmari]		[Havir-El]		"			[El-Havir][High-elf/Light Elf] 
+8.	[High Elves]		[Vanyar/Altmer]		[Højvir-El] 		"		     	[El-Højvir][High-elf/Light Elf] 
+9.	[Snow Elves]		[Light Elf]		[Kalvvir-El] 		"	     	     	[El-Kalvvir][Pale/Fair - less "radiant" than high elves]
+10.	[Dark Elves]		[Dark/Black Elf]	[Sokrienvir-El]/        "	     		[El-Trúrvir][Dark Elves/Black Elf]
 	Dökkálfar(Dark Elves)   [Sindar]		[Trúrvir-El]
 	Svartálfar(Black Elves)			
-11	[Jotun]/		[Ice Giant]/	   	[Storvir/Suurvir]	[Vanir]	      		[Suurvir]
+11.	[Jotun]/		[Ice Giant]/	   	[Storvir/Suurvir]	[Vanir]	      		[Suurvir]
 	[Hrímþursar]		[Frost Giant]		[Titan]
-12	[Jotun]/		[Fire Giant]	   	[Storvir/Suurvir]	[Entians]		[Suurvir]
+12.	[Jotun]/		[Fire Giant]	   	[Storvir/Suurvir]	[Entians]		[Suurvir]
 	[Eldjötnar]					[Giant]
-13	[Dwarves] 	   				[Dvervir/Dwervir]	[Mixed/En-Enshi]  	[El-Trúrvir]
+13.	[Dwarves] 	   				[Dvervir/Dwervir]	[Mixed/En-Enshi]  	[El-Trúrvir]
 	Dökkálfar(Dark Elves) 										[Vir-Nana][Mining Earth/Stone]
 													[Ciri-Nani][Mining Earth/Metal] 
 													[Chisana]Engineering]
-14	[Yaoguai]		[Beast-Folk/Race]	[Yaoguai]		[Tiamat & Hubur]	[Yaoguai/Yokai]
+14.	[Yaoguai]		[Beast-Folk/Race]	[Yaoguai]		[Tiamat & Ummu-Hubur]	[Yaoguai/Yokai]
 	[Yokai]			[All-types][Spirits]/	
 15.	[Lycanthropes]		[Human->animal & vice-versa]						[Yaoguai/Yokai/Lycanthrope]
+16.	[Gala/Demon]		[Monsters(Humanoid)] 	[Ghoul]			[Soul/Spirit]->see below[Hands of Daevas]
+[Realm]													 [->Archetype = Rank/Title (Hand of)]
+[Gods (Devas): Beings who live in temporary bliss and luxury but are still subject to death and rebirth.][Human-> Shàng-Deu-Kamì(Prophet(Pied Piper)) = Rapture]
+[Demi-gods (Asuras): Powerful, competitive beings often consumed by jealousy and conflict.][Human-> Or-chur(Orc/Ogre) = Wrath ]
+[Humans (Manushya): The most fortunate realm for spiritual progress because it offers a balance of pleasure and pain.][Human-> Jī'è-Ue-Fame(Vampire) = Communion]
+[Animals (Tiryak): Beings governed by instinct and fear, often suffering under the control of others.][Human-> Demi-on-gui (Changeling/Skinwalker) = Sacrifice]
+[Hungry Ghosts (Pretas): Tormented beings with insatiable cravings, often depicted with large bellies and tiny throats.][Human-> Wen-shen (Wendigo/Leshy/Wechuge) = Prayer]
+[Hell (Naraka): The lowest state, characterized by intense suffering and anger.][Human-> Demen (Zombie) = The Congregate]
 
 Breeding/Trait [Animals/Marriage]- [2 sets -1 from each parent. only one is rolled by Pc on char-creation][Spouses must sleep in same vincity/even if not in same party- For chance pregnancy roll = Capped at 3 times per week. {define roll chance, virilaty, fertility stat}  ]
 1. Autosomes (Pairs 1–22)
@@ -213,6 +222,57 @@ Bloodline Limit[Innate Ability = Innate[Nature+Technique]]: New Characters- Rndm
 										Intent Roll-> Method roll
 
 [Innate-Nature] -> Innate Nature/Subtypes rolled can have 5 Magnitude freely appiled to spell subtype an can control cross properites ie. fluidity of fire
+
+
+Job-System: [Must choose' Combat-Path and Job ->(Sub)Skill Selection]
+	    [Skill Selection -> Character chooses 3 Major, 3 Minor, & 3 Miscellaneous]		
+	    [SkillCats. with no listed  Sub-skill= all skills optional - SkillCats. with listed Sub-skill = only listed "active"]
+	    ["Active skills" - Any skill can be selected for Major, Minor or Misc [gaining a flat 20%, 12%, & 8% skill gain respectively, Skills listed under selected job if chosen gain a +5% bonus]
+
+1. Primary Combat & Energy Paths [intended Combat path: Justsu [All require unlocking Cultivation for Magic]
+These define the core method by which a practitioner interacts with spiritual energy (Qi). 
+
+[Alchemist / Scholar]:[Learning][Control][Free Choice]
+
+[Paladin / Fighter (Unarmed)]:[Athletics][Combat][Control] 
+
+[Monk / Cleric / Diplomat:[Speech][Survival ][Control]
+
+2. Professional & Auxiliary Occupations[Job path: Career [All require unlocking Arcane for Magic (Must Atleast learn Alchemy)]
+
+These roles provide the resources and tools necessary for the cultivation world to function.
+ 
+[Serf / Slave]: Transforming repetitive daily tasks into specialized expertise.
+
+[Naturalist / Geologist]:[[Arcane: Elemental[Reaction Force], Universal[Law of Domains], Alchemical(internal)[(Neidan)], Release,][Free][Free], 
+
+[Jutsu-Master][Weapon Master / Fighter]: [Weapon Skills][Free][Free]
+
+[Master-Smith][Blacksmith / Artisan]:[Metallurgy][Artistry][Stoneworking]
+
+[Apothecary / Crafter]:[Artistry: Alchemy(External)][Agriculture: Animal Husbandry, Floriculture ],[Survival: Conditioning, Medical],[Learning: Mercantile][Metallurgy]
+
+[Cartographer / Scribe]:[[Arcane: Elemental[Reaction Force], Universal[Law of Domains], Alchemical(internal)[(Neidan)], Rituals, Formations],[Learning: Physics ,Geography, Calligraphy, Performance]
+
+[Thief / Beast Master]:[Arcane: Alchemical(internal)[(Neidan)], Rituals][Survival: Hunting, Trapping, Gathering, Conditioning: Poison][Roguery:][Agriculture: Animal Husbandry, Apiculture]
+
+Talisman Master[Scribe / Jeweler]:[Artistry: Jewel-crafting, Calligraphy][Learning: Culture, Geometry, Histoy][Arcane: Elemental[Reaction Force], Universal[Law of Domains], Release, Rituals, Formations,]
+
+Beast Tamer[Beast Master / Hunter]: Breeds and commands spiritual beasts or monsters as combat partners.
+[Agriculture: Animal Husbandry], [Survival: Medical, Hunting, Trapping,], [Roguery: Stealth], [Athletics]
+
+Immortal Physician / Chef[Healer / Chef]:[Survival: Medical][Speech: Commanding, Inquiry, Description, Exposition],[Agriculture],
+[Learning: Cooking, Cuisine, Religion, Physics, Geometry, Anatomy, Biology, Mathematics, Kinesiology, Geography, Mercantile, Geology, Calligraphy, Alchemy(External)[(Waidan)]]
+
+[Musician / Performer / Bard]:[Learning: Musicality, Mathematics, Performance, Arcane (Rituals), Artistry: Pottery, Glassmaking, Woodworking, Musicality, Speech: Narration, Description, Exposition, Prasising,]
+
+[Occultist/ Mage / Scholar]:[Learning:, Biology (Terra, Astra), History,Culture][Arcane: Alchemical(internal)[(Neidan)], Release, Rituals, Entites)
+
+[Charmer / Con Artist/ Rogue]:[Speech: Intimidation, Coercion, Persuasion, Argumentaion, Commanding, Interrogation, Prasising, Mockery,],[Learning: Performance, Mercantile][Learning: Arcane (Alchemical(internal), Rituals, Entites)]
+
+[Ranger / Survivalist]: [Survival: Medical, Hunting, Trapping, Gathering, Scavenging][Learning: Arcane: Rituals, Formations, Entites][Speech: Commanding (Ordering), Negotiation, Interrogation, Inquiry]
+[Agriculture: Animal Husbandry [butchery], Aquaculture, Horticulture (Fruit & Vegs), Floriculture (Florals), Forestry (Logging), Apiculture (Beekeping), Food Processing]
+
 ===========================
 CHARACTER CREATOR FIELDS
 ===========================

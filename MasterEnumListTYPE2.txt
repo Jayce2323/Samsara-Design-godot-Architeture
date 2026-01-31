@@ -1,0 +1,3550 @@
+
+
+
+
+# Defines Item Category
+enum ItemType {
+enum ItemCategory {
+	ENTITY,
+	EQUIPPABLE,
+	CONSUMABLE, 
+	MATERIALS,
+	CONTAINERS,
+	FUNCTIONAL,
+	CURRENCY,
+	FURNITURE,
+	LOCATION,
+	TERRAIN,
+	PLACE,
+	CARDINALDIR,
+	QUEST_ITEM,
+	ARTIFACT,
+	KEYS,
+}
+
+enum CustomItem_MagicShape {
+	PROJECTTILE, 
+	RAY, 
+	BEAM,
+	ORB, 
+	CUBE, 
+	LUNE, 
+	TETRAHEDRON,
+}
+#enum EntityType {
+	PLANT,
+	ANIMAL,
+	HUMANOID,
+	MONSTER
+	#}
+#enum EquippableType {
+	ARMOR, 
+	WEAPON, 
+	JEWELRY, 
+	CLOTHING,
+	#}
+#enum ConsumableType { 
+	FOOD, 
+	DRINK, 
+	MEDICINE, 
+	POTION, 
+	POISON, 
+	AMMUNITION,
+	#}
+#enum MaterialsType { 
+	MINERAL, 
+	LUMBER, 
+	TEXTILES, 
+	ANIMALSKINS, 
+	WEAPONPARTS,
+	ARMORPARTS,
+	PLANTS, 
+	POTTERY,
+	#}
+#enum ContainersType { 
+	BAG,
+	POUCH,
+	BACKPACK,
+	SACK,
+	CHEST,
+	BARREL,
+	BOX,
+	CRATE,
+ 	BOTTLE,
+ 	JAR,
+ 	FLASK,
+ 	CANISTER,
+	VIAL,
+	KEG,
+ 	BIN,
+	SIEVE,
+	#}
+#enum FunctionalType { 
+	TOOLS, 
+	DEVICES,[UNCLASSED MANUFACTURED PRODUCTS] 
+	SEALS, #{BADGE}
+	STAMP, 
+	BOOKS, 
+	FUEL_SOURCE, #[TRACKING MANMADE FIRE] 
+ 
+	}
+#enum FunitureType { 
+	CHAIR
+	STOOL
+	BENCH
+	TABLE
+	DESK
+	BED
+	SHELF
+	CABINET
+	RACK
+ 	CUPBOARD
+	WARDROBE
+	BOOKCASE
+	COUNTER
+	ALTAR
+	#}
+#enum ToolType { 
+	CUTTING,
+	HAMMERING,
+	PRYING,
+	DIGGING,
+	GRIPPING,
+	SHAPING, #(PERFORATTING,FILING, TOOL & DIE(Standardized Screws/CONNECTORS" or "Standardized Valves" ))
+	MEASURING,
+	FISHING,
+	SMELTING,
+	CLEANING,
+	COOKWARE,
+}	LIGHT_SOURCE,
+
+#enum CookwareType {
+	PLATE,
+	BOWL,
+	CUP,
+	GLASS,
+	MUG,
+	GOBLET,
+	SPOON,
+	FORK,
+	KNIFE,
+	TRAY,
+	SERVING_DISH,
+	KETTLE,
+	TEAPOT,
+	CAULDRON,
+	POT,
+	PAN,
+	CAULDRON,
+	PIPKIN,
+}
+#enum BookType {
+	CODEX, (BOOK)
+	SCROLL,
+	LEAFLET,
+	NOTE,
+	MANUSCRIPT,
+	JOURNAL,
+	MAP,
+	FOLIO,
+	TOME, (SHOLARLY TEXTBOOK/SCIENCE BOOK)
+	LEDGER,
+
+#enum ToolSubType {
+HAMMER_TOOL
+SAW
+CHISEL
+ADZE
+PICK
+SHOVEL
+TROWEL
+KNIFE_TOOL
+SCISSORS
+NEEDLE
+AWL
+FILE
+WRENCH
+SCREWDRIVER
+PLIERS
+RASP
+GLUE
+ROPE
+NAIL
+SCREW
+PIN
+CLAMP
+LOCK
+KEY
+LANTERN
+TORCH
+CANDLE
+  # Science/Alchemy
+  - BEAKER
+  - TEST_TUBE
+  - FLASK
+  - BURNER
+  - RETORT
+  - PIPE
+
+CLEANING (The Physical Build)
+This type covers the mechanical removal of surface layers.
+The Bristle Bundle:
+Parts: Filaments (Wire/Fiber), Ferrule (The ring that holds them), Handle.
+Logic: A multi-point contact tool for irregular surfaces.
+The Flat Scraper:
+Parts: Hardened Bevel (The edge), Shank, Grip.
+Logic: A single-point contact tool for shearing off surface buildup.
+GRIPPING (Force Multipliers)
+Tools that use mechanical advantage to hold or twist.
+The Pivot Assembly (Pliers/Tongs/Shears)
+Parts: Fulcrum Bolt, Offset Handle, Work-Head (Jaws/Blades).
+Logic: The "Grip" is just a lever-ratio calculation between the handle length and the head length.
+The Screw-Clamp (Vise/C-Clamp)
+Parts: Threaded Spindle, Traveling Block (The jaw that moves), Guide Rail (Prevents rotation), Fixed Stop.
+Logic: Uses a Leadscrew to translate rotation into high-pressure linear clamping.
+SHAPING (Abrasive/Refining)
+Components that remove material or enforce geometry.
+The Rotary Mandrel (Lathe/Drill)
+Parts: Spindle, Drive Pulley/Crank, Chuck/Collet (The part that grips the workpiece or bit), Bearing Housing.
+Logic: A high-speed rotating shaft that allows a Shaping bit to hit a workpiece evenly.
+The Abrasive Surface (Files/Hones)
+Parts: Hardened Face, Toothed Profile, Tang.
+Logic: A surface with a higher Hardness value than the workpiece, used to "scrape" away material at a sub-millimeter level.
+The Punch & Matrix (For Valves/Connectors):
+Parts: Male Punch, Female Die-Plate, Guide Pins (for alignment).
+Logic: These are the "Standardizers." They ensure every screw or valve-flap you make is a 1:1 physical match.
+The Tap (For Internal Threads):
+Parts: Threaded Flutes (The cutting teeth), Square Drive (The top for a wrench), Tapered Tip.
+The Die (For External Threads/Screws):
+Parts: Threaded Core, Adjustment Screw (to set depth), Die Stock (The handle frame).
+PERFORATTING; The Tool: Punch & Drift or Aul.
+The Parts: Hardened Point/Tip, Striking Face (the top), Tapered Body.
+The Function: This is how you create the starter holes for your Rivets or the slots for Standardized Connectors in sheet metal.
+SMELTING (Thermal & Material State)
+Parts for containing or directing high-energy states.
+The Air Displacement Unit (Bellows)
+Parts: Compression Chamber (Expanding/collapsing volume), One-way Reed Valve (The flap), Directional Nozzle.
+Logic: A mechanical pump used to force air (oxygen) into the Furnace to raise temperatures beyond a standard fire's limit.
+The Casting Vessel (Crucible/Ladle)
+Parts: Refractory Liner (Thermal resistance), Structural Shell (The frame that holds the liner), Shank (Long handle for distance from heat).
+Logic: A container specifically rated to stay solid while its contents are liquid.
+The Die/Matrix (Molds)
+Parts: Cavity (The negative space), Alignment Pins (To ensure the two halves match), Pouring Basin.
+Logic: A standardized "Negative" of a part used to replicate geometry exactly.
+
+
+Fastener Shear & Stability (L/W/H Logic)
+The stability of a Composite is determined by the Fastener Grade relative to the Part Dimensions.
+Fastener	Physics Role	Strength Formula (Sim Logic)
+Rivet	Shear Specialist	Strength = (Material_Hardness * Rivet_Area) * Vibration_Modifier(1.0)
+Screw	Tension/Torque	Strength = (Thread_Depth * Clamp_Force) * Vibration_Modifier(0.8)
+Stability Logic: Joint_Stability = (Sum_Fastener_Strength) / (Part_Mass * Distance_from_Center).
+
+CRAFT-LOGIC-> SET LENTGH,WIDTH, HEIGHT
+
+#enum FurnitureType {}
+# Defines Item Class (seperated by sub-category)
+#EquippableType
+#enum ArmorType { 
+	HEADARMOR, 
+	HANDARMOR, 
+	TORSOARMOR, 
+	ARMARMOR,
+	SHOULDERARMOR,
+	FOREARMARMOR, 
+	LEGARMOR,
+	UPPERLEGARMOR,
+	LOWERLEGARMOR, 
+	FOOTARMOR,
+	#}
+#enum WeaponsType {
+	SWORD,
+	KNIFE, 
+	AXE, 
+	HAMMER, 
+	MACE, 
+	WARCLUB, 
+	POLEARM, 
+	STAFF, 
+	SHIELD, 
+	BOW, 
+	FIREARM,
+	SLING, 
+	#}
+#enum JewelryType { 
+	NECKLACE, 
+	RING, 
+	EARRING, 
+	BROOCH, 
+	ANKLET, 
+	BRACELET, 
+	BADGE,
+	#}
+#enum ClothingType { 
+	HEADGARMENT,
+	FACECOVER, 
+	HANDGARMENT, 
+	TORSOGARMENT,
+	BACKGARMENT, 
+	ARMGARMENT, 
+	LEGGARMENT, 
+	FOOTWEAR,
+	#}
+#ConsumableType
+#enum FoodType { 
+	VEGETABLE, 
+	MEAT, 
+	MUSHROOM, 
+	HERBS, 
+	SPICES,
+	#}
+#enum DrinkType { 
+	WATER, 
+	ALCOHOL, 
+	TEA, 
+	COFFEE, 
+	JUICE,
+	#}
+#enum MaterialStateType { 
+	LIQUID, 
+	SOLID,
+	GAS, 
+	EMULSION, 
+	#}
+#enum PotionType { 
+	RESTORATIVE, 
+	ENHANCEMENT, 
+	WILLBENDING,
+	 #}
+#enum DrugType { 
+	STIMULANT, 
+	DEPRESSANT, 
+	HALLUCINOGEN, 
+	FACILITATOR, 
+	BLOCKER, 
+	PAINRELIEVER, 
+	ANTIBIOTIC,
+	ANTIFUNGAL,
+	ANTIMICROBIAL,
+	DIURETIC,
+	#}
+#enum PoisonType { 
+	CORROSIVE, 
+	IRRITANT, 
+	SYSTEMIC, 
+	ASPHIXIANT, 
+	GENERAL,
+	#}
+#enum AmmunitionType {
+
+}
+#MaterialsType
+enum MineralType { 
+	NATIVE_ELEMENT,
+	SILICATE,
+	OXIDE,
+	SULFIDE,
+	CARBONATE,
+	HALIDE,
+	PHOSPHATE,
+	CLAY,
+{
+
+enum MineralSize { 
+    	BOULDER,    // > 256mm
+    	COBBLE,     // 64-256mm
+   	PEBBLE,     // 4-64mm
+    	GRAVEL,     // 2-4mm
+    	SAND,       // < 2mm
+{
+enum RefinedMineralType { 
+	INGOT, 
+	SLAG, 
+	GEM,
+	GLASS,
+	CERAMIC,
+	ALLOY,
+	MATTE,
+	CLINKER,
+	CALX,
+	AMALGAM,
+	CONCENTRATE,
+	CHARCOAL,
+	COKE,
+	TAR,
+	ASH,
+	#}  
+
+#enum TreePartType {
+	LOG, 
+	TRUNK, 
+	BOUGH,
+	BRANCH, 
+	TWIG,
+	#}
+#enum LumberType {
+	HARDWOOD,
+	SOFTWOOD,
+)
+#enum LumberCutType {
+	BEAM,
+	PLANK,
+	VENEER,
+	PULP,
+	MULCH,
+	SAWDUST,
+}
+#enum TextileFIBERType {
+  	BAST_FIBER,
+		NETTLE, 
+		FLAX, 
+		JUTE,  
+		HEMP,
+	ANIMAL_HAIR,
+		WOOL,
+		ALPACA,
+		BYSSUS,
+	ANIMAL_FIBER,
+		SILK,
+		SINEW,
+	LEAF_FIBER,
+	SEED_FIBER,
+		KAPOK,
+		COIR,
+		COTTON,
+	#}  
+#enum AnimalSkinSize {
+	FUR,  
+	PELT, 
+	HIDE,
+	SKIN,
+	#}
+#enum WeaponpartType { 
+	HILT, 
+	BLADE, 
+	AXEHEAD, 
+	BLUNTHEAD, 
+	HELVE, 
+	HAFT,
+	#}
+	#enum PlantpartType { 
+	FLOWER, 
+	LEAF, 
+	STEM, 
+	ROOT, 
+	FRUIT, 
+	SEED,
+	#}
+#enum CerramicType {
+	EARTHENWARE, 
+	STONEWARE, 
+	PORCELAIN,
+	}
+#enum LocationType {
+	GLOBAL, #(PLACE: Continents, Oceans, Hemispheres,)
+	REGIONAL, #(PLACE: Countries, States/Provinces, Mountain Ranges, or Biomes)
+	LOCAL, #(PLACE: Cities, Towns, Villages, Landmarks, Buildings, Specific Parcels of Land (ex. __'s farmstead, the __woods))
+	}
+#enum PlaceType {
+	CONTINENT,
+	OCEAN,
+	HEMISPHERE, (#EAST, WEST, NORTH, SOUTH)
+	COUNTRY,
+	STATE, (#Union of Soveriegns)
+	PRROVINCE, #(Vassal)
+	MOUNTAIN_RANGE,
+	BIOME,	 
+	CITY,
+	TOWN,
+	VILLAGE,
+	LANDMARK,
+	BUILDING,
+	}
+# PlaceType Enum
+enum PlaceType {
+	CONTINENTS,
+	OCEANS,
+	HEMISPHERES,
+	COUNTRIES,
+	STATES,
+	PROVINCES,
+	MOUNTAIN_RANGES,
+	BIOMES,
+	CITIES,
+	TOWNS,
+	VILLAGES,
+	LANDMARKS,
+	BUILDINGS
+}
+# Building LCD Tags
+#enum BuildingTag {
+	DWELLING,
+	STORAGE,
+	PRODUCTION,
+	PROCESSING,
+	COMMERCE,
+	RELIGIOUS,
+	GOVERNANCE,
+	SECURITY,
+	ACADEMIC,
+	HEALTH,
+	UTILITY,
+} 
+
+
+#enum LandmarkType {
+	WATERWAY,    # Rivers, streams, fords
+	PASS,        # Mountain gaps, valley openings
+	HARBOR,      # Coastal inlets, bays
+	OASIS,       # Desert springs, fertile pockets
+	GEOLOGIC,    # Peaks, caves, craters
+	MONUMENT,    # Man-made/Ancient structures
+	SACRED_SITE  # Ley lines, groves
+}
+# STATES (verb tags)
+enum LocationStates {
+	FLOODED,
+	BURNING,
+	SMOKY,
+	PILLAGED,
+	ERUPTING,
+	ERUPTED,
+	SUBMERGED,
+	SCORCHING,
+	FREEZING,
+	RESTORED,
+	PILLAGED,
+	LOOTED,
+	ABANDONED,
+	DESTROYED,
+	RUINED,
+	NEGLCTED,
+	CONTAINED,
+	OCCUPIED,
+	SETTLED,
+	FURNISHED,
+	LACKING,
+	DEBTED,
+	DISCOVERED,
+	FOUNDED,
+	GUARDED,
+	SURVEYED,
+	SEIZED,	
+	LIBERATED,
+	LENT, 
+	ATTACKING,
+	DEFENDING,
+	DEFEATED,
+	VICTORY,
+	BORDERING,
+	ALLIED,
+	RIVALLED,
+	SISTER,
+	FLOATING,
+	FLYING,
+	DEPENDANT,
+	REBELLING,
+
+}
+enum ItemStates {  
+	WET,
+	BURNING,
+	BURNED,
+	STEAMING,
+	STOLEN,
+	CARVED,
+	CREATED,
+	DRAWN_ON,
+	WRITTEN_ON,
+	PAINTED,
+	SINKING,
+	SUBMERGED,
+	RUSTED,
+	SHRIVELED,
+	FLICKERING,
+	SHINING,
+	SPARKLING,
+	BOILING,
+	EXPANDING,
+	FLOWING,
+	HUMMING,
+	REVOLVING,
+	ROTATING,
+	SNAPPED,
+	SPINNING,
+	BUZZING,
+	CRACKED,
+	FROZEN
+	ROTTING,
+	ROTTEN,	
+	SIZZLING,
+	MOLDING,
+	MOLDED,
+	PLANTED,
+	SPROUTING,
+	SPROUTED,
+	ROOTING,
+	ROOTED,
+	STEMMING,
+	STEMMED,
+	BUDDING,
+	BUDDED,
+	FLOWERING,
+	FLOWERED,
+	FRUITING,
+	RIPENED,
+	HARVESTED,
+	REPAIRING, #LIMBS
+	REPAIRED,
+	HELD,
+	FOLDED,
+	CLEAN,
+	MIXED,
+	ACTIVATED,
+	WRAPPED,
+	BROKEN,
+	SLICED,
+	DISCARDED,
+	SCRATCHED,
+	COOKING,
+	COOKED,
+	GROWING,
+	GROWN,
+	FULL_GROWN,
+	CLOSED,
+	OPENED,
+	LOCKED,
+	UNLOCKED,
+	WILTING,
+	WILTED,
+	WIHERED,
+	CULTIVAR,
+	DESTORYED,	
+	CONTAINED,
+	OCCUPIED,
+	LACKING,
+	LOST,	
+	FOUND,
+	GUARDED,
+	EXAMINED,
+	SEIZED,
+	BENT,
+	LENT,
+	USED,
+	READ,
+	TAKEN,
+	DEPENDANT,
+	RISING,
+}
+
+enum EntityStates {  
+	WET,
+	BURNING,
+	BURNED,
+	STEAMING,
+	ENSLAVED,
+	SERF,
+	FREE,
+	NOBLE,
+	SINKING,
+	SUBMERGED,
+	FLICKERING,
+	SHINING,
+	HUMMING,
+	SPINNING,
+	FREEZING,
+	FROZEN,
+	SETTLED,
+	CULTIVAR,
+	HEALING,
+	COOKING,
+	NAKED,
+	PARTIALLY_NUDE,
+	CLOTHED,
+	MEDITATING,
+	RESTING,
+	SLEEPING,
+	WAKING,
+	AWAKE,
+	WORKING,
+	EATING,
+	BREATHING,
+	CHOKING,
+	GROOMING,
+	GROOMED,
+	QUAFFING,#DRINKING
+	DRIVING,
+	RIDDEN,
+	DRIVEN,
+	RIDING,
+	DECEPTION,
+	DEAD,
+	DIED,
+	KILLED,#KNOWN
+	MURDERED, #UNKNOWN
+	DEFEATED,
+	LOW_FLOAT,
+	HIGH_FLOAT,
+	KNOCKED_DOWN,
+	UNCONSCIOUS,
+	BITTEN,
+	BITING,
+	BLEEDING,
+	HUNGRY,
+	STARVING,
+	FULL,
+	SATIATED,
+	STUFFED,
+	FOUL,
+	WITHERED,
+	RESTORE,
+	DESTROYED,#ARMS & LEGS BROKEN
+	OFFERING,
+	SHOWING,
+	GIVING,
+	RECIEVING,
+	EXCHANGING,
+	GUARDING,
+	CONTAINED,
+	LACKING,
+	DEBTED,
+	LOST,
+	FOUND,
+	GUARDED,
+	SURVEYING,
+	LOOKING, 
+	EXAMINING, 
+	SEIZED,
+	LIBERATED,
+	FETCHING,
+	LENT,
+	SEARCHING,
+	USING,
+	TEACHING,
+	TALKING,
+	READING,
+	STEALING,
+	ATTACKING,
+	DFENDING,
+	VICTORY,
+	INTIMIDATING,
+	INTIMIDATED,
+	LEARNING,
+	CONSIDERING,	
+	WATCHED,
+	WATCHING,
+	FORGETFULLNESS,
+	REMEMBERING,
+	SENSING,
+	TOUCHING,
+	SMELLING,
+	HEARING,
+	TASTING,
+	SEEING,
+	TAKING,
+	SIEZING, #SHAKING
+	BEING,
+	GOSSIPING,
+	UNION,
+	ALLIED,	
+	RIVALLED,
+	LIMPING,
+	REELING,
+	DEPENDANT,
+	EXILED,
+	DRESS,
+	UNDRESS,
+	RISING,
+	BUILDING,
+	CARVING,
+	DRAWING,
+	KNITTING,
+	PAINTING,
+	MENDING,
+	REPAIRING,
+	HOLDING,
+	DIGGING,
+	FOLDING,
+	POURING,
+	CLEANING,
+	MIXING,
+	TOUCHING,
+	WRAPPING,
+	WRITING,
+	CUTTING,
+	DROPPING,
+	CROUCHING,
+	SNEAKING,
+	RUNNING,
+	STANDING,
+	WALKING,
+	FLOATING,
+	FLYING,
+	JUMPING,
+	MARCHING,
+	SWIMMING,
+	CLIMBING,
+	HANGING,
+	SLIDING,
+	CRAWLING,
+}
+
+enum TileStates {  
+	WET,
+	BURNING,
+	BURNED,
+	STEAMING,
+	DUG,
+{
+
+
+# Defines Misc Item Stats
+enum ItemMiscCategory {
+#enum ArmorThicknessType{
+	THIN,
+	REGULAR,
+	THICK,
+	#}
+#enum EquipSideType { 
+	LEFT,
+	RIGHT,
+	}
+enum FoodTypeTags{
+#enum FoodPrimaryFlavorType { 
+	SWEET, 
+	SOUR, 
+	SALTY, 
+	BITTER, 
+	UMAMI,
+	#}
+#enum FoodSecondaryFlavorType { 
+	SPICY, 
+	MINT, 
+	MELON, 
+	FRUITY, 
+	CITRUS, 
+	BERRY, 
+	EARTHY, 
+	BRINY, 
+	FISHY, 
+	SMOKEY, 
+	TART, 
+	PEPPERY, 
+	PUNGENT, 
+	LICORICE, 
+	NUTTY, 
+	GAMEY, 
+	WOODY, 
+	HERBAL, 
+	FLORAL, 
+	STARCHY, 
+	FATTY, 
+	ACIDIC,
+	ASTRINGENT,
+	#}
+#enum FoodTextureType { 
+	TENDER, 
+	CHEWY, 
+	MOIST, 
+	CRISP, 
+	DELICATE, 
+	SOFT, 
+	FIRM, 
+	JUICY, 
+	WATERY, 
+	CREAMY, 
+	MUSHY, 
+	TOUGH, 
+	FIBOROUS, 
+	WAXY, 
+	DRY, 
+	SPONGEY, 
+	CRUNCHY,
+	GRAINY,
+	GELATINOUS,
+	SLIMY,
+	POWDERY,
+	FLAKY
+	#}
+#enum FlavorIntensity { 
+	BLAND, 
+	WEAK, 
+	MILD, 
+	MIDDLING, 
+	STRONG, 
+	RICH, 
+	FULL, 
+	SHARP,
+	}
+#Defines item weight range
+enum ItemSizeType { LIKELY CAN BE REMOVED.
+	SMALL, 
+	LARGE, 
+	GIANT, 
+	TINY, 
+	NORMAL,
+	}
+
+#Defines Food States
+enum FoodItemState {
+	RAW,
+	STINKY,
+	COOKED,
+	FERMENTED,
+	UNCOOKED,
+	BRINED,
+	TOXIC, 
+	PICKLED,
+	POISONOUS, 
+	DEHYDRATED,
+	FRESH,
+	BOILED,
+	STALE,
+	BAKED,
+	ROTTEN, 
+	FRIED,
+	RIPE, 
+	STEAMED,
+	UNRIPE, 
+	HOT,
+	OVER_RIPE,
+	COLD,
+	MOLDY, 
+	SALTED,
+	SEASONED,
+	MOLDED,
+	PEPPERED,
+	SPICED,
+	POISONED,
+	}
+enum ItemTypeSubCategory {
+#HeadArmorType 
+	HAPPURI,
+	OPEN_FACE_HELM,
+	NASAL_HELM,
+	BUCKET_HELM,
+	FILTERED_HELM,
+	FULL_HELM,
+	MAGE_HELM,
+	MAGE_HELM_TYPE2,
+	GREAT_HELM,
+	SORCERER_MENPO,
+	CLERICS_MENPO,
+	WARLOCK_MENPO,
+	FACELESS_MENPO,
+	SORCERER_FACE,
+	CLERICS_FACE,
+	WARLOCK_FACE,
+	FACELESS,
+	PURGING_HELM,
+	MASKED_FILTERED_HELM,
+	CHAIN_HELM,
+	VIZORED_HELM,
+	ARMET,
+	DRAGOON_HELM,
+	BARBUTE,
+#HANDArmorType, 
+	GLOVES,
+	MITTENS,
+	MAIL_MITTENS,
+	MAIL_GLOVES,
+	MITTEN_GAUNTLET,
+	FINGER_GAUNTLET,
+	DEMI_GAUNTLET,
+#TORSOArmorType,
+	GAMBESON,
+	JUPON,
+	AKETON,
+	POURPOINT,
+	BRIGANDINE,
+	BRIGANDINE_TYPE2,
+	KIRITSUKE_KOZANE_DOU,
+	KOZANE_DOU,
+	LAMELLAR,
+	LAMELLAR_TYPE2,
+	CHAIN_MAIL,
+	DO,
+	PLATE_ARMOUR,
+	TWOPIECE_ARMOUR,
+ 	GEATIC_ARMOR,
+	CURAISS,
+#ARMArmorType,
+	GAMBESON_SLEEVE,
+	JUPON_SLEEVE,
+	AKETON_SLEEVE,
+	POURPOINT_SLEEVE,
+	CHAINMAIL_SLEEVE,
+	FULL_CANNON,
+	BRIGANDINE_SLEEVE,
+	HALF_KOTE,
+	SPAULDER,
+	SPAULDER_TYPE2,
+	FULL_KOTE,
+	PAULDRON,
+	PAULDRON_TYPE2,
+	REREBRACE,
+	VAMBRACE,
+	VAMBRACE_TYPE2,
+#LEGArmorType
+	CUISH,
+	CUISH_TYPE2,
+	CUISH_TYPE3,
+	CUISH_GREAVE,
+	CUISH_GREAVE_TYPE2,
+	CUISH_GREAVE_TYPE3,
+	HAIDATE,
+	HAIDATE_TYPE2,
+	CHAIN_MAIL_LEGS,
+	HAIDATE_SUNEATE,
+	HAIDATE_SUNEATE_TYPE2,
+	PLATE_LEGS,
+	PLATE_LEGS_TYPE2,
+	GREAVES,
+#FOOTArmorType,
+	BOOTS,
+	SOLLERETS,
+	SABATONS,
+#WEAPONHiltType
+	HANDGUARDHILT,
+	NOGUARDHILT,
+	BASKETGUARDHILT,
+	CROSSGUARDHILT,
+	KNUCKLEGUARDHILT,
+	NOGUARDHILT_TYPE2,
+	NOGUARDHILT_TYPE3,
+	LARGE_CROSSGUARDHILT,
+	PARIERHAKENHILT,
+	TSUBAGUARDHILT,
+	TSUBAGUARDHILT_TYPE2,
+	CROSSGUARD_TYPE2,
+#WEAPONHelveType
+	HELVE,
+	SHAFT,
+	HAFT,
+#WEAPONBladeType
+	SINGLE_EDGE,
+	DOUBLE_EDGE,
+	THRUSTING_BLADE,
+	FLAT_BLADE,
+	GREAT_BLADE,
+	DOUBLE_EDGE_TYPE2,
+	LONG_PARRY_BLADE,
+	KATANA_KEN,
+	ODACHI_KEN,
+	DOUBLE_EDGE_WIDE,
+	SHORT_BLADE_TYPE2,
+	LONG_KNIFE_BLADE,
+	SHORT_BLADE,
+	CURVED_BLADE,
+	THRESHER_BLADE,
+#WEAPONHeadType
+	AXE_HEAD,
+	SCYTHE,
+	BILLHOOK,
+	FELLING_AXE_HEAD,
+	DAGGER_AXE_HEAD,
+	WAR_AXE_HEAD,
+	CRESCENT_AXE_HEAD,
+	HAMMERE_HEAD,
+#SHIELD&WEAPONType
+	KANABO,
+	BUCKLER_SHIELD,
+	ROUND_SHIELD,
+	KITE_SHIELD,
+	HEATER_SHIELD,
+	PAVISE_SHIELD,
+	TOWER_SHIELD,
+	}
+
+enum GenderType {
+	MALE,
+	FEMALE,
+	#}
+# Attributes
+enum Attribute {
+	STRENGTH,
+	INTELLIGENCE,
+	ENDURANCE,
+	DEXTERITY,
+	WILLPOWER,
+	PERCEPTION,
+	HEIGHT,
+}
+
+# Derived Stats
+enum DerivedStat {
+	POWER,
+	ACCURACY,
+	CHARISMA,
+	STAMINA,
+	TOUGHNESS,
+	QUICKNESS,
+	RESILIENCE,
+	MUSCLE_MEMORY,
+	APTITUDE,
+	CONSTITUTION,
+	HEALTH_POINTS, # (HP)
+	VIGOR_POINTS,  # (VP)
+	AGILITY,
+	RESISTANCE,
+	METABOLISM,
+	HIT_CHANCE_EVASION,
+	FATIGUE,
+	CALORIES,
+	HUNGER,
+	THIRST,
+	AGE,
+	BODY_TEMP,
+}
+
+enum EntityMaterialTypes {
+	SKIN,
+	BONE,
+	FAT,
+	MUCLSCE, #(MEAT ON DEATH)
+	VISCERA,
+	BLOOD,
+	BILE,
+	SCALES,
+	CHITIN, #(EXOSKELTON)
+	HAIR,
+	FUR,
+	FEATHER,
+	SHELL,
+	CARTILAGE,
+	NERVE,
+	TENDON,
+	LIGAMENT,
+}
+
+# Limbs and Body Parts
+enum LimbBodyPart {
+	HEAD,
+	FACE,
+	SNOUT,
+	CHEEK,
+	JAW,
+	NECK,
+	BACK,
+	THROAT,
+	SIDE_L, 
+	SIDE_R,
+	EYES,
+	EYELID,
+	SKULL,
+	MOUTH,
+	TONGUE,
+	TEETH,
+	EARS,
+	ORBITAL,
+	BRAIN,
+	TORSO,
+	CHEST,
+	ABDOMINALS,
+	HEART,
+	KIDNEY,
+	SPINE,
+	LUNGS,
+	RIBS,
+	LIVER,
+	PANCREAS,
+	SPLEEN,
+	STOMACH,
+	INTESTINES,
+	BLADDER,
+	DIAPHRAM,
+	PELVIS,
+	HIP,
+	SHOULDER,
+	ARMS,
+	UPPER_ARM,
+	BICEP,
+	RADIAL_ARTERY_VEIN,
+	ARMPIT,
+	HUMOROUS_UPPER_ARM,
+	ELBOW,
+	LOWER_ARM,
+	TRICEP,
+	ULNAR_ARTERY_VEIN,
+	RADIUS_ULNA_LOWER_ARM,
+	FOREARM,
+	WRIST,
+	HANDS,
+	HAND,
+	PALM,
+	FINGERS,
+	LEGS,
+	UPPER_LEG,
+	QUADRICEP,
+	HAMSTRING,
+	FEMORAL_ARTERY,
+	FEMUR,
+	KNEES,
+	LOWER_LEG,
+	TIBIAL_ARTERY,
+	TIBIA,
+	FIBULA,
+	SHIN,
+	CALF,
+	ANKLE,
+	ACHILLES_TENDON,
+	FEET,
+	FOOT,
+	SOLE,
+	HEEL,
+	TOES,
+	HOOF,
+	CLAW,
+	PINCER,
+	WING,
+	TAIL,
+	HORN,
+	THORAX,
+	ANTENNAE,
+	FIN,
+	TENTACLE,
+}
+
+
+# Elements
+enum ElementCore {
+	EARTH,
+	WATER,
+	FIRE,
+	AIR,
+}
+
+enum ElementBranch {
+	METAL,
+	WOOD,
+	LIGHTNING,
+	ICE,
+}
+
+# Senses
+enum Sense {
+	SIGHT,
+	SMELL,
+	HEARING,
+	TOUCH,
+	TASTE,
+	TEMPERATURE,
+	ESP,
+	RATIONALE,
+	MORALE,
+}
+
+# Pain Levels
+enum PainLevel {
+	NONE,
+	SCRATCH,
+	NAGGING,
+	THROBBING,
+	STINGING,
+	BURNING,
+	SEARING,
+	INTENSE,
+	NAUSEATING,
+	CRIPPLING,
+	CATASTROPHIC,
+	DEVASTATING,
+}
+
+# Confidence Rating
+enum ConfidenceRating {
+	OVERCONFIDENT,
+	RADICALLY_CONFIDENT,
+	SELF_ASSURED,
+	CAPABLE,
+	NEUTRAL,
+	QUESTIONING,
+	INSECURE,
+	SELF_DOUBTING,
+	OVERWHELMED,
+}
+
+# Courageousness Scale
+enum Courageousness {
+	BRAVE,
+	VALIANT,
+	GRITTED,
+	RESOLUTE,
+	STEADY,
+	APPREHENSIVE,
+	INTIMIDATED,
+	FEARFUL,
+	TERRIFIED,
+}
+
+# Sensory State Chart
+enum SensoryState {
+	EXTREME_HYPERSTIMULATION,
+	SEVERE_HYPERSTIMULATION,
+	MODERATE_HYPERSTIMULATION,
+	MILD_HYPERSTIMULATION,
+	NEUTRAL,
+	MILD_HYPOSTIMULATION,
+	MODERATE_HYPOSTIMULATION,
+	SEVERE_HYPOSTIMULATION,
+	EXTREME_HYPOSTIMULATION,
+}
+
+# Pathogen Type
+enum PathogenType {
+	VIRAL,
+	BACTERIAL,
+}
+
+# Pathogen Species
+enum PathogenSpecies {
+	HUMAN,
+	ANIMAL,
+	PLANT,
+}
+
+# Transmission Tags
+enum TransmissionTag {
+	AIRBORNE,
+	BLOODBORNE,
+	CONTACT,
+	FOOD_WATERBORNE,
+}
+
+# Infection Stages
+enum InfectionStage {
+	INCUBATION,
+	INFECTIOUS,
+	SYMPTOMATIC,
+	RECOVERING,
+}
+
+enum Damage Type {
+	KINETIC,  
+	EDGE_SLASH,  
+	EDGE_PIERCE,  
+}
+
+
+enum COMBATMENU {
+	TARGET,
+	TARGET_BODY_PART
+
+# Combat Skills Tier 1
+enum CombatSkillTier1 {
+	STRIKING_GENERAL_FIGHTING,
+	RANGED,
+	GRAPPLING,
+	ONE_HANDED_FIGHTING,
+	TWO_HANDED_FIGHTING,
+	DUAL_WIELDING, # (Include Sword & Shield)
+	POLEARM,
+	BLUNT_WEAPON_FIGHTING,
+}
+
+# Combat Skills Tier 2
+enum CombatSkillTier2 {
+	PUNCHING,
+	KICKING,
+	FOOTWORK_DODGE_EVASION,
+	THROWS,
+	TAKEDOWNS,
+	HOLDS,
+	KNIFE,
+	SHORT_KNIFE,
+	LONG_KNIFE,
+	SWORD,
+	SHORT_SWORD,
+	LONG_SWORD,
+	THRUSTING_SWORD,
+	SICKLE,
+	AXE,
+	HAMMER,
+	CLUB,
+	STAFF,
+	JAVELIN,
+	SPEAR,
+	POLEAXE,
+	SPEARSWORD,
+	GLAIVE,
+	PIKE,
+	SHIELD,
+	SLINGS,
+	SHORT_BOW,
+	BOW,
+	LONGBOW,
+	WARBOW,
+	CROSSBOW,
+	ARBALEST,
+	HAND_CANNON,
+	MUSKET_ARQUEBUS,
+	RIFLE,
+	PISTOL,
+	ARTILLERY_CANNON,
+	ARTILLERY_CATAPULT_TREBUCHET,
+	ARTILLERY_CATAPULT_ONAGER_MANGONEL,
+	ARTILLERY_BALLISTA,
+}
+
+# Combat Skills Tier 3
+enum CombatSkillTier3 {
+	LIMB_INTEGRITY,
+}
+
+# Survival Skills
+enum SurvivalSkill {
+	CONDITIONING, # (Heat, Cold, Pierce Res, Slash Res, Impact Res, Poison: Corrosive, Irritant, Systemic)
+	MEDICAL,
+	HUNTING,
+	TRAPPING,
+	GATHERING,
+	SCAVENGING,
+}
+
+# Agriculture Skills
+enum AgricultureSkill {
+	ANIMAL_HUSBANDRY,
+	AQUACULTURE,
+	HORTICULTURE_FRUIT_VEGS,
+	FLORICULTURE_FLORALS,
+	FORESTRY_LOGGING,
+	APICULTURE_BEEKEEPING,
+	FOOD_PROCESSING,
+}
+
+# Stoneworking Skills
+enum StoneworkingSkill {
+	QUARRYING_EXTRACTION,
+	CUTTING_SHAPING,
+	CARVING,
+	MASONRY,
+}
+
+# Roguery Skills
+enum RoguerySkill {
+	LOCKPICKING,
+	STEALTH,
+	DECEPTION_BLENDING,
+	LARCENY,
+}
+
+# Athletics Skills
+enum AthleticsSkill {
+	TRAVEL,
+	JUMPING,
+	THROWING,
+	WEIGHTLIFTING,
+	SWIMMING,
+}
+
+# Metallurgy Skills
+enum MetallurgySkill {
+	SMELTING,
+	CRUSHING_GRINDING_PROCESSING,
+	EXTRACTION,
+	REFINING_ALLOY_CREATION_TEMPERING,
+}
+
+# Learning Skills
+enum LearningSkill {
+	TEACHING,
+	FARMING,
+	COOKING,
+	CUISINE,
+	HISTORY,
+	CULTURE,
+	PHYSICS,
+	GEOMETRY,
+	ANATOMY,
+	BIOLOGY,
+	MATHEMATICS,
+	KINESIOLOGY,
+	GEOGRAPHY,
+	MERCANTILE,
+	PERFORMANCE,
+	GEOLOGY,
+	ARCANE,
+	THINKING_SPEECH_LOGOS,
+	THINKING_SPEECH_PATHOS,
+	THINKING_SPEECH_ETHOS,
+}
+
+# Artistry Skills
+enum ArtistrySkill {
+	BLACKSMITHING,
+	WEAPONSMITHING,
+	ARMORSMITHING,
+	GOLDSMITHING,
+	SILVERSMITHING,
+	TOOLSMITHING,
+	JEWEL_CRAFTING,
+	TANNERY,
+	LEATHER_WORKING,
+	WOODWORKING,
+	WEAVING,
+	POTTERY,
+	GLASSMAKING,
+	CARTOGRAPHY,
+	CALLIGRAPHY,
+	MUSICALITY_STRING,
+	MUSICALITY_PERCUSSION,
+	MUSICALITY_WIND,
+	ALCHEMY_EXTERNAL_WAIDAN,
+}
+
+# Speech Skills
+enum SpeechSkill {
+	POSITIVE_SPEECH,
+	NEGATIVE_SPEECH,
+	BARTERING,
+	INTIMIDATION,
+	COERCION,
+	PERSUASION,
+	ARGUMENTATION,
+	COMMANDING_ORDERING,
+	NEGOTIATION,
+	INTERROGATION,
+	INQUIRY,
+	NARRATION,
+	DESCRIPTION,
+	EXPOSITION,
+	PRAISING,
+	PLEADING,
+	MOCKERY,
+}
+
+# Control Skills
+enum ControlSkillQiAbsorption {
+	MEDITATION,
+	BREATHING,
+	MERIDIANS,
+	CHAKRAS,
+}
+
+enum ControlSkillQiOutput {
+	FORCE_SPELL_OUTPUT,
+	ARTIFACT,
+}
+
+enum ControlSkillQiNatureMainType1Chakra {
+	FIRE,
+	WATER,
+	EARTH,
+	AIR,
+	LIGHTNING,
+	ICE,
+	METAL,
+	WOOD,
+}
+
+enum ControlSkillQiNatureManifestationsType2Chakra {
+	CRYSTAL,
+	MIST,
+	BLOOD,
+	LAVA,
+	CORROSION,
+	SWIFT,
+	GLASS,
+	SMOKE,
+	STONE,
+	STEAM,
+	FLASH,
+	SAND,
+	SOUND,
+	MAGNETISM,
+	FLUID,
+	PRESSURE,
+	PLASMA,
+	MIASMA,
+	GRAVITY,
+	SWALLOW,
+}
+
+enum ControlSkillQiNatureTemporalLaw {
+	DIVINE_SENSE_TIME,
+	VOID_MASTERY_SPACE,
+}
+
+enum ControlSkillQiNatureLawOfDomains {
+	DOMAIN_CREATION_CREATION,
+	LAW_COMPREHENSION_DESTRUCTION,
+	FORMATIONS_ARRAYS,
+	DIEIFICATION_FAITH,
+}
+
+# Sleep States
+enum SleepState {
+	AWAKE,
+	LIGHT,
+	DEEP,
+	REM,
+}
+
+# Dream Types
+enum DreamType {
+	NONE,
+	NEUTRAL,
+	PLEASANT,
+	NIGHTMARE,
+	PROPHETIC,
+	DEMONIC,
+	MEMORY,
+}
+
+# Sleep Surface Types
+enum SleepSurfaceType {
+	STONE_HARD_GROUND,
+	DIRT_GRASS,
+	BEDROLL_MAT,
+	STRAW_BED,
+	MATTRESS,
+	QUALITY_BED,
+}
+
+# Sleep Conditions
+enum SleepCondition {
+	SHELTERED_INDOORS,
+	TEMPERATURE_COMFORTABLE,
+	TOO_HOT_30C,
+	TOO_COLD_10C,
+	NOISY_ENVIRONMENT,
+	UNSAFE_LOCATION,
+	SACRED_BLESSED_GROUND,
+}
+
+# Cultivation Stages
+enum CultivationStage {
+	MORTAL,
+	QI_CONDENSATION,
+	FOUNDATION_EST,
+	GOLDEN_CORE,
+	NASCENT_SOUL,
+	SPIRIT_TRANSFORMATION,
+	VOID_REFINEMENT_PLUS,
+}
+
+# Party Sleep Options
+enum PartySleepOption {
+	ALL_SLEEP,
+	SET_WATCH,
+	ILL_SLEEP_ALONE,
+}
+
+# Stomach Satiation Levels
+enum StomachSatiationLevel {
+	EMPTY_FASTING,
+	MILD_FULLNESS_SATIATION_POINT,
+	COMFORTABLY_FULL_NORMAL_MEAL,
+	MAXIMUM_TOLERATED_VOLUME,
+}
+
+# Thirst Levels
+enum ThirstLevel {
+	MILD_THIRST,
+	STRONG_THIRST,
+	EXTREME_THIRST,
+	SEVERE_DEHYDRATION,
+}
+
+# Thirst Types
+enum ThirstType {
+	OSMOTIC_INTRACELLULAR_THIRST,
+	HYPOVOLEMIC_EXTRACELLULAR_THIRST,
+}
+
+# Brain Satiation Levels
+enum BrainSatiationLevel {
+	STARVING, 
+	HUNGRY, 
+	PECKISH, 
+	SATIATED, 
+	FULL, 
+	STUFFED, 
+	BURSTING,
+}
+
+# BrainThirst Levels
+enum BrainThirstLevel {
+	TUMESCENT,
+	HYDRATED,
+	NO THIRST,
+	PARCHED,
+	THIRRSTY,
+	DEHYDRATED,
+}
+
+# Body Fat Classification
+enum BodyFatClassification {
+	ESSENTIAL_FAT,
+	JACKED,
+	ATHLETE,
+	AVERAGE,
+	OBESE,
+}
+
+# Muscle Mass Build Description
+enum MuscleMassBuildDescription {
+	JACKED_BODYBUILDER,
+	ATHLETIC_FIT,
+	AVERAGE_ACCEPTABLE,
+	OBESE,
+	SHREDDED_IDEAL_PERFORMER,
+	STRONGMAN_POWERFUL_HEAVY,
+	OVER_MUSCLED_OBESE,
+	LEAN_TONED_FITNESS_MODEL,
+	STANDARD_BUILD_AVERAGE_NPC,
+	TYPICAL_OVERWEIGHT,
+	SKINNY_ECTOMORPH,
+	SKINNY_FAT_SEDENTARY,
+	SEDENTARY_OBESE_HIGH_RISK,
+	EMACIATED,
+	THIN,
+	MORBIDLY_OBESE,
+	WASTING_AWAY,
+	RIPPED,
+	IN_SHAPE_TONED,
+	OVERWEIGHT_CHUBBY,
+	STARVING,
+	HULKING_OVER_MUSCLED,
+	PAPER_SKINNED,
+	WELL_FED_STOCKY,
+	GAUNT,
+}
+
+# Health State
+enum HealthState {
+	LIMB_HEALTH,
+	INTERNAL_HEALTH,
+	TOTAL_HEALTH,
+}
+
+enum HierarchyLevel {
+	MICRO,
+	MESO,
+	MACRO,
+}
+
+enum Lawfulness {
+	LAWFUL,
+	UNLAWFUL,
+	OUTLAW,
+}
+
+enum Charitability {
+	BENEFACTOR,
+	TRUSTWORTHY,
+	THIEF,
+}
+
+enum Rules {
+	UPHOLDER,
+	ORDERLY,
+	REBEL,
+}
+
+enum SelfInterest {
+	ALTRUISTIC,
+	NEUTRAL,
+	SELFISH,
+}
+
+enum EthicsScore {
+	BENEVOLENT,
+	GOOD,
+	NORMAL,
+	TABULA_ROSA,
+	BAD,
+	EVIL,
+}
+
+enum DispositionRating {
+	MORTAL_ADVERSARY,
+	ADVERSARY,
+	DISLIKE,
+	NEUTRAL,
+	LIKED,
+	PHILIA,
+	LOVED,
+	EROS,
+}
+
+enum ReputationRatingTitle {
+	LEGENDARY,
+	RENOWNED,
+	WELL_KNOWN,
+	NOTICED,
+	OBSCURE,
+	DISLIKED,
+	INFAMOUS,
+	NOTORIOUS,
+	REVILED,
+}
+
+enum Sentiment {
+	POSITIVE,
+	NEUTRAL,
+	NEGATIVE,
+}
+
+enum RelationshipModifier {
+	RUMOR_ABOUT_ENEMY,
+	RUMOR_ABOUT_FRIEND,
+	RUMOR_ABOUT_NEUTRAL,
+}
+
+enum RumorState {
+	FORGOTTEN,
+	CRYSTALLIZED,
+}
+
+
+enum PsycheStat {
+	PATHOS,
+	LOGOS,
+	ETHOS,
+}
+
+enum ToneSetting {
+	HOSTILE,
+	DECEPTIVE,
+	NEUTRAL,
+	FRIENDLY,
+}
+
+enum ActionEffect {
+	NEGATIVE_DEFEND,
+	POSITIVE_ATTACK,
+}
+
+enum ConversationType {
+	GOAL_ORIENTED,
+	INFO_ORIENTED,
+	RELATIONAL_ORIENTED,
+}
+
+enum GoalOrientedType {
+	DIPLOMATIC,
+	NEGOTIATION,
+	ARGUMENTATIVE,
+	COERCIVE,
+}
+
+enum InfoOrientedType {
+	INTERROGATIVE,
+	INFORMATIVE,
+	CONSULTIVE,
+	NARRATIVE,
+}
+
+enum RelationalOrientedType {
+	SOCIAL,
+	THERAPEUTIC,
+	CEREMONIAL,
+	CONFRONTATIONAL,
+}
+
+
+enum PromotionRequirement {
+	FAME_SCORE,
+	PRESTIGE_LEVEL,
+	INFLUENCE,
+}
+
+# Spell Types and Methods
+enum SpellType {
+	RELEASE,
+	RITUAL,
+}
+
+enum SpellIntent {
+	ENERGY_TRANSFER,
+	SUMMON,
+	CONJURE,
+	STRENGTHEN,
+	WEAKEN,
+	ILLUSION,
+	COUNTER_REACTION,
+	PERCEIVE,
+	CONTROL,
+	SEAL_PROTECTIVE,
+	SEAL_BINDING,
+	SEAL_TRACKING,
+	SEAL_CONTRACT,
+	DISPLACE,
+	TRANSMUTE,
+}
+enum SecondarySpellIntent { #(CAN ONLY BE ADDED TO SECONDARY OR TERTIARY SPELLS, AFFECTS PRIMARY SPELL)
+	CHAIN,
+	AURAL,
+}
+
+
+enum EnergyType {
+	POSITIVE, #(YIN/LIGHT)
+	NEGATIVE, #(YANG/DARK)
+}
+
+enum SpellCastType {
+	SINGLE,
+	CONTINUOUS,
+}
+
+enum ActivationMethod {
+	SOMATIC,
+	VERBAL,
+	MENTAL,
+	MATERIAL,
+	INSCRYPTION,
+	ARTISANAL_ANY,
+	ARTISANAL_SPECIFIC_ITEM,
+	CONDUIT_ANY,
+	CONDUIT_SPECIFIC_ITEM,
+	CHANNELED_ANY,
+	CHANNELED_SPECIFIC_BODY_PART,
+}
+
+# Shape/Pattern Types
+enum ShapePattern {
+	NONE,
+	PROJECTILE,
+	RAY,
+	BEAM,
+	PARALLEL_BEAM,
+	DIVERGENT_BEAM,
+	CONVERGENT_BEAM,
+	ORB,
+	CUBE,
+	LUNE,
+	TETRAHEDRON,
+	TESSERACT,
+	HYPERSPHERE,
+}
+
+# Elemental Natures
+enum ElementNature {
+	WATER,
+	FIRE,
+	AIR,
+	LIGHTNING,
+	EARTH,
+	WOOD,
+	METAL,
+	TIME,
+	SPACE,
+	CREATION,
+	DESTRUCTION,
+	HEALING,
+	POISON,
+	AETHER, #(KINETIC DMG TYPES/SOUL/SPIRIT)
+}
+
+# CompositionTarget 
+enum CompositionTargetType {
+	ORGANIC,
+	INORGANIC,
+	HYBRID,
+	BIORGANIC,
+	BIOINORGANIC,
+}
+
+enum TargetDisposition {
+	FRIENDLY,
+	NEUTRAL,
+	HOSTILE,
+}
+
+# Cast Target Types
+enum CastTargetType {
+	ON_TOUCH,
+	ON_SELF,
+	ON_TARGET,
+	AT_TARGET,
+	ON_GROUND,
+	IN_AIR,
+}
+
+# Oscillation Rate
+enum OscillationModifier {
+	DURATION,
+	PULSE,
+}
+
+# Dual Nature (Chakra, Elemental Associations)
+enum DualNatureMain {
+	FIRE,
+	WOOD,
+	EARTH,
+	METAL,
+	ICE,
+	WATER,
+	AIR,
+	LIGHTNING,
+}
+
+# Tri Nature (Manifestation/Chakra Point Activation)
+enum TriNatureCombo {
+	ICE,
+	CRYSTAL,
+	MIST,
+	METAL,
+	BLOOD,
+	WOOD,
+	LAVA,
+	LIGHTNING,
+	CORROSION,
+	STORM,
+	GLASS,
+	SMOKE,
+	STONE,
+	STEAM,
+	FLASH,
+	SAND,
+	# For Yin Combos:
+	SOUND,
+	MAGNETISM,
+	FLUID,
+	PRESSURE,
+	# For Yang Combos:
+	PLASMA,
+	ASH_STAGNATION,
+	GRAVITY,
+	BLACK_VOID,
+}
+
+# Innate Nature / Subtypes (bloodline limits)
+enum InnateNature {
+	HEATOUTPUT,
+	BONDING,
+	SEPARATION,
+	DESTRUCTION,
+	FLOWING,
+	STAGNATION,
+	PURITY,
+	IMPURITY,
+	SOUND,
+	SILENCE,
+	FORCE,
+	SWIFT,
+	HARDNESS,
+	SOFTNESS,
+	COMPACT,
+	LOOSENESS,
+	BODY,
+	MIND,
+	SOUL,
+}
+
+# Senses (mental combat/psyche targeting)
+enum SenseType {
+	SIGHT,
+	SMELL,
+	HEARING,
+	TOUCH,
+	TASTE,
+	TEMPERATURE,
+	ESP,
+}
+
+# Spell Utility/Combat Types
+enum SpellCompositionCategory {
+	BASE_SPELL,
+	PRIMARY_SPELL,
+	AUXILIARY_SPELL,
+	TERTIARY_SPELL,
+}
+
+enum SpellIntentMethod {
+	ENERGY_TRANSFER,
+	SUMMON,
+	CONJURE,
+	STRENGTHEN,
+	WEAKEN,
+	ILLUSION,
+	COUNTER_REACTION,
+	PERCEIVE,
+	CONTROL,
+	SEAL_PROTECTIVE,
+	SEAL_BINDING,
+	SEAL_TRACKING,
+	SEAL_CONTRACT,
+	DISPLACE,
+	TRANSMUTE,
+}
+
+# Difficulty/Game World Types
+enum DifficultyType {
+	EASY,      # General-world sim [no magic, no monsters]
+	MEDIUM,    # Static/scaling, low-fantasy, magic/monsters rare
+	HARD,      # High-fantasy, different races, magic, monsters
+}
+
+# Free Body Diagram - Force Type
+enum ForceType {
+	IMPULSE,
+	CONSTANT,
+}
+
+
+# Hardness scales (materials)
+enum HardnessScaleType {
+	SHORE_OO,
+	SHORE_A,
+	SHORE_D,
+	MOHS,
+}
+
+enum KingdomEnum {
+	PLANTAE,
+	FUNGI,
+	ANIMALIA
+}
+
+enum PlantClassEnum {
+	FLOWERING,
+	CONIFER,
+	HARDWOOD,
+	FERN,
+	MOSS,
+	ALGAE,
+	SUCCULENT
+}
+
+enum FungiClassEnum {
+	MUSHROOM,
+	SAC_FUNGI,
+	MOLD
+}
+
+enum AnimalClassEnum {
+	MAMMAL,
+	BIRD,
+	REPTILE,
+	AMPHIBIAN,
+	FISH,
+	ARTHROPOD,
+	MOLLUSK
+}
+
+#PlantSubClass 
+enum FLOWERING_SubClass {
+ 	FRUIT_BEARING,
+  		#POME: APPLE, PEAR, QUINCE, MEDLAR
+ 		#DRUPE: CHERRY, PLUM, PEACH, APRICOT, OLIVE, NECTARINE
+  		#BERRY: GRAPE, TOMATO, BLUEBERRY, STRAWBERRY, BLACKBERRY, RASPBERRY, MULBERRY, ELDERBERRY
+ 		#CITRUS: ORANGE, LEMON, LIME, GRAPEFRUIT, POMELO
+  		#TROPICAL: BANANA, MANGO, PAPAYA, PINEAPPLE, GUAVA, PLANTAIN, DATE, JUJUBE
+  		#MELON: WATERMELON, CANTALOUPE, HONEYDEW
+ 		#GOURD: PUMPKIN, SQUASH, CUCUMBER, ZUCCHINI
+	VEGETABLE,
+  		#LEAFY: LETTUCE, SPINACH, KALE, CABBAGE, CHARD, ARUGULA
+  		#CRUCIFEROUS: BROCCOLI, CAULIFLOWER, BRUSSELS_SPROUTS
+  		#ALLIUM: ONION, GARLIC, LEEK, CHIVE, SCALLION
+  		#ROOT: CARROT, BEET, RADISH, TURNIP, PARSNIP, HORSERADISH, SALSIFY, RUTABAGA
+  		#TUBER: POTATO, YAM, TARO, CASSAVA
+  		#STEM: ASPARAGUS, CELERY, RHUBARB, BAMBOO
+  		#BULB: FENNEL, KOHLRABI
+  		#FLOWER: ARTICHOKE, CAULIFLOWER, BROCCOLI
+	LEGUME,
+  		#BEAN: BLACK, KIDNEY, LIMA, FAVA, NAVY
+ 		 #PEA: GREEN, BLACK_EYED, CHICKPEA
+  		#LENTIL: GREEN, RED, BROWN
+	GRAIN,
+  		#WHEAT: EINKORN, EMMER, SPELT, DURUM, KAMUT, TRITICALE
+  		#RICE: WHITE, BROWN, WILD
+ 	 	#CORN: WHITE, YELLOW (aka MAIZE)
+  		#BARLEY
+ 		#OAT
+  		#RYE
+  		#MILLET
+  		#SORGHUM
+  		#ANCIENT: AMARANTH, QUINOA, TEFF, BUCKWHEAT, FONIO, KANIWA
+	NUT,
+  		#TREE_NUT: ALMOND, WALNUT, HAZELNUT, CHESTNUT, PECAN, HICKORY
+  		#SEED_NUT: CASHEW, PISTACHIO, MACADAMIA
+  		#GROUND_NUT: PEANUT
+	HERB,
+  		#CULINARY: BASIL, OREGANO, THYME, ROSEMARY, SAGE, DILL, CILANTRO, PARSLEY, TARRAGON, CHIVES
+  		#MINT: PEPPERMINT, SPEARMINT, APPLEMINT, HORSEMINT, WILDMINT, PENNYROYAL
+  		#MEDICINAL: CHAMOMILE, LAVENDER, FEVERFEW, COMFREY, BETONY, SELF_HEAL, DANDELION, MILK_THISTLE
+  		#AROMATIC: LEMONGRASS, PANDAN, BAY
+	SPICE,
+  		#SEED: CUMIN, CORIANDER, FENNEL, ANISE, NUTMEG
+  		#BARK: CINNAMON
+  		#ROOT: GINGER, TURMERIC, HORSERADISH
+  		#FLOWER: SAFFRON, CLOVE
+  		#FRUIT: PEPPER, CHILI, VANILLA, PAPRIKA
+	NIGHTSHADE,
+  		#PEPPER: BELL, JALAPENO, HABANERO, POBLANO, BANANA, PIRI_PIRI
+  		#TOMATO: RED, GREEN, YELLOW, ORANGE
+  		#EGGPLANT
+  		#TOBACCO
+	OIL,
+  		#SEED_OIL: SUNFLOWER, SESAME, FLAX
+  		#FRUIT_OIL: OLIVE, COCONUT, PALM
+  		#NUT_OIL: ALMOND, WALNUT
+}
+enum CONIFER_SubClass {
+	PINE,
+	SPRUCE,
+	FIR,
+	CEDAR,
+	JUNIPER,
+	CYPRESS,
+	YEW,
+}
+enum HARDWOOD_SubClass {
+	OAK, #(RED_OAK, WHITE_OAK),
+	MAPLE,
+	HICKORY,
+	CHESTNUT,
+	WALNUT,
+	COTTONWOOD,
+	EBONY_PERSIMMON,
+	SATINWOOD,
+}
+enum FERN_SubClass {
+	TRUE_FERN #(POLYPODIOPSIDA),
+	TREE_FERN #(CYATHEALES),
+	WATER_FERN #(SALVINIACEAE),
+	FIDDLEHEAD,
+}
+enum MOSS_SubClass {
+	TRUE_MOSS #(BRYOPSIDA),
+	PEAT_MOSS #(SPHAGNUM),
+	LIVERWORT #(MARCHANTIOPHYTA),
+}
+enum ALGAE_SubClass {
+	GREEN_ALGAE #(CHLORELLA, SPIRULINA),
+	RED_ALGAE #(NORI, DULSE, AGAR_SOURCE),
+	BROWN_ALGAE #(KELP, KOMBU, WAKAME, HIJIKI),
+	BLUE_GREEN #(CYANOBACTERIA),
+}
+enum SUCCULENT_CACTUS_SubClass{
+	CACTUS, #(PRICKLY_PEAR)
+	AGAVE,
+}
+
+enum FungiClass {
+	MUSHROOM,
+	SAC_FUNGI,
+	MOLD,
+} 
+enum Mushroom_SubClass {
+	AGARIC, (GILLED)
+		#BUTTON, 
+		#CREMINI, 
+		#PORTOBELLO, 
+		#SHIITAKE, 
+		#OYSTER, 
+		#ENOKI, 
+		#CHANTERELLE, 
+		#INK_CAP, 
+		#SHAGGY_INK_CAP, 
+		#FAIRY_RING, 
+		#BLUSHER, 
+		#VOLVARIELLA, 
+		#FLY_AGARIC, 
+		#LIBERTY_CAP, 
+		#DEATH_CAP, 
+		#FALSE_BLUSHER, 
+		#DESTROYING_ANGEL,
+	BOLETE (PORED)
+		#PORCINI, #KING_BOLETE, #BEEFSTEAK_FUNGUS
+	POLYPORE (BRACKET)
+		#REISHI, #TURKEY_TAIL, #HOOF_FUNGUS, #MAITAKE, #POLYPORE
+	TOOTH (HYDNOID)
+		#LION'S_MANE
+	CORAL #(CLAVARIOID)
+		#GOLDEN_NEEDLE
+	PUFFBALL #(LYCOPERDACEAE)
+	TRUFFLE #(TUBER)
+		#BLACK_TRUFFLE, 
+		#WHITE_TRUFFLE
+}
+enum SacFungi_SubClass {
+	MOREL, #(MORCHELLA)
+	CUP_FUNGI,
+	YEAST, #(SACCHAROMYCES)
+	KOJI, #(ASPERGILLUS)
+}
+enum Mold_SubClass {
+	TEMPEH_STARTER, #(RHIZOPUS)
+	BLUE_MOLD, #(PENICILLIUM)
+	BLACK_MOLD,
+}
+	
+
+#ANIMALIA
+enum AnimalClass {
+	MAMMAL,
+	BIRD,
+	REPTILE,
+	AMPHIBIAN,
+	FISH,
+	ARTHROPOD,
+	MOLLUSK,
+}
+enum Mammal_SubClass {
+	BOVINE, 
+		#COW_BULL_OX, BUFFALO, BISON, YAK
+	CERVID, 
+		#DEER, ELK, MOOSE, REINDEER_CARIBOU, MUNTJAC
+	EQUINE, 
+		#HORSE, DONKEY, MULE, ZEBRA
+	CAPRINE, 
+		#GOAT, SHEEP, IBEX
+	PORCINE, 
+		#PIG_SWINE, WILD_BOAR
+	CANINE, 
+		#DOG, WOLF, FOX, COYOTE
+	FELINE, 
+		#CAT, LION, TIGER, LEOPARD
+	RODENT, 
+		#RAT, MOUSE, SQUIRREL, BEAVER, GUINEA_PIG
+	LAGOMORPH, 
+		#RABBIT, HARE
+	PRIMATE, 
+		#HUMAN, CHIMPANZEE, GORILLA, MONKEY
+	URSINE, 
+		#BROWN_BEAR, BLACK_BEAR, POLAR_BEAR
+	MARSUPIAL, 
+		#KANGAROO, OPOSSUM, KOALA
+	CAMELID, 
+		#CAMEL, LLAMA, ALPACA
+}
+enum Human_SubClass {
+	VIR,
+	SKOVIR_EL,
+	TAKEVIR_EL,
+	HAVIR_EL,
+	HOJVIR_EL,
+	KALVVIR_EL,
+	SOKRIENVIR_EL,
+	TRURVIR_EL,
+	STORVIR,
+	SUURVIR,
+	DWERVIR,
+}
+enum Bird_SubClass {
+	POULTRY, 
+		#CHICKEN, TURKEY, QUAIL, GUINEA_FOWL
+	WATERFOWL, 
+		#DUCK, GOOSE, SWAN
+	GAME_BIRD, 
+		#PHEASANT, PARTRIDGE, GROUSE
+	RAPTOR, 
+		#EAGLE, HAWK, FALCON, OWL
+	SONGBIRD, 
+		#SPARROW, FINCH, CROW_RAVEN
+	RATITE, 
+		#OSTRICH, EMU, CASSOWARY
+}
+enum Reptile_SubClass {
+	LIZARD, 
+		#COMMON_LIZARD, IGUANA, GECKO, MONITOR
+	SNAKE, 
+		#CONSTRICTOR, VIPER, COBRA, PYTHON
+	TURTLE_TORTOISE, 
+		#SEA_TURTLE, LAND_TORTOISE, FRESHWATER_TURTLE
+	CROCODILIAN, 
+		#CROCODILE, ALLIGATOR, CAIMAN
+}
+enum Amphibian_SubClass {
+	FROG_TOAD, 
+		#COMMON_FROG, TOAD, TREE_FROG, BULLFROG
+	SALAMANDER_NEWT, 
+		#SALAMANDER, NEWT, AXOLOTL
+	CAECILIAN,
+}
+enum Fish_SubClass {
+	FRESHWATER, 
+		#CARP, TROUT, SALMON, CATFISH, TILAPIA, BASS, PIKE
+	SALTWATER, 
+		#TUNA, COD, HADDOCK, SEA_BASS, SARDINE, ANCHOVY, MACKEREL
+	CARTILAGINOUS, 
+		#SHARK, RAY, SKATE
+}
+enum Arthropod_SubClass {
+	INSECT, 
+		#BEETLE, ANT, BEE, WASP, FLY, MOTH, BUTTERFLY, CRICKET, GRASSHOPPER, CICADA, TERMITE, DRAGONFLY, MEALWORM
+	ARACHNID, 
+		#SPIDER, SCORPION, TICK, MITE
+	CRUSTACEAN, 
+		#CRAB, LOBSTER, SHRIMP, CRAYFISH, BARNACLE
+enum Mollusk_SubClass {
+	BIVALVE, 
+		#OYSTER, CLAM, MUSSEL, SCALLOP
+	GASTROPOD,
+		#SNAIL, SLUG
+	CEPHALOPOD, 
+		#OCTOPUS, SQUID, CUTTLEFISH
+}
+
+### 4C. Trait Types (Examples)
+- GrowthTime: FAST, MEDIUM, SLOW
+- DiseaseResistance: RESISTANT, PARTIAL, SUSCEPTIBLE
+- StressTolerance, DecayRate: [0.0 - 1.0] float, sometimes enum for types (HEAT, COLD, DROUGHT...)
+- ClimatePreference: TROPICAL, TEMPERATE, ARID, ARCTIC, AQUATIC
+- SeasonTolerance: SPRING, SUMMER, AUTUMN, WINTER
+- TerrainPreference: FOREST, GRASSLAND, MOUNTAIN, DESERT, WETLAND, COASTAL, UNDERGROUND
+- ReproductionType: SEED, CUTTING, TUBER, BULB, SPORE, GRAFTING, LAYERING
+- PollinationType: SELF, CROSS, WIND, INSECT, BIRD
+- WaterNeed: LOW, MEDIUM, HIGH
+- SoilPreference: SANDY, LOAMY, CLAY, ROCKY, FERTILE
+- LightNeed: SHADE, PARTIAL, FULL
+- Temperament: DOCILE, NEUTRAL, AGGRESSIVE, SKITTISH
+- Pack/HerdBehavior: SOLITARY, PAIR, SMALL_GROUP, HERD, SWARM
+- ActivityCycle: DIURNAL, NOCTURNAL, CREPUSCULAR, CATHEMERAL
+
+
+enum PloidyEnum {
+	HAPLOID_1N,
+	DIPLOID_2N,
+	TRIPLOID_3N,
+	TETRAPLOID_4N,
+	PENTAPLOID_5N,
+	HEXAPLOID_6N,
+	OCTOPLOID_8N
+}
+
+enum FertilityTypeEnum {
+	FERTILE,
+	TYPE_A_PERMANENT,
+	TYPE_B_RECOVERABLE,
+	TYPE_C_REDUCED,
+	INCOMPATIBLE
+}
+
+enum PlantReproEnum {
+	SEED,
+	CUTTING,
+	TUBER,
+	BULB,
+	SPORE,
+	GRAFTING,
+	LAYERING
+}
+
+enum AnimalReproEnum {
+	VIVIPAROUS,
+	OVIPAROUS,
+	OVOVIVIPAROUS
+}
+
+enum FungiReproEnum {
+	SPORE,
+	FRAGMENTATION,
+	BUDDING
+}
+
+enum PollinationEnum {
+	SELF,
+	CROSS,
+	WIND,
+	INSECT,
+	BIRD
+}
+
+enum ClimateEnum {
+	TROPICAL,
+	TEMPERATE,
+	ARID,
+	ARCTIC,
+	AQUATIC
+}
+
+enum SeasonEnum {
+	SPRING,
+	SUMMER,
+	AUTUMN,
+	WINTER
+}
+
+enum TerrainEnum {
+	FOREST,
+	GRASSLAND,
+	MOUNTAIN,
+	HILL,
+ 	DESERT,
+	WETLAND,
+	SWAMP,
+	COASTAL,
+	BEACH,
+	UNDERGROUND,
+	CAVE,
+	RIVERBANK,
+	LAKE,
+	POND,
+	PLAINS,
+	CLIFF,
+	TUNDRA,
+	TAIGA,
+	SAVANNA,
+	CANYON,
+	VOLCANIC,
+	ICEFIELD,
+	CITY,
+	VILLAGE,
+	ROAD,
+	BRIDGE,
+	MARSH,
+	FJORD,
+	FALLOW,
+}
+#LOCATIONS
+  - FORT
+  - RUIN
+  - SHRINE
+}
+
+enum SoilTypeEnum {
+	SANDY,
+	LOAMY,
+	CLAY,
+	ROCKY,
+	FERTILE
+}
+
+enum LightNeedEnum {
+	SHADE,
+	PARTIAL,
+	FULL
+}
+
+enum WaterNeedEnum {
+	LOW,
+	MEDIUM,
+	HIGH
+}
+
+enum EffectTypeEnum {
+    POISON,           # Harmful to body or system
+    MEDICINAL,        # Restores hp, cures effects
+    PSYCHOACTIVE,     # Alters perception/thought/mood
+    NUTRITIONAL,      # Provides food value/healing via nutrition
+    BUFF,             # Improves stat, e.g. strength, speed
+    DEBUFF,           # Temporarily decreases stat
+    HEALING,          # Repairs wounds, restores health
+    REVITALIZING,     # Removes fatigue or boosts stamina
+    CURATIVE,         # Removes debuff or status effect
+    INTOXICATING,     # Alcoholic/drunken effect
+    NEUTRAL,          # No mechanical effect
+    SPECIAL,          # Unique or magical effect only for rare alchemy
+
+
+
+enum PoisonSubtypeEnum {
+    CORROSIVE,       # Damages organs on contact (acid burns, necrosis)
+    IRRITANT,        # Causes itchiness, swelling, general discomfort
+    SYSTEMIC,        # Enters bloodstream, affects multiple organs
+    NEUROTOXIC,      # Targets nervous system, paralysis, spasms
+    CYANOGENIC,      # Produces cyanide; blocks oxygen, rapid suffocation
+    CARDIOTOXIC,     # Affects heart and blood pressure
+    HEPATOTOXIC,     # Affects liver/related metabolism
+    NEPHROTOXIC,     # Affects kidneys/filtration
+    GI_TRACT,        # Targets stomach/intestines, vomiting/diarrhea
+    HEMOTOXIC,       # Damages blood, causes hemorrhage
+    ENZYME_INHIBITOR,# Inhibits key enzymes, may block digestion/nerves
+    HALLUCINOGENIC,  # Induces hallucinations, confusion
+    DERMATOLOGIC,    # Skin-specific reactions (burns, blisters, rash)
+    RESPIRATORY,     # Targets lungs or airway
+    COAGULANT,       # Thickens blood (decreases flow)
+    ANTICOAGULANT,   # Prevents blood clotting (increases bleeding)
+    IMMUNOTOXIC,     # Weakens immune response
+    ALLERGEN,        # Triggers allergic reaction
+    METABOLIC,       # Disturbs core metabolism (hypoglycemia/hyperglycemia/shock)
+    PSYCHOACTIVE,    # Alters mood/thoughts; similar to "Hallucinogenic" but less severe
+    CHOLINERGIC,     # Nervous system overload (sweating, salivation, seizures)
+    VASODILATOR,     # Opens blood vessels, causes blood pressure drop
+    MUCOSAL,         # Damages mucous membranes (mouth, throat, gut)
+    CYTOTOXIC,       # Damages cells directly, causes cell death
+    RADIOTOXIC,      # Causes radiation-related harm (for monsters/magical ecology)
+    SLOW_ACTING,     # Delayed onset poison
+    ACUTE,           # Immediate rapid poisoning
+    CUMULATIVE,      # Builds up with repeated exposure, long-term effect
+}
+
+enum MedicinalSubtypeEnum {
+	ANALGESIC,
+	ANTIBIOTIC,
+	STIMULANT,
+	SEDATIVE,
+	RESTORATIVE,
+	HEMOSTATIC,
+	ANTI_INFLAMMATORY,
+	DIURETIC,
+	ANTIVIRAL,
+	LAXATIVE,
+	TONIC
+}
+
+enum ToxicityLevelEnum {
+	NONE,
+	MILD,
+	HALLUCINOGENIC,
+	LETHAL
+}
+
+enum PrepStateEnum {
+	RAW,
+	COOKED,
+	BOILED,
+	FRIED,
+	BAKED,
+	DRIED,
+	FERMENTED,
+	PRESERVED,
+	PICKLED
+}
+
+enum GrowthStageEnum {
+	SEED,
+	SPROUT,
+	JUVENILE,
+	MATURE,
+	FLOWERING,
+	FRUITING,
+	SENESCENT
+}
+
+enum FlavorPrimaryEnum {
+	SWEET,
+	SOUR,
+	SALTY,
+	BITTERN,
+	UMAMI,
+	SPICY
+}
+
+enum FlavorSecondaryEnum {
+	EARTHY,
+	NUTTY,
+	HERBAL,
+	FLORAL,
+	CITRUS,
+	PINEY,
+	PUNGENT,
+	TANGY,
+	MELON,
+	FRUITY,
+	SMOKY,
+	GAMEY,
+	SAVORY,
+	MINTY,
+	LICORICE,
+	SHARP
+}
+
+enum TexturePrimaryEnum {
+	CRUNCHY,
+	SOFT,
+	CHEWY,
+	CREAMY,
+	TOUGH,
+	CRISP,
+	FLAKY,
+	TENDER,
+	FIRM
+}
+
+enum TextureSecondaryEnum {
+	JUICY,
+	DRY,
+	SPONGY,
+	WATERY,
+	FIBROUS,
+	STARCHY,
+	MUSHY,
+	SMOOTH,
+	AIRY,
+	DELICATE,
+	HARD
+}
+
+enum TemperamentEnum {
+	DOCILE,
+	NEUTRAL,
+	AGGRESSIVE,
+	SKITTISH
+}
+
+enum PackBehaviorEnum {
+	SOLITARY,
+	PAIR,
+	SMALL_GROUP,
+	HERD,
+	SWARM
+}
+enum ActivityLevel {
+	SEDENTARY,  
+	LIGHT , 
+	MODERATE,  
+	HEAVY,
+}
+enum ActivityCycleEnum {
+	DIURNAL,
+	NOCTURNAL,
+	CREPUSCULAR,
+	CATHEMERAL
+}
+
+enum PlantFormEnum {
+	GRASS,
+	SHRUB,
+	BUSH,
+	VINE,
+	TREE,
+	SUCCULENT,
+	BULBOUS
+}
+
+enum LeafShapeEnum {
+	OVATE,
+	LANCEOLATE,
+	LOBED,
+	PALMATE,
+	PINNATE,
+	NEEDLE,
+	HEART_SHAPED,
+	ELLIPTICAL,
+	GRASS_LIKE,
+	FERN_LIKE
+}
+
+enum RootDepthEnum {
+	SHALLOW,
+	MEDIUM,
+	DEEP
+}
+
+enum SubstrateEnum {
+	WOOD,
+	SOIL,
+	DUNG,
+	LIVING_HOST,
+	DECAYING_MATTER
+}
+
+enum SymbiosisEnum {
+	SAPROPHYTE,
+	PARASITE,
+	MYCORRHIZAL
+}
+
+enum SporeColorEnum {
+	WHITE,
+	BROWN,
+	BLACK,
+	PURPLE,
+	PINK,
+	YELLOW,
+	GREEN
+}
+
+enum MutationOutcomeEnum {
+	BENEFICIAL,
+	NEUTRAL,
+	HARMFUL
+}
+
+enum HierarchyLevel {
+	MICRO,
+	MESO,
+	MACRO,
+}
+
+enum HierarchySubLevel {
+	INDIVIDUAL,
+	FAMILY,
+	KIN,
+	CLAN,
+	GUILD,
+	RELIGION,
+	STATE,	
+}
+
+enum HeirarchyTrackedStats {
+MICRO: {
+	INDIVIDUAL: {
+		NAME, (FIRST/MIDDLE)
+		HOME,	(TOWN/VILLAGE)
+		DOB,
+		RACE,
+		BLOODLINE, (FAMILY NAME)
+		CLAN_NAME,
+		COUNTRY,
+		RELIGION_NAME, 
+		WEALTH,
+		APPEARANCE,
+		SOCIAL_STATUS,
+		PERSONALITY,
+		MOOD,
+		DISPOSITION,
+		ETHICS,
+		LAWFULNESS,
+		FAME,
+		INFLUENCE, (FACTIONAL)
+		PRESTIGE, (SKILLS)
+		FACTION(S), 
+		},
+	FAMILY: {
+		ANCESTORY, (MATERNAL/PATERNAL/GRANDPARENTS)
+		PARENTS, (MOTHER/FATHER)
+		SIBLINGS, (BROTHERS/SISTERS)
+		},
+	KIN: {
+		SPOUSE, HUSBAND/WIFE
+		INLAWS, (MOTHER/FATHER)
+		COLLATERAL_TIES, (AUNTS/UNCLES[PARENTS SIBLINGS])
+		ADOPTIVE, (PARENTS/SIBLINGS)
+		}}
+MESO: {
+	CLAN: { #(ETHNIC CORE)
+		CLAN_LEADER
+		ANCESTRAL_BLOODLINE,
+		LANGUAGE,
+		ETHICS,
+		},
+	RELIGION: {
+		HIGH_PREIST,
+		GOD
+		WORSHIP_TIME,
+		OFFERING,
+		WORSHIP_METHOD,
+		HOLY_PLACE,
+		DOCTINE,
+		}}
+MACRO: {
+	COUNTRY,
+	STATE,
+	STATE_LEADER
+	GOVERNMENT,
+	MILITARY,
+	BUREAUCRACY,
+		}}
+}
+
+
+enum StateLeaderType {
+	EMPORER,
+	MONARCH,
+	PREMIER,
+	TYRANT,
+}
+
+enum GovernmentType {
+	BICAMERAL,
+	UNICAMERAL,
+	COUNCIL,
+}
+
+enum MilitaryType {
+	REPUBLIC,
+	STRATOCRACY,
+	JUNTA,
+	CONTRACT,
+}
+
+enum BureaucratType {
+	LORD,
+	LANDOWNER,
+}
+enum StatusTrackedStat {
+	MOVEMENT,
+	JOB,
+	CLASS,
+	LAWS,
+	RULES,
+}
+
+enum MovementStatusStat { #MOVEMENT FREEDOM
+	RESTRICTED,
+	PERMISSARY,
+	FREE,
+}	
+
+enum ClassStat {
+	SLAVE,
+	PEASANT,
+	LABORER,
+	OUTLAW,
+	FREEMAN,
+	ARTISAN, 
+	CRIMINAL,
+	MIDDLE_CLASS,
+	CLERGY,
+	NOBLE_SERVANT,
+	OFFICIAL,
+	NOBILITY,
+	HIGH COMMAND,	
+}
+
+enum JobType {
+	FARMER,
+	PLOUGHMAN, 
+	SHEPHERD, 
+	SWINEHERD,
+	LIVESTOCKER, 
+	FORESTER,
+	HUNTER,
+	TRAPPER,
+	POACHER,
+	CHEF,
+	COOK,
+	BAKER,
+	BREWER,
+	QUARRIER,
+	MINER,
+	GUARDSMAN,
+	WATCHMAN,
+	OUTER_DISCIPLE,
+	BLACKSMITH,
+	ARMORSMITH,
+	WEAPONSMITH,
+	GOLDSMITH,
+	SILVERSMITH,
+	TOOLSMITH,
+	JEWELER,
+	TANNER,
+	LEATHER_WORKER,
+	WOOD_WORKER,
+	WEAVER,
+	POTTER,
+	GLASSBLOWER,
+	STONEMASON,
+	BRICKLAYER,
+	CARPENTER,
+	TAILOR,
+	SPY,
+	ASSASSIN,
+	MERCHANT,
+	TRADESMAN,
+	MUSICIAN,
+	INNER_DISCIPLE,
+	SCRIBE,
+	ALCHEMIST,
+	HEALER,
+	PHYSICIAN,
+	CLERK,
+	ASSAYER,
+	SCHOLAR,
+	BAILIFF,
+	STEWARD,
+	EMISSARY
+	ARBITER,
+	PRIEST,
+	MONK,
+	SECT_ELDER,
+	CAPTAIN,
+	GENERAL,	
+	
+}
+
+enum MoodTypes {
+	LOGOS,
+	PATHOS,	
+	ETHOS,
+}
+
+enum MoodRating {
+	LOGOS: {
+		ANALYTICAL,
+		LOGICAL,
+		REASONABLE,
+		OBJECTIVE,
+		PRAGMATIC,	
+		SKEPTICAL,	
+		PARANOID,
+		DELUSIONAL,
+		IRRATIONAL,
+	},
+	PATHOS: {
+		EMPATHETIC,
+		CARING,
+		AFFABLE,
+		DETACHED,
+		INDIFFERENT,	
+		DISMISSIVE,	
+		APATHETIC,
+		HATEFUL,
+		CRUEL,
+	},	
+	ETHOS: {
+		TRUSTED,
+		CREDIBLE,
+		REPUTABLE,
+		VALID,
+		CONSIDERED,	
+		DUBIOUS,	
+		UNRELIABLE
+		DECEPTIVE,
+		FEARUL,
+	},	
+}
+
+enum Personality_SpeechModes {
+	HOSTILE,
+	DECEPTIVE,
+	NEUTRAL,
+	FRIENDLY,
+
+}
+
+enum PersonalityTypes {
+	HOSTILE,
+	DECEPTIVE,
+	NEUTRAL,
+	FRIENDLY,
+
+}
+
+enum OutlookTypes {
+	BARTERING: {
+		ANTAGONISTIC,
+		SCHEMING,
+		STRATEGICAL, 
+		CUSTOMER,
+		},
+	PERSUASION: {
+		PATHETIC,
+		SARCASTIC,
+		SUBVERSIVE, 
+		RATIONAL,
+		PASSIONATE,
+		MEDIATIVE,
+		DIPLOMATIC,
+		},
+	INTERROGATION: {
+		PREDATORY,
+		JUDGEMENTAL,
+		INFILTTRATOR, 
+		DOMINEERING,
+		CARING,
+		OBSERVANT,
+		},
+	EXPOSITION: {
+		PATHETIC,
+		SARCASTIC,
+		CHARLATAN, 
+		SUBVERSIVE,
+		INFILTATOR,
+		RACONTEURING,
+		WISE,
+		OBSERVANT,
+		CARING,
+		SUPPORTIVE,
+		},
+	INTIMIDATION: {
+		HOT_TEMPERED,
+		ENFORCER,
+		COMMANDING, 
+		MANIPULATIVE,
+		INTIMIDATING,
+		HUMOSROUS,
+		},
+	ARGUMENTATION: {
+		HOT_TEMPERED,
+		ANTAGONISTIC,
+		SUBVERSIVE, 
+		RATIONAL,
+		JUDGEMENTAL,
+		CARING,
+		JEALOUS,
+		},
+	INQUIRY: {
+		PATHETIC,
+		SARCASTIC,
+		INFILTRATOR, 
+		STRATEGICAL,
+		CARING,
+		OBSERVANT,
+		},
+	PRAISING: {
+		PATHETIC,
+		SARCASTIC,
+		SCHEMING, 
+		SUPPORTIVE,
+		WISE,
+		OBSERVANT,
+		},
+	COERCION: {
+		PREDATORY,
+		MANIPULATIVE,
+		TACTICAL, 
+		INTIMIDATING,
+		GASLIGHTING,
+		},
+	COMMAND: {
+		ENFORCER,
+		DEMANDING,
+		MANIPULATIVE, 
+		COMMANDING,
+		DOMINANT,
+		},
+	NARRATION: {
+		PATHETIC,
+		SARCASTIC,
+		CHARLATAN, 
+		SUBVERSIVE,
+		RACONTEURING,
+		WISE,
+		},
+	PLEADING: {
+		PATHETIC,
+		SARCASTIC,
+		CHARLATAN, 
+		MANIPULATIVE,
+		SYMPATHETIC,
+		CARING,
+		},
+	NEGOTIATION: {
+		PATHETIC,
+		SARCASTIC,
+		SCHEMING, 
+		RATIONAL,
+		STRAEGICAL,
+		DIPLOMATIC,
+		MEDIATIVE,
+		},
+	DESCRIPTION: {
+		PATHETIC,
+		SARCASTIC,
+		SUBEVERSIVE, 
+		RACONTEURING,
+		OBSERVANT,
+		WISE,
+		OBSERVANT,
+		},
+	MOCKERY: {
+		HOT_TEMPERED,
+		ANTAGONISTIC,
+		CHILDISH, 
+		DOMINERING,
+		MANIPULATIVE,
+		HUMOROUS,
+		INFILTRATOR,
+		},
+}
+
+enum PartyComp {
+	COMPANION,
+	MERCANERY,
+}
+
+enum DeceptivePersonalityTypes {
+	SUBVERSIVE,
+	DEVIANT,
+	LIAR,
+	CHARLATAN,
+}
+
+enum LiarTypes {
+	PA, Pathologic
+	SO, Sociopathic
+	NA, Narcissistic
+	CO, Compulsive
+	OC, Occasional
+	IMP, Impulsive
+	AV, Avoidant
+	PRO, Prosocial
+}
+
+
+enum DispostionRating {
+	MORTAL_ADVERSARY,
+	ADVERSARY,
+	DISLIKE,
+	NEUTRAL,
+	LIKED,
+	PHILIA,
+	LOVED,
+	EROS,
+}
+
+enum LawfulnessRating {
+	LAWFUL,
+	UNLAWFUL,
+	OUTLAW,
+}
+
+enum CharitabilityRating {
+	BENEFACTOR,
+	TRUSTWORTHY,
+	THEIF,
+}
+
+enum RulinessRating {
+	UPHOLDER,
+	ORDERLY,
+	REBEL,
+}
+
+enum SelfInterestRating {
+	ALTTRUISTIC,
+	NEUTRAL,
+	SELFISH,
+}
+
+enum MoralityTypes {
+	BENEVOLENT,
+	GOOD,
+	NORMAL,
+	TABULA_ROSA,
+	BAD,
+	EVIL,
+}
+
+enum FameRating {
+	LEGENDARY,
+	RENOWNED,
+	WELL_KNOWN,
+	NOTICED,
+	OBSCURE,
+	DISLIKED,
+	INFAMOUS,
+	NOTORIOUS,
+	REVILED,
+}
+
+enum Convo_Entities {
+ 	INITIATOR,
+	RESPONDENT,
+	INITIATOR_PARTY,
+	RESPONDENT_PARTY,
+}
+
+enum ENTITY_ACTIONType {
+	PHYSICAL
+	SPEAKING
+	LIVING
+	PERCIEVING
+}
+
+PHYSICAL_ACTIONTYPE{
+ATTACK
+ASSEMBLE #(BUILD/REPAIR)
+ACQUIRE #(GIVING/RECIEVING)
+MOVE,
+}
+
+ATTACK_TYPE {
+ARMED,
+UNARMED,
+RANGED,
+BLOCK,
+MAGIC,
+}
+
+ARMED_ATTACK_TYPE {
+CUT, #(EDGE_SLASH)
+STAB,#(EDGE_PIERCE)
+HIT, #(KINETIC)
+}
+
+UNARMED_ATTACK_TYPE {
+HEADBUTT,
+BITE
+KICK,
+PUNCH,
+DOUBLE_FIST #(BOTH HAND TOGETHER)
+DOUBLE_PUNCH #(BOTH PUNCH SEPERATE)
+GRAPPLE,
+}
+
+RANGED_ATTACK_TYPE {
+THROW,
+ARCHERY,
+SLING,
+SHOOT,
+LAUNCH,
+}
+
+BLOCK_ATTACK_TYPE {
+ABSORB,
+PARRY,
+
+MAGIC_ATTACK_TYPE {
+RELEASE,
+RITUAL,
+}
+
+ASSEMBLE_TYPE {
+PROCESS
+MANUFACTURE
+}
+
+PROCESSING_ASSEMBLY_TYPE {
+GRIND,
+MIX,
+SPIN,
+CUT,
+PREFORATE,
+HEAT,
+COOL,
+SORT,
+DYE,
+FERMENT,
+MOLD,
+}
+
+GRINDING_PROCESSING_TYPE {
+KNAP,
+CRUSH,
+PULVERIZE,
+POLISH, #(+CLEANING)
+SAND,
+}
+
+CUTTING_PROCESSING_TYPE {
+CARVE,  #(GEN. SHAPING)
+CHOP,
+SAW,
+ENGRAVE, #(WORDS/SYMBOLS)
+ETCH, #(ART/PICS)
+}
+
+PREFORATING_PROCESSING_TYPE {
+DRILL,
+PUNCH,
+}
+
+HEATING_PROCESSING_TYPE {
+	MELT,
+	DRY,
+	BOIL,
+	STEAM,
+	BAKE,
+	FRY,
+	SUN_DRY,
+}
+
+SORTING_PROCESSING_TYPE {
+	EXTRACT, 
+	FILTER,
+	REFINE,
+}
+
+
+| Action      | Typical Final Size      | Surface Area Change        | Notes / Examples                 |
+|-------------|------------------------|----------------------------|----------------------------------|
+| GRINDING    | 0.5–2mm fragments      | ↑↑↑ (very high)            | ground flour, spices, grain      |
+| CUTTING     | 1–50mm slices/chunks   | ↑ (low–mod)                | general/mechanical cuts          |
+| KNAPPING    | 10–50mm shards         | ↑ (low)                    | stone, flint toolmaking          |
+| CRUSHING    | 2–10mm irregular       | ↑↑ (moderate)              | hand-broken, bruised, garlic     |
+| PULVERIZING | <0.5mm powder          | ↑↑↑↑ (extremely high)      | flour, fine powders              |
+| SPLITTING   | 10–100mm pieces        | ↑ (low)                    | wood/log splitting, rough break  |
+| SAWING      | mm–cm thick pieces     | ↑ (low–moderate)           | sawed planks, bones              |
+| SLICING     | flat (2–10mm thick)    | ↑ (minor)                  | carrot/fruit discs, bacon        |
+| JULIENNING  | 1–3mm × 30–70mm rods   | ↑↑ (moderate)              | matchstick veg                   |
+| CHOPPING    | 5–15mm cubes/chunks    | ↑↑ (moderate)              | rough veg, stew                  |
+| DICING      | 3–8mm cubes            | ↑↑ (mod-high)              | finer than chopped               |
+| MINCING     | 1–3mm bits             | ↑↑↑ (high)                 | garlic, onion, meat              |
+| SHREDDING   | 2–5mm × 1–2mm strips   | ↑↑↑ (high)                 | cheese, carrots                  |
+| GRATING     | 1–2mm × 2–5mm bits     | ↑↑↑ (very high)            | cheese, zest                     |
+| PUREEING    | paste/liquid           | ↑↑↑↑ (extreme)             | tomato sauce, baby food          |
+| MASHING     | 2–5mm soft mass        | ↑↑ (mod-high)              | potatoes, avocado                |
+
+
+MANUFACTURING_ASSEMBLY_TYPE {
+	FORGE,
+	CASTE,
+	JOINING,
+	TAILOR,
+	ASSEMBLE,
+}
+
+JOINING_MANUFACTURING_TYPE {
+	FASTEN,
+	ADHERE,
+	WELD,
+}
+
+TAILORING_MANUFACTURING_TYPE {
+	SEW,
+	STITCH,
+	BRAID,
+	KNIT,
+}
+
+
+Typical Fiber/Yarn Thickness:
+Sewing: Fine thread, <0.5mm (often as fine as 0.1–0.3mm)
+Stitching: Slightly thicker, but still fine, 0.5mm to 1mm
+Braiding: 1mm+ (cords/ropes commonly 2–8mm)
+Knitting: 1.5mm (fine)–5mm (bulky); most usage 2–4mm
+
+ACQUISITION_TYPE {
+	BUY,
+	SELL,
+	TRADE,
+	GIFT,
+	STEAL,
+	GATHER,  
+	BORROW,
+	LEND,
+}
+
+
+GATHER_ACQUISITIONTYPE {
+	FORAGE, #(gathering wild food—plants, mushrooms, or fruit)
+	SCAVENGE, #(carcasses or discarded food left behind)
+	HARVEST, #(organized, collection resources)
+}
+
+MOVE_TYPE {
+	WALK,
+	RUN,
+	SNEAK,
+	JUMP,
+	CLIMB,
+	MANUAL,
+	INTERACTIVE,
+}
+
+MANUAL_MOVEMET_TYPE {
+	LIFT,
+	CARRY,
+	PUSH,
+	PULL,
+	TURN,
+	SET,
+	RAISE,
+	DROP,
+	CATCH,
+}
+
+INTERACTIVEE_MOVEMET_TYPE {
+	OPEN,
+	CLOSE,
+	ACTIVATE,
+	DEACTIVATE,
+	CRANK,
+	LOCK,
+	UNLOCK,
+	INSPECT,
+	USE,
+}
+
+SPEEAKING_ACTIONTYPE{
+	GOAL
+	SOCIAL
+}
+
+
+GOAL_SPEECH_ACTIONTYPE {
+	INTIMIDATE, 
+	COERCE, 
+	PERSUADE, 
+	ARGUE, 
+	COMMAND, 
+	NEGOTIATE, 
+	INTERROGATE, 
+}
+
+SOCIAL_SPEECH_ACTIONTYPE {
+	INQUIREE, 
+	NARRATE, 
+	DESCRIBE, 
+	EXPOSITE, 
+	PRAISE, 
+	PLEAD,
+	MOCK,
+}
+
+LIVING_ACTIONTYPE {
+	EAT,
+	DRINK,
+	REST,
+	HEAL,
+	CLEAN,
+	DRESS,
+	UNDRESS,
+	CULTIVATE,
+	LEARN,
+	GROW,
+}
+
+
+RESTING_ACTIONTYPE {
+	SIT,
+	MEDITATE,
+	SLEEP	,
+}
+
+CLEANING_ACTIONTYPE {
+	GROOM,
+	WIPE,
+	SCRUB,
+	SCRAPE,
+	SWEEP,
+	MOP,
+	DUST,
+	WASH,
+}
+
+CULTIVATION_ACTIONTYPE {
+	LIVESTOCK
+	HORTICULTURE,
+	ARABLE,
+	AQUACULTURE,
+	FUNGICULTURE,
+	QI_CULTURE,
+}
+
+enum LEARNING_ACTIONType {
+	READ,
+	INSTRUCTION,
+	DEDUCE,
+}
+
+GROWTH_ACTIONTYPE {
+ENTITY,
+PLANT,
+FUNGAL,
+LOCATION
+}
+
+ENTITY_GROWTH_TYPE {
+HEIGHT,
+WEIGHT, #(FAT/MUSCLE)
+MATURITY, #(AGE)
+RANK, 
+JOB,
+PART,
+TRAIT,
+}
+
+PLANT_GROWTH_TYPE {
+SEED,
+ROOT,
+STEM,
+LEAVES,
+BULB,
+FLOWER,
+FRUIT,
+PART,
+TRAIT,
+}
+
+FUNGAL_GROWTH_TYPE {
+SPORE,
+MYCELLIUM,
+FRUIT_BODY,
+TRAIT,
+}
+
+LOCATION_GROWTH_TYPE {
+POPULATION,
+TRAIT,
+}
+
+PERCEPTION_ACTIONTYPE {
+SEEING,
+TASTING,
+HEARING,
+SMELLING,
+TOUCHING,
+SENSING,
+TEMPERATURE,
+RECALL,
+}
+

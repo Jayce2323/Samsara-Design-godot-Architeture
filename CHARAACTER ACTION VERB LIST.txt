@@ -1,0 +1,316 @@
+CHARACTER/ENTITY VERB ACTIONS/TAG {
+PHYSICAL
+SPEECH
+LIVING
+PERCEPTION
+}
+
+PHYSICAL_ACTIONTYPE{
+ATTACK
+ASSEMBLY #(BUILD/REPAIR)
+ACQUISITION #(GIVING/RECIEVING)
+MOVEMENT,
+}
+
+ATTACK_TYPE {
+ARMED,
+UNARMED,
+RANGED,
+BLOCK,
+PARRY,
+MAGIC,
+}
+
+ARMED_ATTACK_TYPE {
+CUT, #(EDGE_SLASH)
+STAB,#(EDGE_PIERCE)
+HIT, #(KINETIC)
+}
+
+UNARMED_ATTACK_TYPE {
+HEADBUTT,
+BITE
+KICK,
+PUNCH,
+DOUBLE_FIST #(BOTH HAND TOGETHER)
+DOUBLE_PUNCH #(BOTH PUNCH SEPERATE)
+GRAPPLE,
+}
+
+RANGED_ATTACK_TYPE {
+THROW,
+ARCHERY,
+SLING,
+SHOOT,
+LAUNCH,
+}
+
+MAGIC_ATTACK_TYPE {
+RELEASE,
+RITUAL,
+}
+
+ASSEMBLY_TYPE {
+PROCESSING
+MANUFACTURING
+}
+
+PROCESSING_ASSEMBLY_TYPE {
+GRINDING,
+MIXING,
+SPINNING,
+CUTTING,
+PREFORATING,
+HEATING,
+COOLING,
+SORTING,
+DYEING,
+FERMENTATION,
+MOLDING,
+}
+
+GRINDING_PROCESSING_TYPE {
+KNAPPING,
+CRUSHING,
+PULVERIZING,
+POLISHING, #(+CLEANING)
+SANDING,
+}
+
+CUTTING_PROCESSING_TYPE {
+CARVING,  #(GEN. SHAPING)
+CHOPPING,
+SAWING,
+ENGRAVING, #(WORDS/SYMBOLS)
+ETCHING, #(ART/PICS)
+}
+
+PREFORATING_PROCESSING_TYPE {
+DRILLING,
+PUNCHING,
+}
+
+HEATING_PROCESSING_TYPE {
+MELTING,
+DRYING,
+BOILING,
+STEAMING,
+BAKING,
+FRYING,
+SUN_DRYING,
+}
+
+SORTING_PROCESSING_TYPE {
+EXTRACTION, 
+FILTERING,
+REFINING,
+}
+
+
+| Action      | Typical Final Size      | Surface Area Change        | Notes / Examples                 |
+|-------------|------------------------|----------------------------|----------------------------------|
+| GRINDING    | 0.5–2mm fragments      | ↑↑↑ (very high)            | ground flour, spices, grain      |
+| CUTTING     | 1–50mm slices/chunks   | ↑ (low–mod)                | general/mechanical cuts          |
+| KNAPPING    | 10–50mm shards         | ↑ (low)                    | stone, flint toolmaking          |
+| CRUSHING    | 2–10mm irregular       | ↑↑ (moderate)              | hand-broken, bruised, garlic     |
+| PULVERIZING | <0.5mm powder          | ↑↑↑↑ (extremely high)      | flour, fine powders              |
+| SPLITTING   | 10–100mm pieces        | ↑ (low)                    | wood/log splitting, rough break  |
+| SAWING      | mm–cm thick pieces     | ↑ (low–moderate)           | sawed planks, bones              |
+| SLICING     | flat (2–10mm thick)    | ↑ (minor)                  | carrot/fruit discs, bacon        |
+| JULIENNING  | 1–3mm × 30–70mm rods   | ↑↑ (moderate)              | matchstick veg                   |
+| CHOPPING    | 5–15mm cubes/chunks    | ↑↑ (moderate)              | rough veg, stew                  |
+| DICING      | 3–8mm cubes            | ↑↑ (mod-high)              | finer than chopped               |
+| MINCING     | 1–3mm bits             | ↑↑↑ (high)                 | garlic, onion, meat              |
+| SHREDDING   | 2–5mm × 1–2mm strips   | ↑↑↑ (high)                 | cheese, carrots                  |
+| GRATING     | 1–2mm × 2–5mm bits     | ↑↑↑ (very high)            | cheese, zest                     |
+| PUREEING    | paste/liquid           | ↑↑↑↑ (extreme)             | tomato sauce, baby food          |
+| MASHING     | 2–5mm soft mass        | ↑↑ (mod-high)              | potatoes, avocado                |
+
+
+MANUFACTURING_ASSEMBLY_TYPE {
+FORGING,
+CASTING,
+JOINING,
+TAILORING,
+ASSEMBLING,
+}
+
+JOINING_MANUFACTURING_TYPE {
+FASTENING,
+ADHERING,
+WELDING,
+}
+
+TAILORING_MANUFACTURING_TYPE {
+SEWING,
+STITCHING,
+BRAIDING,
+KNITTING,
+}
+
+
+Typical Fiber/Yarn Thickness:
+Sewing: Fine thread, <0.5mm (often as fine as 0.1–0.3mm)
+Stitching: Slightly thicker, but still fine, up to 1mm
+Braiding: 1mm+ (cords/ropes commonly 2–8mm)
+Knitting: 1.5mm (fine)–5mm (bulky); most usage 2–4mm
+
+ACQUISITION_TYPE {
+BUY,
+SELL,
+TRADE,
+GIFT,
+STEAL,
+FIND,  
+BORROW,
+LEND,
+}
+
+
+FIND_ACQUISITIONTYPE {
+FORAGING, #(gathering wild food—plants, mushrooms, or fruit)
+SCAVENGING, #(carcasses or discarded food left behind)
+HARVESTING, #(organized, collection resources)
+}
+
+MOVEMET_TYPE {
+WALKING,
+RUNNING,
+SNEAKING,
+JUMPING,
+CLIMBING,
+MANUAL,
+INTERACTION,
+}
+
+MANUAL_MOVEMET_TYPE {
+LIFTING,
+CARRYING,
+PUSHING,
+PULLING,
+TURNING,
+SETTING,
+RAISING,
+DROPPING,
+CATCHING,
+}
+
+INTERACTION_MOVEMET_TYPE {
+OPENING,
+CLOSING,
+ACTIVATING,
+DEACTIVATING,
+PRESSING,
+CRANKING,
+LOCKING,
+UNLOCKING,
+INSPECTING,
+USING,
+}
+
+SPEECH_ACTIONTYPE{
+GOAL_ORIENTED
+SOCIAL_ORIENTED
+}
+
+
+GOAL_ORIENTEDSPEECH_ACTIONTYPE {
+INTIMIDATION, 
+COERCION, 
+PERSUASION, 
+ARGUMENTATION, 
+COMMANDING, 
+NEGOTIATION, 
+INTERROGATION, 
+}
+
+SOCIAL_ORIENTEDSPEECH_ACTIONTYPE {
+INQUIRY, 
+NARRATION, 
+DESCRIPTION, 
+EXPOSITION, 
+PRAISING, 
+PLEADING,
+MOCKERY,
+}
+
+LIVING_ACTIONTYPE {
+EATING,
+DRINKING,
+RESTING,
+GROWING,
+HEALING,
+CLEANING,
+DRESSING,
+UNDRESSING,
+CULTIVATION,
+}
+
+
+RESTING_ACTIONTYPE {
+SITTING,
+MEDITATING,
+SLEEPING,
+}
+
+GROWING_ACTIONTYPE {
+ENTITY,
+PLANT,
+FUNGAL,
+}
+
+ENTITY_GROWTH_TYPE {
+HEIGHT,
+WEIGHT, (FAT/MUSCLE)
+AGE,
+}
+
+PLANT_GROWTH_TYPE {
+SEED,
+ROOT,
+STEM,
+LEAVES,
+BULB,
+FLOWER,
+FRUIT,
+}
+
+FUNGAL_GROWTH_TYPE {
+SPORE,
+MYCELLIUM,
+FRUIT_BODY,
+}
+
+CLEANING_ACTIONTYPE {
+GROOMING,
+WIPING,
+SCRUBBING,
+SCRAPING,
+DISINFECTING,
+SWEEPING,
+MOPPING,
+DUSTING,
+WASHING,
+}
+
+CULTIVATION_ACTIONTYPE {
+LIVESTOCK
+HORTICULTURE,
+ARABLE,
+AQUACULTURE,
+FUNGICULTURE,
+QI_CULTURE,
+}
+
+PERCEPTION_ACTIONTYPE {
+SEEING,
+TASTING,
+HEARING,
+SMELLING,
+TOUCHING,
+SENSING,
+TEMPERATURE,
+RECALL,
+}
+
+

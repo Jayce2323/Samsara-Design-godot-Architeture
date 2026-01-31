@@ -610,7 +610,7 @@ This formula calculates the amount of Infection_Load that the character's immune
 
 	Survival Skills (Overall Lvl-> Decrease Task-time(Mod), Increase Constitution = .5% per lvl)- 
 
-			Conditioning [(Cultivation only [(Heat, Cold,] Body cultivator only [Pierce Res, Slash Res, Impact Res,Poison: Corrosive, Irritant, Systemic,](Toughness, Resilience = .5% per lvl))], 
+			Conditioning [(Cultivation only [(Heat, Cold, Pierce Res, Slash Res, Impact Res,Poison: Corrosive, Irritant, Systemic,)](Toughness, Resilience = .5% per lvl))], 
 					Medical, Hunting, Trapping, Gathering, Scavenging [Resilience = .5% per lvl]
 			
 			Resistances are added during composite interaction Formulas/ combat rolls[See Formulas]
@@ -658,7 +658,7 @@ This formula calculates the amount of Infection_Load that the character's immune
 
 	Stoneworking Stats-  Power 30%, Accuracy 30%, Stamina 40%
 
-	Stoneworking Learning Skills: Physics, Geometry, Geography, Artistry
+	Stoneworking Learning Skills: Physics, Geometry, Geography, Artistry, Geology
 
 	Roguery Skills [Decrease Task-time (Mod)= .5% per lvl] - Lockpicking[Accuracy = .5% per lvl], Stealth[Decrease Task-time (Mod) = .5% per lvl], Deception/Blending[Charisma = .5% per lvl], Larceny[Decrease Task-time (Mod) = .5% per lvl], 
 
@@ -684,7 +684,7 @@ This formula calculates the amount of Infection_Load that the character's immune
 
 	Learning Skills [Decrease Task-time (Mod)= .5% per lvl] - [train Potential & Knowledge ][Learning Proficency Skill Lvl = Learning Theoretical Skill Lvl][Learning skill = Max Magic Magnitude Threshold]
 		Teaching [Expression of Learning skill], Farming, Cooking, Cuisine [Non-PC created recipes learned], 
-		History [World], Culture[History[Saga, Language, Religion (Knowledge, Piety), Musicality (Composition, Theory), Physics, Geometry, Anatomy, Biology (Terra, Astra, Mara), Mathematics, Kinesiology, 
+		History [World], Culture[History[Saga, Language, Religion (Knowledge, Piety), Musicality (Composition, Theory)], Physics, Geometry, Anatomy, Biology (Terra, Astra, Mara), Mathematics, Kinesiology, 
 		Geography (increased by exploring (going) or learning about new places), Mercantile [Trading], Performance, Geology, 
 		Arcane (Elemental[Reaction Force], Universal[Law of Domains], Alchemical(internal)[(Neidan)], Release, Rituals, Formations, Entites), 
 		Thinking/Speech: Logos [logic], Pathos [emotion], Ethos [credibility (appeal to authority or consensus over reliability)](Npc only: Tactics, Strategy, Leadership)
@@ -726,6 +726,7 @@ This formula calculates the amount of Infection_Load that the character's immune
 				Skill_Method/Fuction[Control]: Control is measure of one ability to manipulate Aether. 
 
 Known/Unknown Skills [only trained until learned]- Reading, Writing
+						   Prestige: [Combos(atttacks), Release/Rituals(spells), Killing-Intent(Inner Focus)](See social sim and char.actions)
 
 				
 				Handling_Experience - 
@@ -1102,7 +1103,26 @@ END SLEEP SYSTEM SPECIFICATION
                                                                                            Disavntage formula [[(1s-X) x 100]-25% = Y] (R) must be R <(Less than)/(or)=(equal to) Y to hit (go to damage calc or skip is dodging)
 
 	[Pc Action: Rest vs Meditate: Rest- a gen. action to recover stamina. (Gains bonus from sitting, sitting supported, sitting shaded(under canopy)/when applicable, Laying (infers supported bonus),surface comfort lvl )
-				Meditate - gen action for ki-formation (confers rest status for Cultivators) - Action for Qigong (Breathe Control)- trains (Control Skills)[Skill name: Jitsu-Jutsu]]		
+				Meditate - gen action for ki-formation (confers rest status for Cultivators) - Action for Qigong (Breathe Control)- trains (Control Skills)[Skill name: Jitsu-Jutsu]]	
+
+# --- SentienceComponent.gd (The N-P tag, attached to ANIMAL/HUMANOID/MONSTER entities) ---
+extends Node
+
+var is_sentient: bool = true
+# Add logic for AI, movement, communication here
+
+# Function to check role in grammar
+func get_grammar_role() -> String:
+    if is_sentient:
+        return "N-P (Actor)"
+    else:
+        return "N-O (Object)"
+
+# Function for state change on death
+func on_death():
+    is_sentient = false
+    # Disable AI and movement scripts
+    # The entity is now an N-O CORPSE	
      
 			Height and Weight Chart (Adults)
 This table provides general weight ranges for various heights in metric units, corresponding to the BMI categories above. 

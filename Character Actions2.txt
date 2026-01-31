@@ -6,10 +6,12 @@ Wait: Rest: Action to recover stamina. (Gains bonus from sitting, sitting suppor
 			   -> Tri-Nature Activation
 			    -> Quick Activation -> Holds Saved Activations hotbars-> Set Magnitude (All/Each)->Execute
 	Sleep: Charcter Sleeps [need to add tiredness and sleep]
+	Eat/Drink:
      Exercise: Bodyweight:
 	       Lift: 
-Look/Examine/Peak[context:around corners][contextual: Harvest: (Some: set #, All: (take all))][Contextual(Item stack):]
+Look/Examine/Peak[context:around corners][contextual: Harvest: (Some: set #, All: (take all))][Contextual(Item stack):][Contextual: Talk]
 Interact:Interact[Select tile in reach->select target in tile range->select interaction by target type/context],Grab: [will pick up on hold smaller items/ for pushing and pulling large items[Grapple]],Pickup:[pick up and hold item in free hand, Dominant hand first][contextual: Harvest: (Some: set #, All: (take all))][Contextual(Item stack): Take: All, Sort:Choose items]
+			[If: Neighboring tile = ledge;options-> Climb/Lower, Jump & Grab/Jump Down [Manual options climb = 3 moves in ledge direction/jump & grab/jump down = 4/+4 moves=unreachable], ]
 Open: Inventory, Journal
 Movement: [Alternating 2]: Walk/Run: Triggers run mode [x2 travel speed], Jump:[select distance], Climb: [contextual], Crouch: [Character is half-height and moves x2 slower]
 Combat: Armed  
@@ -36,7 +38,7 @@ Combat: Armed
 
 
 
-*Attack-Composition menu/Flow -> Target -> Select Char-> Next, -> After Target Selection-> Attack Hand/Direction -> Left/Right/Both-> (Starts from Stance)-So, North (up)[From the southpointing directions wielding a sword] counts as and upward slash; If NE + W is selected [From the southpointing directions wielding a sword] counts as a 45degree angle upward-diagonal slash at target, followed by a cross-body slash to the left (Each attack takes 1.2 sec before stats applied. can chain as many directions as charcter can achieve in 1.2 secs or 1 turn)
+*Attack-Composition menu/Flow -> Target -> Select Char-> Next, -> After Target Selection-> Attack With/Attack_Type: Hand [Left/Right/Both], Feet [Left/Right], Head [Headbutt/Bite]-> Direction -> (Starts from Stance)-So, North (up)[From the southpointing directions wielding a sword] counts as and upward slash; If NE + W is selected [From the southpointing directions wielding a sword] counts as a 45degree angle upward-diagonal slash at target, followed by a cross-body slash to the left (Each attack takes 1.2 sec before stats applied. can chain as many directions as charcter can achieve in 1.2 secs or 1 turn)
 			->Change-Stance	->	    Select Target BodyPart ->  After Attack Direction -> Select recovery position = Return to stance or manual set (see stance) -> Select Move Direction: Select square/position to "move toward" while attack-> Attack: Preloads composed attack and goes back to attack menu for combo selection or attack composition, Grapple: Preloads composed attack and goes to grapple menu for combo selection or grapple composition,Execute
 										[*Attack Direction: if unarmed also choose Attack Type: before Attack direction:][*Move Direction: allow to change Move-Type: before Move direction:]
 
@@ -99,7 +101,30 @@ Batch-Item-> Create Multiples of one item
 
 Multi-Item-> Create Multiple items -> preload [loop menu]
 
+Crafting/Processing Tab
 
+1. Quantity Mode
+- Individual-Item: Craft one.
+- Batch-Item: Create Multiples of one item.
+- Multi-Item: Create Multiple items -> preload [loop menu].
+
+2. Crafting Methods
+- By Tool: Select Tool [show tools in inventory] -> Selection Action.
+- Assembly: Select Tile and Add Base Piece [requires tools, may require rivets and nails].
+- Regular: Tool + Station + input -> output crafting.
+- Custom Station: 
+    * Set shape_type [Projectile, Ray, Orb, Cube, Lune, Tetrahedron, Triangle, Pre-Fab: [any known in game item]].
+    * Set dimensions [L, W, H, R1, R2].
+    * Save Recipe.
+
+3. The Processor
+- Check: Recipe gives mats required.
+- Compare: Initial attempt vs. mats required.
+- If initial attempt had too little -> Output "mats required" message.
+- If initial attempt sufficient -> Input -> Output.
+
+4. Loop Logic
+- Multi-Item path cycles the preload [loop menu] through the processor until the queue is finished.
 
 
 
@@ -154,3 +179,43 @@ Multi-step, high stakes, continuity across time.
 Directly tied to NPC’s core goal.
 Player becomes a helper, not a fetcher.
 Examples: help NPC rise in faction, resolve a feud, achieve a long-term ambition.
+
+
+Core Crafting Methods
+The system is divided into three primary categories based on the equipment required: 
+Survival Crafting: Accessible anywhere through your inventory menu. It requires no special station and is used for basic gear like bandages, primitive weapons, torches, and decrafting equipment into raw materials.
+Cooking: Performed at a Campfire (for basic roasting), a Cooking Pot, or a Kitchen. Cooking provides essential status-buffing foods that offer health, stamina, or mana regeneration.
+Alchemy: Requires an Alchemy Kit placed over a fire. This is used to brew powerful potions, elixirs, and elemental varnishes. 
+Key Mechanics
+Manual vs. Recipe Crafting: You can craft items by selecting a learned recipe from a list or by manually placing ingredients in slots. If you manually discover a valid combination, you permanently learn that recipe.
+Recipe Acquisition: Recipes can be purchased from merchants, found as loot in Recipe Scrolls, or shared by other players.
+Trial and Error: If you attempt a manual recipe and fail, you lose all the ingredients used.
+Decrafting: You can break down most weapons and armor into basic resources (like iron or palladium scraps) by placing a single item in the manual survival crafting screen
+
+flow of battles-
+Battles occur on a grid map, each grid space is made of 3x3 cells (9 squares) for thepurpos of tracking foot movement.
+Instead of using initiative and turn order all moves are selected and played out in the same turn
+Each turn represents 6 secs, each move selected during a turn will have an associated time and stamina cost
+Recieving a blow, even if no damge is taken will also have a stamina cost
+Attackers start the battle with weapons at the neutral position or a mid level defensfive stance, and select to defend, move, or target body part to attack
+Each characters base Swing speed, Accuracy, and Evasion are calculated and each parties moves per turn are weighted played against the oppenents in the order selected 
+The character with the higher swing speed will be counted as attacker first turn and and every other after(1,3,5). The slower character will be counted as attacker for the second action turn and every other turn after (2,4,6)
+To determine if an attack succeeds, the attackers Accuracy(to-hit-chance(attack speed+ Perception modifier))+1d20 - defenders Evasion(dodge chance(Attack speed )
+While attacking the player and enemy both have a chance to avoid damage based on evasion chance
+Evasion base total is the character dex and perceptions bonus added together with modifers based on attack direction and the position of the targeted body part
+Armor has a slight penalty to evasion chance (my goal is to only to only have the penalty become a real factor when a character is injured)
+If the defender succeeds the evasion roll and is attacking with a srtike from the oppsing direction of the attacker a 1d8 is rolled for parry chance and added to the defenders attack speed.
+A success is obtained if the defenders attack speed + 1d8 = +1 - or higher than the attackers attacked speed. At +1-+3 a parry is intiated and the next attack is a guarenteed crit. If +4 or higher a riposte is initiated the the current attack 
+If the defender fails the parry roll with attack speed + 1d8 = attacker speed up to -2 attacker speed a sword bind will be initiated
+During a sword bind niether party will be able to complete an attack starting from the turn the bind was initiated. Instead, the attacker and defender roll a 1d20 each turn until one player rolls at least +3 higher than their opponent
+After which the succeeding party will continue their action phase with a guarenteed critical strike. If niether party succeeds a roll during the bind and the action phase ends the parties will reset to neutral and begin the next preperation phase.
+if both characters succeed an evasion roll a parry roll will be initiated.
+if no evasion is roll is succesful both characters will take damage if the attacker fails to interrupt their opponent(hit-trade)
+
+Game-World/Difficulty [Easy - General-World Sim (No Magic, No Monster)(Job/Social/4x style game(maybe less 4x more total war/Nobunagas Ambition/ROTK(Koei)))]
+					Medium - [-Static - Low-Fantasy-World Sim  (Magic and Monsters are rare)(ex. Early Berserk)]
+					         [-Scaling - World Setting Starts on Medium and Scale up to Hard through a World-Event(s)]
+					Hard -	[High-Fantasy-World-Sim (Different races, Magic, Monsters)]
+						[Easily controlled through spawns, and if magic has to be learned then no character can learn magic if no magic items spawn in world.]
+
+Combat Note: Target tracking is done through Target Vectors where: Ground Vector: represents Target-Body-Position. Target Vector: represents Target-Body, where (0,0) equals Centerline-midpoint of the body
